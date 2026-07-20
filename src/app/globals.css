@@ -1268,12 +1268,12 @@ img {
     font-size: 1.35rem;
 }
 
-/* ULTRA-LUXURY FOOTER STYLES (CLEAR & HIGHLY VISIBLE BACKGROUND IMAGE) */
+/* FOOTER STYLES (BALANCED ELEGANT OVERLAY) */
 .footer-luxury {
     position: relative;
     background-color: var(--primary-dark);
     background-image: 
-        linear-gradient(180deg, rgba(3, 10, 22, 0.68) 0%, rgba(6, 18, 36, 0.82) 100%),
+        linear-gradient(180deg, rgba(3, 10, 22, 0.82) 0%, rgba(6, 18, 36, 0.90) 100%),
         url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
@@ -1301,12 +1301,12 @@ img {
 }
 
 .footer-brand-card {
-    background: rgba(255, 255, 255, 0.07);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: var(--shadow-lg);
 }
 
