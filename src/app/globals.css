@@ -38,8 +38,8 @@
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     
-    --transition-slow: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-smooth: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-slow: all 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -113,7 +113,7 @@ body {
     transform: scale(0.65);
 }
 
-/* ELEGANT & SMOOTH SLOW BUTTON ANIMATION */
+/* VERY SLOW & ELEGANT CINEMATIC BUTTON ANIMATION */
 .btn,
 .btn-default {
     position: relative;
@@ -131,7 +131,7 @@ body {
     border-radius: 12px;
     border: none;
     cursor: pointer;
-    transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 1.6s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
     z-index: 1;
     gap: 0.5rem;
@@ -144,17 +144,17 @@ body {
     transform: translateY(-2px);
 }
 
-/* Slow Arrow Nudge Animation */
+/* Very Slow Arrow Nudge Animation */
 .btn i,
 .btn-default::before {
-    transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn:hover i {
     transform: translateX(6px);
 }
 
-/* Slow Skewed Background Curtain Wipe */
+/* Very Slow Skewed Background Curtain Wipe */
 .btn::after,
 .btn-default::after {
     content: '';
@@ -168,7 +168,7 @@ body {
     height: 106%;
     background: var(--primary-color);
     transform: skew(30deg);
-    transition: all 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: -1;
 }
 
@@ -226,7 +226,7 @@ figure.image-anime::after {
     background-color: rgba(255,255,255,.35);
     transform: translate(-50%,-50%) rotate(-45deg);
     z-index: 5;
-    transition: all 800ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 1200ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 figure.image-anime:hover::after {
@@ -235,7 +235,7 @@ figure.image-anime:hover::after {
 }
 
 figure.image-anime img {
-    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), filter 0.85s ease;
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 1.2s ease;
 }
 
 figure.image-anime:hover img {
