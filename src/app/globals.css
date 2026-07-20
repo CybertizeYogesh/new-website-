@@ -1084,17 +1084,17 @@ img {
 #rate-list tr:nth-child(even) { background-color: var(--light-bg); }
 #rate-list tr:hover { background-color: rgba(255, 59, 92, 0.04); }
 
-/* Floating Radar Action Buttons */
-.floating-button-left,
-.floating-button-right {
+/* Floating Radar Action Buttons (Stacked Vertically on Right Side) */
+.floating-buttons-container {
     position: fixed;
     bottom: clamp(20px, 4vw, 35px);
+    right: clamp(15px, 3vw, 30px);
     z-index: 1000;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
 }
-
-.floating-button-left { left: clamp(15px, 3vw, 30px); }
-.floating-button-right { right: clamp(15px, 3vw, 30px); }
 
 .floating-btn {
     display: flex;
