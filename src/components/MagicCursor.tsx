@@ -36,7 +36,7 @@ export default function MagicCursor() {
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const cursorTarget = target.closest('[data-cursor-text], a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card, .image-anime') as HTMLElement;
+      const cursorTarget = target.closest('[data-cursor-text], a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card, .image-anime, h1, h2, h3, h4, .sub-title') as HTMLElement;
 
       if (cursorTarget) {
         setIsHovered(true);
@@ -47,6 +47,8 @@ export default function MagicCursor() {
           setCursorText('EXPLORE');
         } else if (cursorTarget.closest('.image-anime, img')) {
           setCursorText('VIEW');
+        } else if (cursorTarget.closest('h1, h2, h3, h4, .sub-title')) {
+          setCursorText('LOOK');
         } else if (cursorTarget.closest('.btn, button, a')) {
           setCursorText('GO');
         } else {
