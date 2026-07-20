@@ -1268,13 +1268,13 @@ img {
     font-size: 1.35rem;
 }
 
-/* ULTRA-LUXURY FOOTER STYLES */
+/* ULTRA-LUXURY FOOTER STYLES (CLEAR & HIGHLY VISIBLE BACKGROUND IMAGE) */
 .footer-luxury {
     position: relative;
     background-color: var(--primary-dark);
     background-image: 
-        linear-gradient(180deg, rgba(3, 10, 22, 0.95) 0%, rgba(6, 18, 36, 0.98) 100%),
-        url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop');
+        linear-gradient(180deg, rgba(3, 10, 22, 0.68) 0%, rgba(6, 18, 36, 0.82) 100%),
+        url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1301,12 +1301,12 @@ img {
 }
 
 .footer-brand-card {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 2rem;
     border-radius: var(--radius-lg);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: var(--shadow-lg);
 }
 
