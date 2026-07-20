@@ -208,7 +208,7 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* Services Grid & Cards (Rich Section Color Gradient Slide-Up on Hover) */
+/* Services Grid & Cards (Electric Blue Tone Hover Animation) */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
@@ -232,7 +232,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(255, 59, 92, 0.12) 0%, rgba(59, 130, 246, 0.16) 100%);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(37, 99, 235, 0.22) 100%);
     transform: translateY(100%);
     transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 0;
@@ -244,9 +244,9 @@ body {
 }
 
 .service-card:hover {
-    box-shadow: 0 20px 40px -10px rgba(255, 59, 92, 0.25);
+    box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.3);
     transform: translateY(-10px);
-    border-color: var(--accent-color);
+    border-color: var(--secondary-color);
 }
 
 .service-img {
