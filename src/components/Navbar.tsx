@@ -13,7 +13,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 40) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -24,7 +24,6 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    // Close menu when route changes
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
   }, [pathname]);
@@ -54,14 +53,14 @@ export default function Navbar() {
         onClick={closeMenu}
       ></div>
 
-      <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
+      <header className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="navbar">
         <div className="container nav-container">
-          <Link href="/" className="logo">
+          <Link href="/" className="logo" onClick={closeMenu}>
             <Image 
               src="/assets/images/logo.png" 
               alt="HSM Packers and Movers Electronic City" 
-              width={180} 
-              height={60} 
+              width={170} 
+              height={50} 
               className="logo-img" 
               priority
             />
@@ -71,7 +70,7 @@ export default function Navbar() {
             className={`nav-toggle ${isMenuOpen ? 'active' : ''}`} 
             id="navToggle"
             onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
+            aria-label="Toggle Navigation Menu"
           >
             <span></span>
             <span></span>
@@ -133,11 +132,11 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <Link href="#quote" className="btn btn-primary nav-cta">
+          <Link href="#quote" className="btn btn-primary nav-cta" style={{ padding: '0.7rem 1.6rem', fontSize: '0.9rem' }}>
             Get a Quote
           </Link>
         </div>
-      </nav>
+      </header>
     </>
   );
 }

@@ -16,7 +16,7 @@ export default function QuoteForm({
       <h3>{title}</h3>
       <p>{subtitle}</p>
       <form action="https://hsmpackersandmovers.in/thank-you.php" method="POST" className="quote-form">
-        <div className="form-grid">
+        <div className="form-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.25rem' }}>
           <div className="input-group">
             <input type="text" name="name" placeholder="Your Name" required />
           </div>
@@ -43,7 +43,7 @@ export default function QuoteForm({
         </div>
 
         <button type="submit" className="btn btn-primary btn-block">
-          Get Quote Now <i className="fa-solid fa-arrow-right"></i>
+          Get Quote Now <i className="fa-solid fa-arrow-right" style={{ marginLeft: '6px' }}></i>
         </button>
       </form>
     </div>
