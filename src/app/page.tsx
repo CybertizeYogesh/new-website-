@@ -8,7 +8,7 @@ import RateTable from '@/components/RateTable';
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
+      {/* 1. Hero Section - Dark Midnight Theme */}
       <header className="hero" id="home">
         <div className="hero-bg">
           <div className="overlay"></div>
@@ -17,8 +17,8 @@ export default function HomePage() {
           <div className="hero-text fade-in-up">
             <span className="badge">#1 Trusted Packers &amp; Movers</span>
             <h1>
-              Moving Made <span className="text-gradient">Seamless</span> &amp;{' '}
-              <span className="text-gradient">Stress-Free</span>
+              Moving Made <span className="text-gradient-accent">Seamless</span> &amp;{' '}
+              <span className="text-gradient-white">Stress-Free</span>
             </h1>
             <p>
               Expert house relocation, office shifting, and vehicle transport services across India and
@@ -38,8 +38,8 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* Features / Why Choose Us */}
-      <section className="features section">
+      {/* 2. Why Choose Us Section - Gradient Shading Pattern */}
+      <section className="features section bg-gradient-shading">
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Why Choose Us</span>
@@ -75,17 +75,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services section bg-light" id="services">
+      {/* 3. Services Section - Dark Grid Pattern */}
+      <section className="services section bg-dark-grid" id="services">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title">Our Services</span>
-            <h2>Comprehensive Relocation Solutions</h2>
-            <p>From packing to unloading, storage, and vehicle transport, we offer complete solutions for every need.</p>
+            <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Our Services</span>
+            <h2 style={{ color: '#ffffff' }}>Comprehensive Relocation Solutions</h2>
+            <p style={{ color: '#cbd5e1' }}>From packing to unloading, storage, and vehicle transport, we offer complete solutions for every need.</p>
           </div>
 
           <div className="services-grid">
-            {/* Service 1 */}
             <div className="service-card fade-in-up">
               <div className="service-img">
                 <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -98,7 +97,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Service 2 */}
             <div className="service-card fade-in-up delay-1">
               <div className="service-img">
                 <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -111,7 +109,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Service 3 */}
             <div className="service-card fade-in-up delay-2">
               <div className="service-img">
                 <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -124,7 +121,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Service 4 */}
             <div className="service-card fade-in-up">
               <div className="service-img">
                 <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -137,7 +133,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Service 5 */}
             <div className="service-card fade-in-up delay-1">
               <div className="service-img">
                 <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -150,7 +145,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Service 6 */}
             <div className="service-card fade-in-up delay-2">
               <div className="service-img">
                 <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
@@ -166,11 +160,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Rate List Section */}
+      {/* 4. Pricing Matrix Dashboard */}
       <RateTable />
 
-      {/* Process Section */}
-      <section className="process section" id="process">
+      {/* 5. How We Work Process Timeline */}
+      <section className="process section bg-gradient-shading" id="process">
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">How We Work</span>
@@ -211,8 +205,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="about section bg-light" id="about">
+      {/* 6. About Section - Split Card Layout */}
+      <section className="about section" id="about">
         <div className="container">
           <div className="about-grid">
             <div className="about-content fade-in-right">
@@ -223,13 +217,13 @@ export default function HomePage() {
               </p>
 
               <ul className="about-list">
-                <li><i className="fa-solid fa-check-circle"></i> 110+ Dedicated Team Members</li>
-                <li><i className="fa-solid fa-check-circle"></i> 9500+ Satisfied Clients</li>
-                <li><i className="fa-solid fa-check-circle"></i> 24/7 Customer Support</li>
-                <li><i className="fa-solid fa-check-circle"></i> Real-time Tracking</li>
+                <li><i className="fa-solid fa-circle-check"></i> 110+ Dedicated Team Members</li>
+                <li><i className="fa-solid fa-circle-check"></i> 9500+ Satisfied Clients</li>
+                <li><i className="fa-solid fa-circle-check"></i> 24/7 Customer Support</li>
+                <li><i className="fa-solid fa-circle-check"></i> Real-time Tracking</li>
               </ul>
 
-              <Link href="/contact-us" className="btn btn-primary">Contact Us</Link>
+              <Link href="/contact-us" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>Contact Us</Link>
             </div>
             <div className="about-image fade-in-left">
               <div className="img-wrapper">
@@ -247,52 +241,52 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="section">
+      {/* 7. Client Testimonials - Dark Theme */}
+      <section className="section bg-dark-grid">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title">Testimonials</span>
-            <h2>What Our Clients Say</h2>
+            <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
+            <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
           </div>
           <div className="grid-3">
-            <div className="feature-card fade-in-up">
-              <div style={{ color: 'var(--secondary-color)', fontSize: '1.2rem', marginBottom: '1rem' }}>
+            <div className="feature-card fade-in-up" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
-              <p>"Excellent service! The team was professional, punctual, and handled all my furniture with great care. Highly recommended for house shifting."</p>
+              <p style={{ color: '#cbd5e1' }}>"Excellent service! The team was professional, punctual, and handled all my furniture with great care. Highly recommended for house shifting."</p>
               <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '40px', height: '40px', background: '#e2e8f0', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>RK</div>
+                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>RK</div>
                 <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem' }}>Rahul Kumar</h4>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Bengaluru to Delhi</span>
+                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Rahul Kumar</h4>
+                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Bengaluru to Delhi</span>
                 </div>
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-1">
-              <div style={{ color: 'var(--secondary-color)', fontSize: '1.2rem', marginBottom: '1rem' }}>
-                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
+            <div className="feature-card fade-in-up delay-1" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
+                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
-              <p>"I used their bike transport service from Pune to Bangalore. I received my bike in perfect condition and on time. Great job team!"</p>
+              <p style={{ color: '#cbd5e1' }}>"I used their bike transport service from Pune to Bangalore. I received my bike in perfect condition and on time. Great job team!"</p>
               <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '40px', height: '40px', background: '#e2e8f0', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>AS</div>
+                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>AS</div>
                 <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem' }}>Amit Sharma</h4>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Pune to Bangalore</span>
+                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Amit Sharma</h4>
+                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Pune to Bangalore</span>
                 </div>
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-2">
-              <div style={{ color: 'var(--secondary-color)', fontSize: '1.2rem', marginBottom: '1rem' }}>
+            <div className="feature-card fade-in-up delay-2" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
-              <p>"Very professional office relocation service. They minimized our downtime and set up everything perfectly at the new office."</p>
+              <p style={{ color: '#cbd5e1' }}>"Very professional office relocation service. They minimized our downtime and set up everything perfectly at the new office."</p>
               <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '40px', height: '40px', background: '#e2e8f0', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' }}>PS</div>
+                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>PS</div>
                 <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem' }}>Priya Singh</h4>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>Corporate Client</span>
+                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Priya Singh</h4>
+                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Corporate Client</span>
                 </div>
               </div>
             </div>
@@ -300,8 +294,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Network / Suburbs Section */}
-      <section className="section bg-light">
+      {/* 8. Suburbs Network Section */}
+      <section className="section bg-gradient-shading">
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Areas We Serve</span>
@@ -338,16 +332,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="section" style={{ background: 'linear-gradient(135deg, var(--primary-color), var(--primary-light))', color: 'white', textAlign: 'center' }}>
+      {/* 9. Call to Action Banner */}
+      <section className="section" style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary-light))', color: 'white', textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '2.5rem' }}>Ready to Move?</h2>
           <p style={{ color: '#cbd5e1', maxWidth: '600px', margin: '0 auto 2.5rem', fontSize: '1.1rem' }}>
             Get a free, no-obligation quote today and experience the best relocation service in India.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="#quote" className="btn btn-primary" style={{ background: 'white', color: 'var(--accent-color)' }}>Get a Quote</Link>
-            <a href="tel:09980303730" className="btn" style={{ border: '2px solid white', color: 'white' }}>Call Us Now</a>
+            <Link href="#quote" className="btn btn-primary">Get a Quote</Link>
+            <a href="tel:09980303730" className="btn btn-outline">Call Us Now</a>
           </div>
         </div>
       </section>
