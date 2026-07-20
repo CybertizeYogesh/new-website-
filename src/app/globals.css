@@ -208,6 +208,94 @@ body {
     border-radius: var(--radius-md);
 }
 
+/* EXACT MOVEIN / GLOBAL PACKERS SERVICE HOVER RISING DOME ANIMATION */
+.service-card,
+.service-item {
+    position: relative;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.service-card::before,
+.service-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--accent-color);
+    border-radius: 999px 999px 0 0;
+    height: 0;
+    width: 100%;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card:hover::before,
+.service-item:hover::before {
+    height: 100%;
+    border-radius: 0;
+}
+
+.service-card:hover,
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-color);
+}
+
+.service-card .service-content,
+.service-item .service-content {
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s ease-in-out;
+}
+
+.service-card:hover h3,
+.service-card:hover p,
+.service-item:hover h3,
+.service-item:hover p {
+    color: var(--white) !important;
+}
+
+.service-card:hover .read-more,
+.service-item:hover .read-more {
+    color: var(--white);
+}
+
+.service-icon {
+    position: absolute;
+    top: -36px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    color: var(--white);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 5px solid var(--white);
+    box-shadow: var(--shadow-lg);
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-card:hover .service-icon {
+    background: var(--white);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.1) rotate(6deg);
+}
+
 /* UNIVERSAL AUTOMATIC IMAGE ANIMATION & LIGHT BEAM OVERLAY */
 figure.image-anime,
 .img-wrapper,
@@ -805,100 +893,6 @@ img {
     background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
     color: var(--white);
     transform: rotateY(180deg) scale(1.05);
-}
-
-/* Services Grid */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
-    gap: clamp(1.5rem, 3.5vw, 2.5rem);
-}
-
-.service-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition-slow);
-    border: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-}
-
-.service-card:hover {
-    box-shadow: var(--shadow-xl);
-    transform: translateY(-10px);
-    border-color: rgba(255, 59, 92, 0.3);
-}
-
-.service-img {
-    height: 240px;
-    overflow: hidden;
-    position: relative;
-}
-
-.service-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.service-card:hover .service-img img {
-    transform: scale(1.1);
-}
-
-.service-content {
-    padding: clamp(1.5rem, 3vw, 2.25rem);
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.service-icon {
-    position: absolute;
-    top: -36px;
-    right: 25px;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
-    color: var(--white);
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    border: 5px solid var(--white);
-    box-shadow: var(--shadow-lg);
-    z-index: 10;
-    transition: var(--transition-smooth);
-}
-
-.service-card:hover .service-icon {
-    transform: scale(1.15) rotate(10deg);
-}
-
-.service-content p {
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-}
-
-.read-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.6rem;
-    color: var(--accent-color);
-    font-weight: 800;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-}
-
-.read-more:hover {
-    gap: 0.9rem;
-    color: var(--secondary-color);
 }
 
 /* Process Timeline Steps */
