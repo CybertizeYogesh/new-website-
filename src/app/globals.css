@@ -113,6 +113,100 @@ body {
     transform: scale(0.65);
 }
 
+/* EXACT MOVEIN / GLOBAL PACKERS BUTTON ANIMATION */
+.btn,
+.btn-default {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3.25rem 1rem 2rem;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: capitalize;
+    color: var(--white);
+    background: var(--accent-color);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 1;
+    gap: 0.5rem;
+}
+
+.btn:hover,
+.btn-default:hover {
+    color: var(--white);
+    box-shadow: 0 10px 25px -5px rgba(255, 59, 92, 0.5);
+}
+
+/* Arrow Nudge Animation */
+.btn i,
+.btn-default::before {
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Skewed Background Wipe Curtain Animation */
+.btn::after,
+.btn-default::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--primary-color);
+    transform: skew(30deg);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.btn:hover::after,
+.btn-default:hover:after {
+    width: 130%;
+    transform: skew(0deg);
+    left: 0;
+}
+
+/* Highlighted / Secondary Button Variant */
+.btn-secondary {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-secondary::after {
+    background: var(--primary-color);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    color: var(--white);
+}
+
+.btn-outline::after {
+    background: var(--white);
+}
+
+.btn-outline:hover {
+    color: var(--primary-color);
+}
+
+.btn-block {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+
 /* Image Sheen & Light Beam Overlay */
 figure.image-anime {
     position: relative;
@@ -121,26 +215,22 @@ figure.image-anime {
     border-radius: var(--radius-lg);
 }
 
-figure.image-anime::before {
-    content: '';
+figure.image-anime::after {
+    content: "";
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(255, 255, 255, 0.4) 50%,
-        transparent 100%
-    );
-    transform: skewX(-25deg);
+    width: 200%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255,255,255,.35);
+    transform: translate(-50%,-50%) rotate(-45deg);
     z-index: 5;
-    transition: left 0.75s ease-in-out;
+    transition: all 600ms linear;
 }
 
-figure.image-anime:hover::before {
-    left: 140%;
+figure.image-anime:hover::after {
+    height: 250%;
+    background-color: transparent;
 }
 
 figure.image-anime img {
@@ -148,39 +238,8 @@ figure.image-anime img {
 }
 
 figure.image-anime:hover img {
-    transform: scale(1.12);
+    transform: scale(1.1);
     filter: brightness(1.05);
-}
-
-/* Button Sheen Light Sweep */
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 70%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(255, 255, 255, 0.45) 50%,
-        transparent 100%
-    );
-    transform: skewX(-25deg);
-    z-index: 2;
-    transition: left 0.75s ease-in-out;
-}
-
-.btn:hover::before {
-    left: 150%;
-}
-
-.btn i {
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn:hover i {
-    transform: translateX(6px);
 }
 
 /* Curtain Preloader */
@@ -343,52 +402,6 @@ img {
     padding: clamp(4rem, 8vw, 7rem) 0;
     position: relative;
     overflow: hidden;
-}
-
-/* Buttons */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.95rem 2.25rem;
-    font-weight: 700;
-    border-radius: 50px;
-    cursor: pointer;
-    border: none;
-    transition: var(--transition-smooth);
-    gap: 0.65rem;
-    font-size: 1rem;
-    letter-spacing: 0.4px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
-    color: var(--white);
-    box-shadow: var(--shadow-glow-accent);
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 16px 35px -5px rgba(255, 59, 92, 0.5);
-}
-
-.btn-secondary {
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-hover) 100%);
-    color: var(--white);
-    box-shadow: var(--shadow-glow-blue);
-}
-
-.btn-secondary:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 16px 35px -5px rgba(59, 130, 246, 0.5);
-}
-
-.btn-block {
-    width: 100%;
-    border-radius: var(--radius-md);
 }
 
 /* Floating Header */
