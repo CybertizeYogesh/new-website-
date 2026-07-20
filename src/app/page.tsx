@@ -4,6 +4,8 @@ import Image from 'next/image';
 import QuoteForm from '@/components/QuoteForm';
 import StatCounter from '@/components/StatCounter';
 import RateTable from '@/components/RateTable';
+import TextAnime from '@/components/TextAnime';
+import ImageReveal from '@/components/ImageReveal';
 
 export default function HomePage() {
   return (
@@ -14,12 +16,14 @@ export default function HomePage() {
           <div className="overlay"></div>
         </div>
         <div className="container hero-content">
-          <div className="hero-text fade-in-up">
+          <div className="hero-text">
             <span className="badge">#1 Trusted Packers &amp; Movers</span>
-            <h1>
-              Moving Made <span className="text-gradient-accent">Seamless</span> &amp;{' '}
-              <span className="text-gradient-white">Stress-Free</span>
-            </h1>
+            <TextAnime>
+              <h1>
+                Moving Made <span className="text-gradient-accent">Seamless</span> &amp;{' '}
+                <span className="text-gradient-white">Stress-Free</span>
+              </h1>
+            </TextAnime>
             <p>
               Expert house relocation, office shifting, and vehicle transport services across India and
               internationally. We handle your belongings with the utmost care and precision.
@@ -32,7 +36,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="hero-form fade-in-up delay-1">
+          <div className="hero-form">
             <QuoteForm />
           </div>
         </div>
@@ -43,7 +47,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Why Choose Us</span>
-            <h2>We Make Moving <span className="highlight">Easier</span></h2>
+            <TextAnime>
+              <h2>We Make Moving <span className="highlight">Easier</span></h2>
+            </TextAnime>
             <p>Experience the difference with our premium relocation services designed for your peace of mind.</p>
           </div>
 
@@ -80,15 +86,19 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Our Services</span>
-            <h2 style={{ color: '#ffffff' }}>Comprehensive Relocation Solutions</h2>
+            <TextAnime>
+              <h2 style={{ color: '#ffffff' }}>Comprehensive Relocation Solutions</h2>
+            </TextAnime>
             <p style={{ color: '#cbd5e1' }}>From packing to unloading, storage, and vehicle transport, we offer complete solutions for every need.</p>
           </div>
 
           <div className="services-grid">
             <div className="service-card fade-in-up">
-              <div className="service-img">
-                <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-house-chimney"></i></div>
                 <h3>House Relocation</h3>
@@ -98,9 +108,11 @@ export default function HomePage() {
             </div>
 
             <div className="service-card fade-in-up delay-1">
-              <div className="service-img">
-                <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-building"></i></div>
                 <h3>Office Shifting</h3>
@@ -110,9 +122,11 @@ export default function HomePage() {
             </div>
 
             <div className="service-card fade-in-up delay-2">
-              <div className="service-img">
-                <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-car-side"></i></div>
                 <h3>Vehicle Transport</h3>
@@ -122,9 +136,11 @@ export default function HomePage() {
             </div>
 
             <div className="service-card fade-in-up">
-              <div className="service-img">
-                <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-warehouse"></i></div>
                 <h3>Warehouse Service</h3>
@@ -134,9 +150,11 @@ export default function HomePage() {
             </div>
 
             <div className="service-card fade-in-up delay-1">
-              <div className="service-img">
-                <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-plane-departure"></i></div>
                 <h3>International Moving</h3>
@@ -146,9 +164,11 @@ export default function HomePage() {
             </div>
 
             <div className="service-card fade-in-up delay-2">
-              <div className="service-img">
-                <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
-              </div>
+              <ImageReveal>
+                <div className="service-img">
+                  <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
+                </div>
+              </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-box-open"></i></div>
                 <h3>Packing &amp; Unpacking</h3>
@@ -168,7 +188,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">How We Work</span>
-            <h2>Simple 4-Step Process</h2>
+            <TextAnime>
+              <h2>Simple 4-Step Process</h2>
+            </TextAnime>
             <p>We've optimized our workflow to ensure the most efficient and stress-free moving experience for you.</p>
           </div>
 
@@ -211,7 +233,9 @@ export default function HomePage() {
           <div className="about-grid">
             <div className="about-content fade-in-right">
               <span className="sub-title">About Company</span>
-              <h2>Trusted Relocation Partner Since 2012</h2>
+              <TextAnime>
+                <h2>Trusted Relocation Partner Since 2012</h2>
+              </TextAnime>
               <p>
                 HSM Packers and Movers Electronic City is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
               </p>
@@ -226,16 +250,18 @@ export default function HomePage() {
               <Link href="/contact-us" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>Contact Us</Link>
             </div>
             <div className="about-image fade-in-left">
-              <div className="img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
-                  alt="About HSM Packers and Movers Electronic City"
-                />
-                <div className="exp-badge">
-                  <span className="years">10+</span>
-                  <span className="text">Years of Experience</span>
+              <ImageReveal>
+                <div className="img-wrapper">
+                  <img
+                    src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
+                    alt="About HSM Packers and Movers Electronic City"
+                  />
+                  <div className="exp-badge">
+                    <span className="years">10+</span>
+                    <span className="text">Years of Experience</span>
+                  </div>
                 </div>
-              </div>
+              </ImageReveal>
             </div>
           </div>
         </div>
@@ -246,7 +272,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
-            <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
+            <TextAnime>
+              <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
+            </TextAnime>
           </div>
           <div className="grid-3">
             <div className="feature-card fade-in-up" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
@@ -299,7 +327,9 @@ export default function HomePage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Areas We Serve</span>
-            <h2>Packers and Movers in Bengaluru – All Areas</h2>
+            <TextAnime>
+              <h2>Packers and Movers in Bengaluru – All Areas</h2>
+            </TextAnime>
             <p>HSM Packers and Movers Electronic City provides reliable house shifting, office relocation and vehicle transport across all areas of Bengaluru.</p>
           </div>
 
