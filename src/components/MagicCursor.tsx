@@ -1,55 +1,67 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 export default function MagicCursor() {
-  const [position, setPosition] = useState({ x: -100, y: -100 });
-  const [ringPosition, setRingPosition] = useState({ x: -100, y: -100 });
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
   const [cursorText, setCursorText] = useState('');
   const [isHovered, setIsHovered] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isEnabled, setIsEnabled] = useState(false);
 
   useEffect(() => {
-    if (window.matchMedia('(pointer: coarse)').matches) return;
-    setIsVisible(true);
+    // Enable custom mouse follower for desktop pointer devices
+    if (window.matchMedia('(pointer: fine)').matches) {
+      setIsEnabled(true);
+    } else {
+      return;
+    }
+
+    let mouseX = -100;
+    let mouseY = -100;
+    let ringX = -100;
+    let ringY = -100;
 
     const onMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      }
     };
 
     window.addEventListener('mousemove', onMouseMove);
 
-    let animationFrameId: number;
+    let animId: number;
     const lerp = (start: number, end: number, amt: number) => (1 - amt) * start + amt * end;
 
-    let currentX = -100;
-    let currentY = -100;
+    const loop = () => {
+      ringX = lerp(ringX, mouseX, 0.18);
+      ringY = lerp(ringY, mouseY, 0.18);
 
-    const render = () => {
-      currentX = lerp(currentX, position.x, 0.2);
-      currentY = lerp(currentY, position.y, 0.2);
-      setRingPosition({ x: currentX, y: currentY });
-      animationFrameId = requestAnimationFrame(render);
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate3d(${ringX - 24}px, ${ringY - 24}px, 0)`;
+      }
+
+      animId = requestAnimationFrame(loop);
     };
 
-    render();
+    loop();
 
-    const handleMouseOver = (e: MouseEvent) => {
+    const onMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const cursorTarget = target.closest('[data-cursor-text], a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card, .image-anime, h1, h2, h3, h4, .sub-title') as HTMLElement;
+      const hoverElem = target.closest('a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card, .image-anime, h1, h2, h3, h4, .sub-title') as HTMLElement;
 
-      if (cursorTarget) {
+      if (hoverElem) {
         setIsHovered(true);
-        const explicitText = cursorTarget.getAttribute('data-cursor-text');
-        if (explicitText) {
-          setCursorText(explicitText);
-        } else if (cursorTarget.closest('.service-card')) {
+        if (hoverElem.closest('.service-card')) {
           setCursorText('EXPLORE');
-        } else if (cursorTarget.closest('.image-anime, img')) {
+        } else if (hoverElem.closest('.image-anime, img')) {
           setCursorText('VIEW');
-        } else if (cursorTarget.closest('h1, h2, h3, h4, .sub-title')) {
+        } else if (hoverElem.closest('h1, h2, h3, h4, .sub-title')) {
           setCursorText('LOOK');
-        } else if (cursorTarget.closest('.btn, button, a')) {
+        } else if (hoverElem.closest('.btn, button, a')) {
           setCursorText('GO');
         } else {
           setCursorText('');
@@ -60,26 +72,23 @@ export default function MagicCursor() {
       }
     };
 
-    window.addEventListener('mouseover', handleMouseOver);
+    window.addEventListener('mouseover', onMouseOver);
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
-      window.removeEventListener('mouseover', handleMouseOver);
-      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('mouseover', onMouseOver);
+      cancelAnimationFrame(animId);
     };
-  }, [position.x, position.y]);
+  }, []);
 
-  if (!isVisible) return null;
+  if (!isEnabled) return null;
 
   return (
     <>
+      <div ref={dotRef} className="cursor-dot" />
       <div 
-        className="cursor-dot" 
-        style={{ transform: `translate3d(${position.x}px, ${position.y}px, 0)` }}
-      ></div>
-      <div 
-        className={`cursor-ring ${isHovered ? 'cursor-hover' : ''} ${cursorText ? 'has-text' : ''}`} 
-        style={{ transform: `translate3d(${ringPosition.x - 24}px, ${ringPosition.y - 24}px, 0)` }}
+        ref={ringRef} 
+        className={`cursor-ring ${isHovered ? 'cursor-hover' : ''}`}
       >
         {cursorText && <span className="cursor-text-badge">{cursorText}</span>}
       </div>
