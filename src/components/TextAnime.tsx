@@ -22,19 +22,20 @@ export default function TextAnime({ children, className = '', delay = 0 }: TextA
 
     const el = textRef.current;
     
-    // Create GSAP ScrollTrigger timeline for text reveal
     const ctx = gsap.context(() => {
       gsap.fromTo(
         el,
         {
           opacity: 0,
-          y: 40,
-          clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)'
+          y: 45,
+          rotateX: 45,
+          transformPerspective: 1000,
+          transformOrigin: '0% 50% -50'
         },
         {
           opacity: 1,
           y: 0,
-          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+          rotateX: 0,
           duration: 1.1,
           delay: delay,
           ease: 'power3.out',
@@ -51,7 +52,7 @@ export default function TextAnime({ children, className = '', delay = 0 }: TextA
   }, [delay]);
 
   return (
-    <div ref={textRef} className={`text-anime-wrap ${className}`}>
+    <div ref={textRef} className={`text-anime-wrap ${className}`} style={{ perspective: '1000px' }}>
       {children}
     </div>
   );

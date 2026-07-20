@@ -61,7 +61,7 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Magic Cursor */
+/* Custom Magic Cursor with Text Badge */
 @media (pointer: fine) {
     body { cursor: default; }
 }
@@ -70,8 +70,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: var(--accent-color);
     border-radius: 50%;
     pointer-events: none;
@@ -83,21 +83,104 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border: 2px solid rgba(255, 59, 92, 0.6);
     background: rgba(255, 59, 92, 0.05);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.25s ease-out, border-color 0.3s ease, background 0.3s ease;
 }
 
 .cursor-ring.cursor-hover {
-    transform: scale(2.2) !important;
+    transform: scale(2.4) !important;
     border-color: var(--secondary-color);
-    background: rgba(59, 130, 246, 0.15);
+    background: rgba(37, 99, 235, 0.2);
     backdrop-filter: blur(4px);
+}
+
+.cursor-text-badge {
+    font-size: 8px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    transform: scale(0.65);
+}
+
+/* Image Sheen & Light Beam Overlay */
+figure.image-anime {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: var(--radius-lg);
+}
+
+figure.image-anime::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    z-index: 5;
+    transition: left 0.75s ease-in-out;
+}
+
+figure.image-anime:hover::before {
+    left: 140%;
+}
+
+figure.image-anime img {
+    transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1), filter 0.75s ease;
+}
+
+figure.image-anime:hover img {
+    transform: scale(1.12);
+    filter: brightness(1.05);
+}
+
+/* Button Sheen Light Sweep */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.45) 50%,
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    z-index: 2;
+    transition: left 0.75s ease-in-out;
+}
+
+.btn:hover::before {
+    left: 150%;
+}
+
+.btn i {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn:hover i {
+    transform: translateX(6px);
 }
 
 /* Curtain Preloader */
@@ -753,7 +836,7 @@ img {
 }
 
 .service-card:hover .service-icon {
-    transform: scale(1.1) rotate(6deg);
+    transform: scale(1.15) rotate(10deg);
 }
 
 .service-content p {
@@ -1108,9 +1191,7 @@ img {
     font-size: 1.35rem;
 }
 
-/* =============================================
-   ULTRA-LUXURY FOOTER STYLES WITH BACKGROUND TEXTURE
-   ============================================= */
+/* ULTRA-LUXURY FOOTER STYLES */
 .footer-luxury {
     position: relative;
     background-color: var(--primary-dark);

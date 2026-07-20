@@ -54,7 +54,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid-3">
-            <div className="feature-card fade-in-up">
+            <div className="feature-card fade-in-up" data-cursor-text="WHY US">
               <div className="icon-box">
                 <i className="fa-solid fa-clock"></i>
               </div>
@@ -62,7 +62,7 @@ export default function HomePage() {
               <p>We respect your schedule, ensuring on-time pickup, transit, and delivery for a stress-free experience.</p>
             </div>
 
-            <div className="feature-card fade-in-up delay-1">
+            <div className="feature-card fade-in-up delay-1" data-cursor-text="SAFE">
               <div className="icon-box">
                 <i className="fa-solid fa-shield-halved"></i>
               </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
               <p>We ensure your belongings are packed, transported, and delivered safely using modern equipment.</p>
             </div>
 
-            <div className="feature-card fade-in-up delay-2">
+            <div className="feature-card fade-in-up delay-2" data-cursor-text="BEST RATE">
               <div className="icon-box">
                 <i className="fa-solid fa-indian-rupee-sign"></i>
               </div>
@@ -93,11 +93,13 @@ export default function HomePage() {
           </div>
 
           <div className="services-grid">
-            <div className="service-card fade-in-up">
+            <div className="service-card fade-in-up" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-house-chimney"></i></div>
@@ -107,11 +109,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="service-card fade-in-up delay-1">
+            <div className="service-card fade-in-up delay-1" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-building"></i></div>
@@ -121,11 +125,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="service-card fade-in-up delay-2">
+            <div className="service-card fade-in-up delay-2" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-car-side"></i></div>
@@ -135,11 +141,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="service-card fade-in-up">
+            <div className="service-card fade-in-up" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-warehouse"></i></div>
@@ -149,11 +157,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="service-card fade-in-up delay-1">
+            <div className="service-card fade-in-up delay-1" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-plane-departure"></i></div>
@@ -163,11 +173,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="service-card fade-in-up delay-2">
+            <div className="service-card fade-in-up delay-2" data-cursor-text="EXPLORE">
               <ImageReveal>
-                <div className="service-img">
-                  <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
-                </div>
+                <figure className="image-anime">
+                  <div className="service-img">
+                    <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
+                  </div>
+                </figure>
               </ImageReveal>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-box-open"></i></div>
@@ -195,28 +207,28 @@ export default function HomePage() {
           </div>
 
           <div className="process-steps">
-            <div className="step-card fade-in-up">
+            <div className="step-card fade-in-up" data-cursor-text="STEP 1">
               <div className="step-number">01</div>
               <div className="step-content">
                 <h4>Book Order</h4>
                 <p>Contact us via phone or website to schedule your move.</p>
               </div>
             </div>
-            <div className="step-card fade-in-up delay-1">
+            <div className="step-card fade-in-up delay-1" data-cursor-text="STEP 2">
               <div className="step-number">02</div>
               <div className="step-content">
                 <h4>We Pack</h4>
                 <p>Our expert team arrives and packs your belongings securely using premium materials.</p>
               </div>
             </div>
-            <div className="step-card fade-in-up delay-2">
+            <div className="step-card fade-in-up delay-2" data-cursor-text="STEP 3">
               <div className="step-number">03</div>
               <div className="step-content">
                 <h4>We Move</h4>
                 <p>Safe transportation to your new destination using our closed container trucks.</p>
               </div>
             </div>
-            <div className="step-card fade-in-up delay-3">
+            <div className="step-card fade-in-up delay-3" data-cursor-text="STEP 4">
               <div className="step-number">04</div>
               <div className="step-content">
                 <h4>Delivery</h4>
@@ -251,16 +263,18 @@ export default function HomePage() {
             </div>
             <div className="about-image fade-in-left">
               <ImageReveal>
-                <div className="img-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
-                    alt="About HSM Packers and Movers Electronic City"
-                  />
-                  <div className="exp-badge">
-                    <span className="years">10+</span>
-                    <span className="text">Years of Experience</span>
+                <figure className="image-anime" data-cursor-text="ABOUT">
+                  <div className="img-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
+                      alt="About HSM Packers and Movers Electronic City"
+                    />
+                    <div className="exp-badge">
+                      <span className="years">10+</span>
+                      <span className="text">Years of Experience</span>
+                    </div>
                   </div>
-                </div>
+                </figure>
               </ImageReveal>
             </div>
           </div>
@@ -277,7 +291,7 @@ export default function HomePage() {
             </TextAnime>
           </div>
           <div className="grid-3">
-            <div className="feature-card fade-in-up" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+            <div className="feature-card fade-in-up" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
               <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
@@ -291,7 +305,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-1" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+            <div className="feature-card fade-in-up delay-1" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
               <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
@@ -305,7 +319,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-2" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
+            <div className="feature-card fade-in-up delay-2" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
               <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
               </div>
@@ -334,27 +348,27 @@ export default function HomePage() {
           </div>
 
           <div className="cities-grid">
-            <Link href="/packers-and-movers-in-electronic-city" className="city-card fade-in-up">
+            <Link href="/packers-and-movers-in-electronic-city" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Electronic City</h3>
             </Link>
-            <Link href="/packers-and-movers-in-begur" className="city-card fade-in-up delay-1">
+            <Link href="/packers-and-movers-in-begur" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Begur</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bellandur" className="city-card fade-in-up delay-2">
+            <Link href="/packers-and-movers-in-bellandur" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Bellandur</h3>
             </Link>
-            <Link href="/packers-and-movers-in-marathahalli" className="city-card fade-in-up">
+            <Link href="/packers-and-movers-in-marathahalli" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Marathahalli</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bommasandra" className="city-card fade-in-up delay-1">
+            <Link href="/packers-and-movers-in-bommasandra" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Bommasandra</h3>
             </Link>
-            <Link href="/packers-and-movers-in-hulimangala" className="city-card fade-in-up delay-2">
+            <Link href="/packers-and-movers-in-hulimangala" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
               <h3>Packers and Movers in Hulimangala</h3>
             </Link>
@@ -370,8 +384,8 @@ export default function HomePage() {
             Get a free, no-obligation quote today and experience the best relocation service in India.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="#quote" className="btn btn-primary">Get a Quote</Link>
-            <a href="tel:09980303730" className="btn btn-outline">Call Us Now</a>
+            <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Get a Quote</Link>
+            <a href="tel:09980303730" className="btn btn-outline" data-cursor-text="CALL">Call Us Now</a>
           </div>
         </div>
       </section>

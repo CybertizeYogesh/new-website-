@@ -5,11 +5,11 @@ import React, { useEffect, useState } from 'react';
 export default function MagicCursor() {
   const [position, setPosition] = useState({ x: -100, y: -100 });
   const [ringPosition, setRingPosition] = useState({ x: -100, y: -100 });
+  const [cursorText, setCursorText] = useState('');
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Only enable on desktop pointer devices
     if (window.matchMedia('(pointer: coarse)').matches) return;
     setIsVisible(true);
 
@@ -19,7 +19,6 @@ export default function MagicCursor() {
 
     window.addEventListener('mousemove', onMouseMove);
 
-    // Smooth lerp for outer ring
     let animationFrameId: number;
     const lerp = (start: number, end: number, amt: number) => (1 - amt) * start + amt * end;
 
@@ -27,21 +26,35 @@ export default function MagicCursor() {
     let currentY = -100;
 
     const render = () => {
-      currentX = lerp(currentX, position.x, 0.18);
-      currentY = lerp(currentY, position.y, 0.18);
+      currentX = lerp(currentX, position.x, 0.2);
+      currentY = lerp(currentY, position.y, 0.2);
       setRingPosition({ x: currentX, y: currentY });
       animationFrameId = requestAnimationFrame(render);
     };
 
     render();
 
-    // Check hover states on interactive elements
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (target.closest('a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card')) {
+      const cursorTarget = target.closest('[data-cursor-text], a, button, input, select, textarea, .btn, .service-card, .feature-card, .city-card, .image-anime') as HTMLElement;
+
+      if (cursorTarget) {
         setIsHovered(true);
+        const explicitText = cursorTarget.getAttribute('data-cursor-text');
+        if (explicitText) {
+          setCursorText(explicitText);
+        } else if (cursorTarget.closest('.service-card')) {
+          setCursorText('EXPLORE');
+        } else if (cursorTarget.closest('.image-anime, img')) {
+          setCursorText('VIEW');
+        } else if (cursorTarget.closest('.btn, button, a')) {
+          setCursorText('GO');
+        } else {
+          setCursorText('');
+        }
       } else {
         setIsHovered(false);
+        setCursorText('');
       }
     };
 
@@ -63,9 +76,11 @@ export default function MagicCursor() {
         style={{ transform: `translate3d(${position.x}px, ${position.y}px, 0)` }}
       ></div>
       <div 
-        className={`cursor-ring ${isHovered ? 'cursor-hover' : ''}`} 
-        style={{ transform: `translate3d(${ringPosition.x - 20}px, ${ringPosition.y - 20}px, 0)` }}
-      ></div>
+        className={`cursor-ring ${isHovered ? 'cursor-hover' : ''} ${cursorText ? 'has-text' : ''}`} 
+        style={{ transform: `translate3d(${ringPosition.x - 24}px, ${ringPosition.y - 24}px, 0)` }}
+      >
+        {cursorText && <span className="cursor-text-badge">{cursorText}</span>}
+      </div>
     </>
   );
 }
