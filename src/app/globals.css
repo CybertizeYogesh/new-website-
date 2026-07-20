@@ -208,7 +208,7 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* Services Grid & Cards (Restored to Original Modern Luxury Design) */
+/* Services Grid & Cards (With Smooth Color Background Shade Animation) */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
@@ -224,6 +224,23 @@ body {
     border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255, 59, 92, 0.03) 0%, rgba(59, 130, 246, 0.07) 100%);
+    transform: translateY(100%);
+    transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.service-card:hover::before {
+    transform: translateY(0);
 }
 
 .service-card:hover {
@@ -255,6 +272,7 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .service-icon {
