@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import ImageReveal from '@/components/ImageReveal';
 
 export const metadata: Metadata = {
   title: 'About Us | HSM Packers and Movers Electronic City',
@@ -31,12 +32,16 @@ export default function AboutUsPage() {
         <div className="container">
           <div className="about-grid">
             <div className="about-image fade-in-left">
-              <div className="img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop"
-                  alt="Our Team"
-                />
-              </div>
+              <ImageReveal>
+                <figure className="image-anime" data-cursor-text="OUR TEAM">
+                  <div className="img-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop"
+                      alt="Our Team"
+                    />
+                  </div>
+                </figure>
+              </ImageReveal>
             </div>
             <div className="about-content fade-in-right">
               <span className="sub-title">Who We Are</span>

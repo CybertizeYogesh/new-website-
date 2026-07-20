@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import ImageReveal from '@/components/ImageReveal';
 
 export const metadata: Metadata = {
   title: 'House Relocation | HSM Packers and Movers Electronic City',
@@ -51,9 +52,13 @@ export default function HouseRelocationPage() {
               <Link href="/contact-us" className="btn btn-primary" style={{ marginTop: '2rem' }}>Book Now</Link>
             </div>
             <div className="about-image fade-in-left">
-              <div className="service-detail-img" style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
-                <img src="/assets/images/household-shifting.jpg" alt="House Relocation" />
-              </div>
+              <ImageReveal>
+                <figure className="image-anime" data-cursor-text="HOUSE MOVE">
+                  <div className="service-detail-img">
+                    <img src="/assets/images/household-shifting.jpg" alt="House Relocation" />
+                  </div>
+                </figure>
+              </ImageReveal>
             </div>
           </div>
         </div>

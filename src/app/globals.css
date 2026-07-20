@@ -208,39 +208,65 @@ body {
     border-radius: var(--radius-md);
 }
 
-/* VERY SLOW CINEMATIC IMAGE SHEEN & ZOOM */
-figure.image-anime {
+/* UNIVERSAL AUTOMATIC IMAGE ANIMATION & LIGHT BEAM OVERLAY */
+figure.image-anime,
+.img-wrapper,
+.service-img,
+.service-detail-img,
+.about-image,
+.image-container {
     position: relative;
     overflow: hidden;
     display: block;
     border-radius: var(--radius-lg);
 }
 
-figure.image-anime::after {
+figure.image-anime::after,
+.img-wrapper::after,
+.service-img::after,
+.service-detail-img::after,
+.about-image::after,
+.image-container::after {
     content: "";
     position: absolute;
     width: 200%;
     height: 0%;
     left: 50%;
     top: 50%;
-    background-color: rgba(255,255,255,.35);
-    transform: translate(-50%,-50%) rotate(-45deg);
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 5;
+    pointer-events: none;
     transition: all 2.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-figure.image-anime:hover::after {
+figure.image-anime:hover::after,
+.img-wrapper:hover::after,
+.service-img:hover::after,
+.service-detail-img:hover::after,
+.about-image:hover::after,
+.image-container:hover::after {
     height: 250%;
     background-color: transparent;
 }
 
-figure.image-anime img {
-    transition: transform 2.0s cubic-bezier(0.16, 1, 0.3, 1), filter 2.0s ease;
+figure.image-anime img,
+.img-wrapper img,
+.service-img img,
+.service-detail-img img,
+.about-image img,
+.image-container img {
+    transition: transform 2.0s cubic-bezier(0.16, 1, 0.3, 1), filter 2.0s ease !important;
 }
 
-figure.image-anime:hover img {
-    transform: scale(1.1);
-    filter: brightness(1.05);
+figure.image-anime:hover img,
+.img-wrapper:hover img,
+.service-img:hover img,
+.service-detail-img:hover img,
+.about-image:hover img,
+.image-container:hover img {
+    transform: scale(1.1) !important;
+    filter: brightness(1.05) !important;
 }
 
 /* Curtain Preloader */
@@ -1155,7 +1181,7 @@ img {
 
 .fade-in-right {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(40px);
     transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
