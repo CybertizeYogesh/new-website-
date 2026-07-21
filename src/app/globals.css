@@ -2467,3 +2467,34 @@ img {
     }
 }
 
+/* Working Process Section - omrelocationmoversandpackers.in design styling */
+.work-process-card {
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.work-process-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(11, 43, 60, 0.12) !important;
+}
+
+.work-process-card:hover .work-process-icon {
+    transform: scale(1.06);
+    background: linear-gradient(135deg, #ff4d26 0%, #0b2b3c 100%) !important;
+}
+
+@media (min-width: 992px) {
+    .work-process-grid {
+        position: relative;
+    }
+    .work-process-grid::before {
+        content: '';
+        position: absolute;
+        top: 85px;
+        left: 18%;
+        right: 18%;
+        height: 2px;
+        border-top: 2px dashed rgba(255, 77, 38, 0.4);
+        z-index: 1;
+    }
+}
+

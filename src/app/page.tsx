@@ -547,7 +547,7 @@ export default function HomePage() {
           </div>
 
           {/* 3 Step Cards Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', position: 'relative' }}>
+          <div className="work-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', position: 'relative', zIndex: 2 }}>
             
             {/* Step 1: Move Planning */}
             <div
@@ -560,12 +560,13 @@ export default function HomePage() {
                 boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                zIndex: 2,
               }}
             >
               {/* Icon Box with Badge */}
               <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
                 <div
+                  className="work-process-icon"
                   style={{
                     width: '96px',
                     height: '96px',
@@ -577,6 +578,7 @@ export default function HomePage() {
                     justifyContent: 'center',
                     fontSize: '2.2rem',
                     boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    transition: 'all 0.3s ease',
                   }}
                 >
                   <i className="fa-solid fa-headset"></i>
@@ -624,12 +626,13 @@ export default function HomePage() {
                 boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                zIndex: 2,
               }}
             >
               {/* Icon Box with Badge */}
               <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
                 <div
+                  className="work-process-icon"
                   style={{
                     width: '96px',
                     height: '96px',
@@ -641,6 +644,7 @@ export default function HomePage() {
                     justifyContent: 'center',
                     fontSize: '2.2rem',
                     boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    transition: 'all 0.3s ease',
                   }}
                 >
                   <i className="fa-solid fa-truck-fast"></i>
@@ -688,12 +692,13 @@ export default function HomePage() {
                 boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                zIndex: 2,
               }}
             >
               {/* Icon Box with Badge */}
               <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
                 <div
+                  className="work-process-icon"
                   style={{
                     width: '96px',
                     height: '96px',
@@ -705,6 +710,7 @@ export default function HomePage() {
                     justifyContent: 'center',
                     fontSize: '2.2rem',
                     boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    transition: 'all 0.3s ease',
                   }}
                 >
                   <i className="fa-solid fa-box-archive"></i>
