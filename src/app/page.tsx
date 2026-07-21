@@ -5,6 +5,7 @@ import QuoteForm from '@/components/QuoteForm';
 import StatCounter from '@/components/StatCounter';
 import TextAnime from '@/components/TextAnime';
 import ImageReveal from '@/components/ImageReveal';
+import GatiTestimonials from '@/components/GatiTestimonials';
 
 export default function HomePage() {
   return (
@@ -366,103 +367,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Client Testimonials - Gati Safe Packer Exact Redesign */}
-      <section className="gati-testimonial-section" id="testimonials">
-        <div className="big-watermark-title">TESTIMONIALS</div>
-        <div className="container">
-          <div className="gati-testimonial-grid">
-            {/* Left Column: Title & Testimonial Card */}
-            <div className="gati-testimonial-left fade-in-left">
-              <div className="gati-tagline">
-                <div className="line"></div>
-                <i className="fa-solid fa-plane"></i> CLIENT TESTIMONIAL
-              </div>
-              <h2 className="gati-testimonial-title">
-                What Our Customers <br /> Say <span>About Us</span>
-              </h2>
-
-              <div className="gati-testimonial-cards-wrapper">
-                {/* Single Testimonial Item 1 */}
-                <div className="gati-testimonial-single" data-cursor-text="REVIEW">
-                  <div className="gati-quote-icon">
-                    <i className="fa-solid fa-quote-right"></i>
-                  </div>
-                  <div className="gati-author-box">
-                    <div className="gati-author-avatar">RS</div>
-                    <div className="gati-author-info">
-                      <h3>Rahul Sharma</h3>
-                      <div className="gati-author-meta">
-                        <span className="gati-author-role">HOUSE SHIFTING</span>
-                        <div className="gati-rating-stars">
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p className="gati-testimonial-text">
-                    "HSM Packers and Movers Electronic City provided smooth home shifting service. Their packers and movers team packed, loaded, and delivered our goods safely on time with professional support and careful handling."
-                  </p>
-                </div>
-
-                {/* Single Testimonial Item 2 */}
-                <div className="gati-testimonial-single" data-cursor-text="REVIEW">
-                  <div className="gati-quote-icon">
-                    <i className="fa-solid fa-quote-right"></i>
-                  </div>
-                  <div className="gati-author-box">
-                    <div className="gati-author-avatar">AP</div>
-                    <div className="gati-author-info">
-                      <h3>Anjali Pareek</h3>
-                      <div className="gati-author-meta">
-                        <span className="gati-author-role">VEHICLE TRANSPORT</span>
-                        <div className="gati-rating-stars">
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                          <i className="fa-solid fa-star"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <p className="gati-testimonial-text">
-                    "Very impressive service! Transported my car and household items safely across states. Gati safe packers team carefully packs household goods and ensures secure transport for every relocation project."
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Column: Visual Showcase Image & Customer Satisfaction Badge */}
-            <div className="gati-testimonial-right fade-in-right">
-              <div className="gati-img-wrapper">
-                <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
-                  alt="Customer Relocation Experience"
-                />
-              </div>
-
-              {/* Floating Satisfaction Avatar Stack Badge */}
-              <div className="gati-satisfied-badge">
-                <div className="gati-avatar-stack">
-                  <div className="gati-avatar-stack-item">RK</div>
-                  <div className="gati-avatar-stack-item">AS</div>
-                  <div className="gati-avatar-stack-item">PS</div>
-                </div>
-                <div className="gati-satisfied-info">
-                  <h4>Customer Satisfied</h4>
-                  <p>
-                    <i className="fa-solid fa-star"></i> 4.8 (15k Reviews)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 6. Client Testimonials - Gati Safe Packer 100% Match Slider */}
+      <GatiTestimonials />
 
       {/* 7. Suburbs Network Section */}
       <section className="section bg-gradient-shading">
