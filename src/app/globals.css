@@ -2456,3 +2456,14 @@ img {
     line-height: 1.35;
 }
 
+/* Hero Vertical Social Bar - Desktop Only Guarantee */
+.hero-vertical-socials {
+    display: none !important;
+}
+
+@media (min-width: 1200px) {
+    .hero-vertical-socials {
+        display: flex !important;
+    }
+}
+

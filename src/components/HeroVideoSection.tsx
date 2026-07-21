@@ -177,7 +177,7 @@ export default function HeroVideoSection() {
 
       {/* Right Side Vertical Social Bar (Desktop Only, Pinned Closer to Right Edge) */}
       <div
-        className="d-none d-xl-flex"
+        className="hero-vertical-socials"
         style={{
           position: 'absolute',
           right: '1.25rem',
