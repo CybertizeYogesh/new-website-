@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function HeroVideoSection() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -124,14 +125,13 @@ export default function HeroVideoSection() {
 
             {/* Action Row: Primary Button + Client Avatars */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-              <a
-                href="#quote"
+              <Link
+                href="/house-relocation"
+                className="btn btn-primary"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '12px',
-                  background: '#ff4d26',
-                  color: '#ffffff',
                   padding: '1rem 2.2rem',
                   borderRadius: '6px',
                   fontWeight: 800,
@@ -140,11 +140,10 @@ export default function HeroVideoSection() {
                   textTransform: 'uppercase',
                   textDecoration: 'none',
                   boxShadow: '0 8px 25px rgba(255, 77, 38, 0.4)',
-                  transition: 'all 0.3s ease',
                 }}
               >
                 VIEW SERVICES &nbsp;| &nbsp;<i className="fa-solid fa-arrow-right"></i>
-              </a>
+              </Link>
 
               {/* Satisfied Clients Avatar Cluster */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
