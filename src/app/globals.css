@@ -2224,6 +2224,10 @@ img {
     }
 }
 
+.nav-close-btn {
+    display: none !important;
+}
+
 @media (max-width: 992px) {
     .navbar {
         top: 0.5rem;
@@ -2265,6 +2269,7 @@ img {
     .nav-menu.active { right: 0; }
 
     .nav-close-btn {
+        display: flex !important;
         position: absolute;
         top: 1.25rem;
         right: 1.25rem;
@@ -2274,7 +2279,6 @@ img {
         background: #f1f5f9;
         border-radius: 50%;
         cursor: pointer;
-        display: flex;
         align-items: center;
         justify-content: center;
         font-size: 1.1rem;
