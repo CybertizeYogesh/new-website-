@@ -4,9 +4,9 @@ import Link from 'next/link';
 import ImageReveal from '@/components/ImageReveal';
 
 export const metadata: Metadata = {
-  title: 'House Relocation | HSM Packers and Movers Electronic City',
-  description: 'Best House Relocation services. Safe and secure packing and moving of your household goods.',
-  keywords: 'house relocation bengaluru, home shifting electronic city, house shifting services bengaluru, 1BHK 2BHK 3BHK shifting bengaluru, residential relocation bengaluru',
+  title: 'Household Shifting Services Near Me | Best Packers and Movers Ahmedabad',
+  description: 'Looking for top household shifting services near me in Ahmedabad? Speed Ex Relocation is the best packers and movers offering safe, stress-free home relocation movers near me. Call: 9624644006.',
+  keywords: 'household shifting services, household shifting services near me, best packers and movers, packers and movers ahmedabad, relocation movers near me, shifting company',
 };
 
 export default function HouseRelocationPage() {
@@ -21,9 +21,9 @@ export default function HouseRelocationPage() {
         color: 'white',
       }}>
         <div className="container">
-          <h1 style={{ color: 'white', marginBottom: '1rem' }}>House Relocation</h1>
+          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Household Shifting Services</h1>
           <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.9rem' }}>
-            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>House Relocation</span>
+            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Household Shifting</span>
           </div>
         </div>
       </header>
@@ -33,12 +33,12 @@ export default function HouseRelocationPage() {
           <div className="about-grid">
             <div className="about-content fade-in-right">
               <span className="sub-title">Expert Home Shifting</span>
-              <h2>Hassle-free House Relocation Services</h2>
+              <h2>Premier Household Shifting Services Near Me in Ahmedabad</h2>
               <p>
-                Moving to a new home is an exciting chapter, but the process of packing and moving can be overwhelming. At HSM Packers and Movers Electronic City, we make your house shifting experience smooth, safe, and stress-free. Our expert team handles everything from packing your delicate items to unloading them at your new destination.
+                Moving to a new home is an exciting chapter, but finding reliable household shifting services near me can make all the difference. At Speed Ex Relocation Packers and Movers Ahmedabad, as the best packers and movers in the region, we ensure your residential relocation experience is completely smooth, safe, and stress-free.
               </p>
               <p>
-                We use high-quality packing materials like bubble wrap, carton boxes, and foam sheets to ensure zero damage during transit.
+                Our expert relocation movers near me handle everything from multi-layer packing of delicate items to loading and unpacking at your new destination with complete precision.
               </p>
 
               <h3 style={{ marginTop: '1.5rem', fontSize: '1.5rem' }}>Why Choose Our Home Shifting?</h3>

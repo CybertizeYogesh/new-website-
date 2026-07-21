@@ -24,17 +24,60 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Speed Ex Relocation Packers and Movers | Ahmedabad',
-  description: 'Speed Ex Relocation Packers and Movers provides reliable house shifting, office relocation, vehicle transport, and warehousing services across India. Call: 9624644006 / 9211206101.',
-  keywords: 'speed ex relocation packers and movers, packers and movers aslali ahmedabad, house shifting ahmedabad, relocation services ahmedabad',
+  title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation - Shifting Services',
+  description: 'Speed Ex Relocation Packers and Movers is the best packers and movers in Ahmedabad offering household shifting services near me, office moving services, vehicle moving services & top transport logistics company solutions. Call: 9624644006 / 9211206101.',
+  keywords: 'packers and movers ahmedabad, best packers and movers, household shifting services, household shifting services near me, transport logistics company, shifting company, relocation movers near me, vehicle moving services, office moving services, speed ex relocation',
   authors: [{ name: 'Speed Ex Relocation Packers and Movers' }],
   metadataBase: new URL('https://speedexrelocation.com'),
   openGraph: {
-    title: 'Speed Ex Relocation Packers and Movers | Ahmedabad',
-    description: 'Reliable house shifting, office relocation, and vehicle transport services.',
+    title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation',
+    description: 'Premier household shifting services, office moving services, vehicle moving services & transport logistics company in Ahmedabad.',
     type: 'website',
     locale: 'en_IN',
+    url: 'https://speedexrelocation.com',
+    siteName: 'Speed Ex Relocation Packers and Movers',
   },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MovingCompany',
+  'name': 'Speed Ex Relocation Packers and Movers',
+  'url': 'https://speedexrelocation.com',
+  'logo': 'https://speedexrelocation.com/assets/images/logo.png',
+  'image': 'https://speedexrelocation.com/assets/images/logo.png',
+  'description': 'Speed Ex Relocation is the best packers and movers in Ahmedabad offering top household shifting services near me, office moving services, vehicle moving services & transport logistics solutions.',
+  'telephone': '+919624644006',
+  'email': 'speedexrelocation3@gmail.com',
+  'priceRange': '₹₹',
+  'address': {
+    '@type': 'PostalAddress',
+    'streetAddress': 'B 107, Bijal Business Centre, Aslali Circle, Aslali',
+    'addressLocality': 'Ahmedabad',
+    'addressRegion': 'Gujarat',
+    'postalCode': '382427',
+    'addressCountry': 'IN'
+  },
+  'geo': {
+    '@type': 'GeoCoordinates',
+    'latitude': 22.9385565,
+    'longitude': 72.5855219
+  },
+  'openingHoursSpecification': {
+    '@type': 'OpeningHoursSpecification',
+    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    'opens': '00:00',
+    'closes': '23:59'
+  },
+  'areaServed': [
+    { '@type': 'City', 'name': 'Ahmedabad' },
+    { '@type': 'City', 'name': 'Aslali' },
+    { '@type': 'City', 'name': 'SG Highway' },
+    { '@type': 'City', 'name': 'Satellite' },
+    { '@type': 'City', 'name': 'Prahlad Nagar' },
+    { '@type': 'City', 'name': 'Narol' },
+    { '@type': 'City', 'name': 'Changodar' }
+  ]
 };
 
 export default function RootLayout({
@@ -51,6 +94,10 @@ export default function RootLayout({
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body>

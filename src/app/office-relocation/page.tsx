@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Office Relocation | HSM Packers and Movers Electronic City',
-  description: 'Seamless office shifting services in Bengaluru with minimal downtime and safe IT equipment transport.',
-  keywords: 'office relocation bengaluru, office shifting electronic city, corporate relocation bengaluru, commercial moving bengaluru',
+  title: 'Office Moving Services | Shifting Company & Transport Logistics Company',
+  description: 'Top office moving services in Ahmedabad by Speed Ex Relocation. Reliable shifting company & transport logistics company for IT equipment & commercial office moving. Call: 9624644006.',
+  keywords: 'office moving services, shifting company, transport logistics company, best packers and movers, packers and movers ahmedabad, relocation movers near me',
 };
 
 export default function OfficeRelocationPage() {
@@ -20,9 +20,9 @@ export default function OfficeRelocationPage() {
         color: 'white',
       }}>
         <div className="container">
-          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Office Relocation</h1>
+          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Office Moving Services</h1>
           <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.9rem' }}>
-            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Office Relocation</span>
+            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Office Moving Services</span>
           </div>
         </div>
       </header>
@@ -32,12 +32,12 @@ export default function OfficeRelocationPage() {
           <div className="about-grid">
             <div className="about-content fade-in-right">
               <span className="sub-title">Corporate Relocation</span>
-              <h2>Organized &amp; Efficient Office Shifting</h2>
+              <h2>Organized Office Moving Services by Premier Transport Logistics Company</h2>
               <p>
-                Relocating an office requires meticulous planning and swift execution to minimize downtime. HSM Packers and Movers Electronic City offers specialized commercial shifting services tailored to your company's business schedule.
+                Relocating an office requires meticulous planning and swift execution to minimize downtime. As a premier shifting company and transport logistics company in Ahmedabad, Speed Ex Relocation Packers and Movers offers specialized office moving services tailored to your business schedule.
               </p>
               <p>
-                From sensitive IT hardware, servers, and computers to heavy office furniture and confidential files, our trained technicians handle everything with complete security.
+                From sensitive IT hardware, servers, and computers to heavy office furniture and confidential files, our trained relocation movers near me handle everything with zero risk.
               </p>
 
               <h3 style={{ marginTop: '1.5rem', fontSize: '1.5rem' }}>Our Office Shifting Highlights</h3>
