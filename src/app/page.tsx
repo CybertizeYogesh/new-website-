@@ -9,6 +9,15 @@ import ImageReveal from '@/components/ImageReveal';
 export default function HomePage() {
   return (
     <>
+      {/* Hidden SVG Marker Definitions */}
+      <svg style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+        <defs>
+          <marker id="arrowhead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#ff4d26" />
+          </marker>
+        </defs>
+      </svg>
+
       {/* 1. Hero Section - Dark Midnight Theme */}
       <header className="hero" id="home">
         <div className="hero-bg">
@@ -204,39 +213,6 @@ export default function HomePage() {
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Curved Dotted Connection Line - Meticulously Proportioned 140px Circle Arcs */}
-            <svg className="speedex-curved-line" viewBox="0 0 1200 220" fill="none" preserveAspectRatio="none">
-              {/* Arc 1: Circle 1 top-right to Circle 2 left-bottom */}
-              <path
-                d="M 194 96 C 250 45, 310 50, 369 88"
-                stroke="#ff4d26"
-                strokeWidth="2.2"
-                strokeDasharray="5 5"
-                markerEnd="url(#arrowhead)"
-              />
-              {/* Arc 2: Circle 2 right-bottom to Circle 3 left-top */}
-              <path
-                d="M 504 124 C 560 165, 620 160, 679 132"
-                stroke="#ff4d26"
-                strokeWidth="2.2"
-                strokeDasharray="5 5"
-                markerEnd="url(#arrowhead)"
-              />
-              {/* Arc 3: Circle 3 top-right to Circle 4 left-bottom */}
-              <path
-                d="M 814 96 C 870 45, 930 50, 989 88"
-                stroke="#ff4d26"
-                strokeWidth="2.2"
-                strokeDasharray="5 5"
-                markerEnd="url(#arrowhead)"
-              />
-              <defs>
-                <marker id="arrowhead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-                  <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#ff4d26" />
-                </marker>
-              </defs>
-            </svg>
-
             <div className="speedex-grid">
               {/* Step 1 */}
               <div className="speedex-step-item step-down">
@@ -249,6 +225,19 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div className="speedex-number-badge">1</div>
+
+                  {/* Relative SVG Connector 1 -> Step 2 */}
+                  <div className="speedex-connector-arc connector-1">
+                    <svg viewBox="0 0 175 95" fill="none">
+                      <path
+                        d="M 5 65 C 50 5, 125 10, 168 55"
+                        stroke="#ff4d26"
+                        strokeWidth="2.2"
+                        strokeDasharray="5 5"
+                        markerEnd="url(#arrowhead)"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <h3>Request A Callback</h3>
                 <p>Reach out to us with your moving needs. Our team will contact you to understand your requirements in detail.</p>
@@ -267,6 +256,19 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div className="speedex-number-badge">2</div>
+
+                  {/* Relative SVG Connector 2 -> Step 3 */}
+                  <div className="speedex-connector-arc connector-2">
+                    <svg viewBox="0 0 175 95" fill="none">
+                      <path
+                        d="M 5 25 C 50 85, 125 80, 168 35"
+                        stroke="#ff4d26"
+                        strokeWidth="2.2"
+                        strokeDasharray="5 5"
+                        markerEnd="url(#arrowhead)"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <h3>Custom Move Planning</h3>
                 <p>We design a tailored relocation strategy, including packing, transportation, and delivery schedules.</p>
@@ -283,6 +285,19 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <div className="speedex-number-badge">3</div>
+
+                  {/* Relative SVG Connector 3 -> Step 4 */}
+                  <div className="speedex-connector-arc connector-3">
+                    <svg viewBox="0 0 175 95" fill="none">
+                      <path
+                        d="M 5 65 C 50 5, 125 10, 168 55"
+                        stroke="#ff4d26"
+                        strokeWidth="2.2"
+                        strokeDasharray="5 5"
+                        markerEnd="url(#arrowhead)"
+                      />
+                    </svg>
+                  </div>
                 </div>
                 <h3>Professional Moving</h3>
                 <p>Our skilled crew packs, loads, and transports your belongings with care using quality materials and tools.</p>

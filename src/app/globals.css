@@ -577,7 +577,7 @@ img {
     overflow: hidden;
 }
 
-/* Speedex Relocation Exact Work Process Section (140px nodes & exact proportions) */
+/* Speedex Relocation Exact Work Process Section (Locked Relative Connector Arcs) */
 .process-speedex-section {
     background-color: #0b2b3c;
     background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1.2px, transparent 1.2px);
@@ -624,16 +624,6 @@ img {
     min-height: 350px;
 }
 
-.speedex-curved-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    pointer-events: none;
-    z-index: 1;
-}
-
 .speedex-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -676,6 +666,36 @@ img {
     inset: -7px;
     border-radius: 50%;
     border: 2px dashed rgba(255, 255, 255, 0.45);
+}
+
+/* Relative Connector Arc SVGs Attached Directly to Circle Nodes */
+.speedex-connector-arc {
+    position: absolute;
+    width: 175px;
+    height: 95px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.speedex-connector-arc.connector-1 {
+    top: -20px;
+    left: 110px;
+}
+
+.speedex-connector-arc.connector-2 {
+    top: 55px;
+    left: 110px;
+}
+
+.speedex-connector-arc.connector-3 {
+    top: -20px;
+    left: 110px;
+}
+
+.speedex-connector-arc svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
 }
 
 .speedex-icon-inner {
@@ -757,7 +777,7 @@ img {
         grid-template-columns: repeat(2, 1fr);
         gap: 3.5rem 2rem;
     }
-    .speedex-curved-line {
+    .speedex-connector-arc {
         display: none;
     }
     .speedex-step-item.step-up,
