@@ -116,15 +116,10 @@ body {
 }
 
 /* ==========================================================================
-   SPEEDEX DUAL-STATE BUTTON HOVER SYSTEM (EVERYWHERE ON THE WEBSITE)
+   GRADUAL & SILKY ULTRA-SMOOTH BUTTON HOVER SYSTEM
    --------------------------------------------------------------------------
-   RULE 1 (Colored Buttons: Red #ff4d26 / Dark Navy #0b2b3c / Accent):
-   - Default: Colored Background + Crisp White (#ffffff) Text.
-   - On Hover: Background TURNS PURE WHITE (#ffffff), Text & Icons TURN DARK NAVY BLUE (#0b2b3c)!
-
-   RULE 2 (White Background Buttons: #ffffff / .btn-white / .btn-light):
-   - Default: Pure White (#ffffff) Background + Dark Navy Blue (#0b2b3c) Text.
-   - On Hover: Background TURNS DARK NAVY BLUE (#0b2b3c), Text & Icons TURN PURE WHITE (#ffffff)!
+   - Background, text color, border, and icons transition gradually over 0.55s ease
+   - Zero abrupt jumps or jarring color switches
    ========================================================================== */
 
 /* --- 1. BASE BUTTON STYLING --- */
@@ -153,14 +148,27 @@ button[type="submit"],
     border-radius: 12px;
     border: 2px solid transparent;
     cursor: pointer;
-    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: background-color 0.55s ease, color 0.55s ease, border-color 0.55s ease, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.55s ease;
     overflow: hidden;
     z-index: 1;
     gap: 0.5rem;
     text-decoration: none !important;
 }
 
-/* --- 2. RULE 1: COLORED BUTTONS (RED / NAVY / ACCENT / SUBMIT) --- */
+.btn *,
+.btn-default *,
+.btn-primary *,
+.btn-secondary *,
+.btn-navy *,
+.btn-accent *,
+.btn-outline *,
+.btn-white *,
+.btn-light *,
+button[type="submit"] * {
+    transition: color 0.55s ease, transform 0.55s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* --- 2. COLORED BUTTONS (RED / NAVY / ACCENT / SUBMIT) --- */
 .btn,
 .btn-default,
 .btn-primary,
@@ -180,7 +188,7 @@ button[type="submit"],
     border-color: var(--primary-color);
 }
 
-/* Curtain Wipe Effect for Colored Buttons (Wipes WHITE) */
+/* Curtain Wipe Layer with Gradual Smooth Transition */
 .btn::after,
 .btn-default::after,
 .btn-primary::after,
@@ -198,13 +206,13 @@ button[type="submit"]::after,
     right: 0;
     width: 0;
     height: 106%;
-    background-color: #ffffff !important; /* Wipes with Crisp White */
+    background-color: #ffffff !important;
     transform: skew(30deg);
-    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 0.55s cubic-bezier(0.25, 1, 0.5, 1), transform 0.55s cubic-bezier(0.25, 1, 0.5, 1), left 0.55s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.55s ease;
     z-index: -1;
 }
 
-/* HOVER: Colored Buttons TURN PURE WHITE (#ffffff) with Dark Navy (#0b2b3c) Text */
+/* GRADUAL HOVER STATE */
 .btn:hover,
 .btn-default:hover,
 .btn-primary:hover,
@@ -244,7 +252,7 @@ button[type="submit"]:hover *,
     color: var(--primary-color) !important;
 }
 
-/* --- 3. RULE 2: WHITE BACKGROUND BUTTONS (.btn-white, .btn-light) --- */
+/* --- 3. WHITE BACKGROUND BUTTONS (.btn-white, .btn-light) --- */
 .btn-white,
 .btn-light,
 button.btn-white,
@@ -254,7 +262,6 @@ a.btn-white {
     border-color: #ffffff !important;
 }
 
-/* Curtain Wipe Effect for White Buttons (Wipes DARK NAVY BLUE #0b2b3c) */
 .btn-white::after,
 .btn-light::after {
     content: '';
@@ -266,13 +273,12 @@ a.btn-white {
     right: 0;
     width: 0;
     height: 106%;
-    background-color: var(--primary-color) !important; /* Wipes with Dark Navy Blue #0b2b3c */
+    background-color: var(--primary-color) !important;
     transform: skew(30deg);
-    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 0.55s cubic-bezier(0.25, 1, 0.5, 1), transform 0.55s cubic-bezier(0.25, 1, 0.5, 1), left 0.55s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.55s ease;
     z-index: -1;
 }
 
-/* HOVER: White Buttons TURN DARK NAVY BLUE (#0b2b3c) with Pure White (#ffffff) Text */
 .btn-white:hover,
 .btn-light:hover,
 button.btn-white:hover,
@@ -296,7 +302,7 @@ a.btn-white:hover {
     color: #ffffff !important;
 }
 
-/* --- 4. RULE 3: OUTLINE BUTTONS (.btn-outline) --- */
+/* --- 4. OUTLINE BUTTONS (.btn-outline) --- */
 .btn-outline {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.85);
@@ -315,7 +321,7 @@ a.btn-white:hover {
     height: 106%;
     background-color: #ffffff !important;
     transform: skew(30deg);
-    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: width 0.55s cubic-bezier(0.25, 1, 0.5, 1), transform 0.55s cubic-bezier(0.25, 1, 0.5, 1), left 0.55s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.55s ease;
     z-index: -1;
 }
 
@@ -336,7 +342,7 @@ a.btn-white:hover {
     color: var(--primary-color) !important;
 }
 
-/* --- 5. ARROW ICON ANIMATION (ON HOVER) --- */
+/* --- 5. GRADUAL ARROW ICON GLIDE --- */
 .btn i,
 .btn-default i,
 .btn-primary i,
@@ -348,7 +354,7 @@ a.btn-white:hover {
 .btn-light i,
 button[type="submit"] i {
     color: inherit;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
+    transition: transform 0.55s cubic-bezier(0.25, 1, 0.5, 1), color 0.55s ease !important;
 }
 
 .btn:hover i,
