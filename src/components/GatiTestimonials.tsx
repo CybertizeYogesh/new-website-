@@ -90,97 +90,113 @@ export default function GatiTestimonials() {
   const current = testimonialsData[currentIndex];
 
   return (
-    <section className="gati-testimonial-section" id="testimonials">
-      {/* Big Watermark Title */}
-      <div className="big-title-watermark">
-        <h2>TESTIMONIALS</h2>
-      </div>
+    <section className="testimonial-one" id="testimonials">
+      <div className="testimonial-one__pattern"></div>
 
-      <div className="container gati-testimonial-container">
-        <div className="gati-testimonial-grid">
-          {/* Left Column: Title, Hanging Red Ribbon Quote Card & Controls */}
-          <div className="gati-testimonial-left">
-            <div className="gati-sec-title-tagline">
-              <div className="line"></div>
-              <div className="text">Client Testimonial</div>
-              <i className="fa-solid fa-plane"></i>
-            </div>
-            <h2 className="gati-sec-title-heading">
-              What Our Customers <br /> Say <span>About Us</span>
-            </h2>
-
-            {/* Testimonial Card Container with Hanging Red Badge Icon */}
-            <div className="gati-testimonial-card-wrapper">
-              <div className="gati-hanging-quote-icon">
-                <i className="fa-solid fa-quote-right"></i>
+      <div className="container">
+        <div className="row style-grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+          {/* Start Testimonial One Content */}
+          <div className="col-xl-6">
+            <div className="testimonial-one__content">
+              <div className="big-title">
+                <h2>TESTIMONIALS</h2>
               </div>
 
-              <div className="gati-testimonial-card-inner">
-                <div className="author-box">
-                  <div className="author-img">{current.initials}</div>
-                  <div className="author-info">
-                    <h3>{current.name}</h3>
-                    <div className="bottom-text">
-                      <p>{current.role}</p>
-                      <div className="rating-box">
-                        {[...Array(current.rating)].map((_, i) => (
-                          <i key={i} className="fa-solid fa-star"></i>
-                        ))}
+              <div className="sec-title">
+                <div className="sec-title__tagline">
+                  <div className="line"></div>
+                  <div className="text">
+                    <h4>Client Testimonial</h4>
+                  </div>
+                  <div className="icon">
+                    <i className="fa-solid fa-plane-up"></i>
+                  </div>
+                </div>
+                <h2 className="sec-title__title">
+                  What Our Customers <br /> Say <span>About Us</span>
+                </h2>
+              </div>
+
+              <div className="testimonial-one__carousel">
+                {/* Start Testimonial One Single */}
+                <div className="testimonial-one__single">
+                  <div className="icon">
+                    <i className="fa-solid fa-quote-right"></i>
+                  </div>
+                  <div className="testimonial-one__single-inner">
+                    <div className="author-box">
+                      <div className="img-box">{current.initials}</div>
+                      <div className="author-info">
+                        <h2>{current.name}</h2>
+                        <div className="bottom-text">
+                          <p>{current.role}</p>
+                          <div className="rating-box">
+                            {[...Array(current.rating)].map((_, i) => (
+                              <i key={i} className="fa-solid fa-star"></i>
+                            ))}
+                          </div>
+                        </div>
                       </div>
+                    </div>
+
+                    <div className="text-box">
+                      <p>"{current.text}"</p>
                     </div>
                   </div>
                 </div>
+                {/* End Testimonial One Single */}
+              </div>
+
+              {/* Slider Controls */}
+              <div className="gati-slider-controls">
+                <button className="gati-slider-arrow" onClick={handlePrev} aria-label="Previous Testimonial">
+                  <i className="fa-solid fa-arrow-left"></i>
+                </button>
+                <div className="gati-slider-dots">
+                  {testimonialsData.map((_, idx) => (
+                    <button
+                      key={idx}
+                      className={`gati-slider-dot ${idx === currentIndex ? 'active' : ''}`}
+                      onClick={() => setCurrentIndex(idx)}
+                      aria-label={`Go to slide ${idx + 1}`}
+                    />
+                  ))}
+                </div>
+                <button className="gati-slider-arrow" onClick={handleNext} aria-label="Next Testimonial">
+                  <i className="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* End Testimonial One Content */}
+
+          {/* Start Testimonial One Img */}
+          <div className="col-xl-6">
+            <div className="testimonial-one__img">
+              <div className="testimonial-one__img1">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
+                  alt="HSM Packers and Movers Customer Relocation Service"
+                />
+              </div>
+
+              <div className="testimonial-one__img-author">
+                <ul>
+                  {testimonialsData.slice(0, 4).map((item) => (
+                    <li key={item.id}>
+                      <div className="img-box">{item.initials}</div>
+                    </li>
+                  ))}
+                </ul>
 
                 <div className="text-box">
-                  <p>"{current.text}"</p>
+                  <h2>Customer Satisfied</h2>
+                  <p>4.9 (15k Reviews)</p>
                 </div>
               </div>
             </div>
-
-            {/* Carousel Navigation Arrows & Dots */}
-            <div className="gati-slider-controls">
-              <button className="gati-slider-arrow" onClick={handlePrev} aria-label="Previous Testimonial">
-                <i className="fa-solid fa-arrow-left"></i>
-              </button>
-              <div className="gati-slider-dots">
-                {testimonialsData.map((_, idx) => (
-                  <button
-                    key={idx}
-                    className={`gati-slider-dot ${idx === currentIndex ? 'active' : ''}`}
-                    onClick={() => setCurrentIndex(idx)}
-                    aria-label={`Go to slide ${idx + 1}`}
-                  />
-                ))}
-              </div>
-              <button className="gati-slider-arrow" onClick={handleNext} aria-label="Next Testimonial">
-                <i className="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
           </div>
-
-          {/* Right Column: Visual Image & Customer Avatar Stack Badge */}
-          <div className="gati-testimonial-right">
-            <div className="gati-testimonial-img-box">
-              <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
-                alt="HSM Packers and Movers Customer Service"
-              />
-            </div>
-
-            <div className="gati-img-author-badge">
-              <ul>
-                {testimonialsData.slice(0, 4).map((item) => (
-                  <li key={item.id}>
-                    <div className="img-avatar">{item.initials}</div>
-                  </li>
-                ))}
-              </ul>
-              <div className="badge-text-box">
-                <h3>Customer Satisfied</h3>
-                <p>4.9 (15k Reviews)</p>
-              </div>
-            </div>
-          </div>
+          {/* End Testimonial One Img */}
         </div>
       </div>
     </section>
