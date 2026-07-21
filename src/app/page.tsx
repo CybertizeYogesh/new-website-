@@ -226,11 +226,11 @@ export default function HomePage() {
                   </div>
                   <div className="speedex-number-badge">1</div>
 
-                  {/* Relative SVG Connector 1 -> Step 2 */}
+                  {/* Relative SVG Connector 1 -> Step 2 (Back/tail cut by 30%) */}
                   <div className="speedex-connector-arc connector-1">
                     <svg viewBox="0 0 175 95" fill="none">
                       <path
-                        d="M 5 65 C 50 5, 125 10, 168 55"
+                        d="M 45 42 C 75 15, 125 10, 168 55"
                         stroke="#ff4d26"
                         strokeWidth="2.2"
                         strokeDasharray="5 5"
@@ -257,11 +257,11 @@ export default function HomePage() {
                   </div>
                   <div className="speedex-number-badge">2</div>
 
-                  {/* Relative SVG Connector 2 -> Step 3 */}
+                  {/* Relative SVG Connector 2 -> Step 3 (Back/tail cut by 30%) */}
                   <div className="speedex-connector-arc connector-2">
                     <svg viewBox="0 0 175 95" fill="none">
                       <path
-                        d="M 5 25 C 50 85, 125 80, 168 35"
+                        d="M 45 48 C 75 78, 125 80, 168 35"
                         stroke="#ff4d26"
                         strokeWidth="2.2"
                         strokeDasharray="5 5"
@@ -286,11 +286,11 @@ export default function HomePage() {
                   </div>
                   <div className="speedex-number-badge">3</div>
 
-                  {/* Relative SVG Connector 3 -> Step 4 */}
+                  {/* Relative SVG Connector 3 -> Step 4 (Back/tail cut by 30%) */}
                   <div className="speedex-connector-arc connector-3">
                     <svg viewBox="0 0 175 95" fill="none">
                       <path
-                        d="M 5 65 C 50 5, 125 10, 168 55"
+                        d="M 45 42 C 75 15, 125 10, 168 55"
                         stroke="#ff4d26"
                         strokeWidth="2.2"
                         strokeDasharray="5 5"
