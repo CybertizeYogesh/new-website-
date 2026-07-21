@@ -23,43 +23,24 @@ export default function HomePage() {
       {/* 1. Dedicated Logistics & Packers Video Section with Overlaid Content */}
       <section className="relocation-video-section" id="home">
         {/* Background Logistics & Packers Moving Video */}
-        <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A?autoplay=1&mute=1&loop=1&playlist=5qap5aO4i9A&controls=0&showinfo=0&rel=0&playsinline=1"
-            title="Movers Packing and Loading Truck Video"
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              width: '100vw',
-              height: '100vh',
-              minWidth: '177.77vh',
-              minHeight: '56.25vw',
-              transform: 'translate(-50%, -50%) scale(1.3)',
-              border: 0,
-              opacity: 0.85,
-            }}
-            allow="autoplay; encrypted-media"
-          />
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/assets/images/movers-packing-loading.png"
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              zIndex: 0,
-            }}
-          >
-            <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/assets/images/movers-packing-loading.png"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 1,
+          }}
+        >
+          <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
+        </video>
 
         {/* Neutral Dark Overlay (Zero Blue Shade) */}
         <div
