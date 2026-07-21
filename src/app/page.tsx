@@ -537,7 +537,7 @@ export default function HomePage() {
           
           {/* Section Header */}
           <div className="section-header text-center" style={{ marginBottom: '4.5rem' }}>
-            <span className="sub-title" style={{ color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.85rem', display: 'inline-block', marginBottom: '0.5rem' }}>
+            <span className="sub-title" style={{ background: 'rgba(255, 77, 38, 0.1)', padding: '6px 22px', borderRadius: '30px', color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.85rem', display: 'inline-block', marginBottom: '0.75rem' }}>
               Working Process
             </span>
             <TextAnime>
@@ -577,7 +577,7 @@ export default function HomePage() {
             {/* Step 3: Delivery Done */}
             <div className="work-process-box text-center">
               <div className="icon-box p-relative">
-                <i className="fa-solid fa-box-check"></i>
+                <i className="fa-solid fa-boxes-packing"></i>
                 <span>3</span>
               </div>
               <div className="content">
