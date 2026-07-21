@@ -29,56 +29,7 @@ export default function ContactUsPage() {
         </div>
       </header>
 
-      {/* Offices Section */}
-      <section className="section bg-light" style={{ padding: '4rem 0 2rem' }}>
-        <div className="container">
-          <h3 className="text-center" style={{ marginBottom: '3rem' }}>Our Branch Offices</h3>
-          <div className="cities-grid" style={{ marginTop: 0 }}>
-            <div className="contact-item" style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)', height: '100%' }}>
-              <div className="icon" style={{ marginBottom: '1rem', fontSize: '2rem', color: 'var(--primary-color)' }}>
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="details">
-                <h4 style={{ marginBottom: '0.5rem' }}>Branch Office 1</h4>
-                <p style={{ fontSize: '0.95rem' }}>Shop No.5, Begur Koppa Main Road, Mylasandra Rd, near SNN Raj Serenity, Bengaluru, Karnataka 560114</p>
-              </div>
-            </div>
 
-            <div className="contact-item" style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)', height: '100%' }}>
-              <div className="icon" style={{ marginBottom: '1rem', fontSize: '2rem', color: 'var(--primary-color)' }}>
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="details">
-                <h4 style={{ marginBottom: '0.5rem' }}>Branch Office 2</h4>
-                <p style={{ fontSize: '0.95rem' }}>Main Rd, 3rd Cross Rd, Devarabisanahalli, Bellandur, Bengaluru, Karnataka 560103</p>
-              </div>
-            </div>
-
-            <div className="contact-item" style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)', height: '100%' }}>
-              <div className="icon" style={{ marginBottom: '1rem', fontSize: '2rem', color: 'var(--primary-color)' }}>
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="details">
-                <h4 style={{ marginBottom: '0.5rem' }}>Branch Office 3</h4>
-                <p style={{ fontSize: '0.95rem' }}>Ayyappa Layout, Chandra Layout, Marathahalli, Bengaluru, Karnataka 560037</p>
-              </div>
-            </div>
-
-            <div className="contact-item" style={{ background: 'white', padding: '2rem', borderRadius: 'var(--radius-md)', boxShadow: 'var(--shadow-sm)', height: '100%' }}>
-              <div className="icon" style={{ marginBottom: '1rem', fontSize: '2rem', color: 'var(--primary-color)' }}>
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="details">
-                <h4 style={{ marginBottom: '0.5rem' }}>Branch Office 4</h4>
-                <p style={{ fontSize: '0.95rem' }}>No. 8, kalena Agrahara, kothnur road, Meenakshi layout, gottigere, Bengaluru, Karnataka 560083</p>
-                <br />
-                <h4>Phone Number</h4>
-                <p><i className="fa-solid fa-phone"></i>&nbsp;&nbsp;<a href="tel:07300412700">073004 12700</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Content */}
       <section className="contact-form-section" style={{ padding: '4rem 0' }}>
