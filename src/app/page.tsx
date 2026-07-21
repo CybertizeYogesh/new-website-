@@ -19,26 +19,58 @@ export default function HomePage() {
         </defs>
       </svg>
 
-      {/* 1. Hero Section - Dark Midnight Theme */}
-      <header className="hero" id="home">
-        <div className="hero-bg">
-          <div className="overlay"></div>
-        </div>
-        <div className="container hero-content">
+      {/* 1. Fullscreen Video Background Hero Section */}
+      <header className="hero hero-video-header" id="home" style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', overflow: 'hidden', padding: '140px 0 80px' }}>
+        {/* HTML5 Video Element */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        >
+          <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
+          <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark Cinematic Vignette Overlay */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.65) 0%, rgba(11, 43, 60, 0.92) 100%)',
+            zIndex: 2,
+          }}
+        ></div>
+
+        {/* Content Over Video */}
+        <div className="container hero-content" style={{ position: 'relative', zIndex: 3 }}>
           <div className="hero-text">
-            <span className="badge">#1 Trusted Packers &amp; Movers</span>
+            <span className="badge" style={{ background: 'rgba(255, 77, 38, 0.25)', color: '#ffffff', border: '1px solid rgba(255, 77, 38, 0.6)' }}>
+              #1 Trusted Packers &amp; Movers Electronic City
+            </span>
             <TextAnime>
-              <h1>
-                Moving Made <span className="text-gradient-accent">Seamless</span> &amp;{' '}
+              <h1 style={{ color: '#ffffff', fontSize: 'clamp(2.5rem, 5vw, 3.8rem)', fontWeight: 800, lineHeight: 1.15, marginBottom: '1.25rem', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
+                Moving Made <span className="text-gradient-accent" style={{ color: '#ff4d26' }}>Seamless</span> &amp;{' '}
                 <span className="text-gradient-white">Stress-Free</span>
               </h1>
             </TextAnime>
-            <p>
-              Expert house relocation, office shifting, and vehicle transport services across India and
-              internationally. We handle your belongings with the utmost care and precision.
+            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+              Expert house relocation, corporate office shifting, vehicle transportation, and secure storage solutions across Bengaluru and major Indian cities.
             </p>
 
-            <div className="hero-stats">
+            <div className="hero-stats" style={{ display: 'flex', gap: '2rem', marginTop: '1.5rem' }}>
               <StatCounter target={9.5} suffix="k+" label="Happy Clients" />
               <StatCounter target={10} suffix="+" label="Years Exp." />
               <StatCounter target={50} suffix="+" label="Cities" />
