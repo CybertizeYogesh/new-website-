@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   keywords: 'packers and movers ahmedabad, best packers and movers, household shifting services, household shifting services near me, transport logistics company, shifting company, relocation movers near me, vehicle moving services, office moving services, speed ex relocation',
   authors: [{ name: 'Speed Ex Relocation Packers and Movers' }],
   metadataBase: new URL('https://speedexrelocation.com'),
+  icons: {
+    icon: '/assets/images/favicon.png',
+    shortcut: '/assets/images/favicon.png',
+    apple: '/assets/images/favicon.png',
+  },
   openGraph: {
     title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation',
     description: 'Premier household shifting services, office moving services, vehicle moving services & transport logistics company in Ahmedabad.',
