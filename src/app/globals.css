@@ -646,17 +646,17 @@ figure.image-anime:hover img,
     margin-top: 0.5rem;
 }
 
-/* Fluid Typography & Heading Hover Effect (No Underline) */
-h1, h2, h3, h4 {
+/* Fluid Typography (Headings NEVER Change Color on Hover) */
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    transition: color 0.45s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     text-decoration: none !important;
 }
 
-h2:hover, h3:hover, h4:hover {
-    color: var(--accent-color);
-    transform: translateY(-2px);
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover,
+a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6,
+.city-card:hover h3 {
     text-decoration: none !important;
+    transform: none;
 }
 
 .section-header h2 {
@@ -1532,8 +1532,6 @@ img {
     margin-bottom: 0;
     transition: var(--transition-smooth);
 }
-
-.city-card:hover h3 { color: var(--accent-color); }
 
 /* Entrance Animations - Make 100% visible by default to prevent blank invisible content */
 .fade-in-up,
