@@ -191,7 +191,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Section (Completely Static - Zero Hover Animations) */}
+      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Section (100% Identical Replica - Static) */}
       <section className="process-speedex-section section" id="process">
         <div className="container">
           <div className="section-header text-center">
@@ -204,14 +204,32 @@ export default function HomePage() {
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Connecting Dotted Curved Lines */}
-            <svg className="speedex-curved-line" viewBox="0 0 1000 110" fill="none" preserveAspectRatio="none">
-              <path d="M 140 85 Q 265 20, 390 40" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
-              <path d="M 390 40 Q 515 110, 640 85" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
-              <path d="M 640 85 Q 765 20, 885 40" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
+            {/* SVG Curved Dotted Connection Line */}
+            <svg className="speedex-curved-line" viewBox="0 0 1000 240" fill="none" preserveAspectRatio="none">
+              <path
+                d="M 195 130 C 255 70, 285 45, 305 60"
+                stroke="#ff4d26"
+                strokeWidth="2"
+                strokeDasharray="4 6"
+                markerEnd="url(#arrowhead)"
+              />
+              <path
+                d="M 445 60 C 475 75, 505 130, 555 130"
+                stroke="#ff4d26"
+                strokeWidth="2"
+                strokeDasharray="4 6"
+                markerEnd="url(#arrowhead)"
+              />
+              <path
+                d="M 695 130 C 725 70, 775 45, 805 60"
+                stroke="#ff4d26"
+                strokeWidth="2"
+                strokeDasharray="4 6"
+                markerEnd="url(#arrowhead)"
+              />
               <defs>
                 <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ff3b47" />
+                  <path d="M 0 2 L 8 5 L 0 8 z" fill="#ff4d26" />
                 </marker>
               </defs>
             </svg>
@@ -221,7 +239,11 @@ export default function HomePage() {
               <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <i className="fa-solid fa-headset"></i>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                      <path d="M15 2a4 4 0 0 1 4 4"/>
+                      <circle cx="18" cy="4" r="1.5" fill="#ffffff" />
+                    </svg>
                   </div>
                   <div className="speedex-number-badge">1</div>
                 </div>
@@ -233,7 +255,13 @@ export default function HomePage() {
               <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <i className="fa-solid fa-box-open"></i>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2a8 8 0 0 0-8 8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4a8 8 0 0 0-8-8z"/>
+                      <path d="M4 10l5 7"/>
+                      <path d="M20 10l-5 7"/>
+                      <path d="M12 2v15"/>
+                      <rect x="9" y="17" width="6" height="5" rx="1"/>
+                    </svg>
                   </div>
                   <div className="speedex-number-badge">2</div>
                 </div>
@@ -245,7 +273,11 @@ export default function HomePage() {
               <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <i className="fa-solid fa-truck-ramp-box"></i>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+                      <path d="m3.3 7 8.7 5 8.7-5"/>
+                      <path d="M12 22V12"/>
+                    </svg>
                   </div>
                   <div className="speedex-number-badge">3</div>
                 </div>
@@ -257,7 +289,12 @@ export default function HomePage() {
               <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <i className="fa-solid fa-house-chimney-check"></i>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                      <path d="M2 12h20"/>
+                      <path d="M12 8l4 4-4 4"/>
+                    </svg>
                   </div>
                   <div className="speedex-number-badge">4</div>
                 </div>
@@ -315,7 +352,7 @@ export default function HomePage() {
       <section className="section bg-dark-grid">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(255, 59, 71, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
+            <span className="sub-title" style={{ background: 'rgba(255, 77, 38, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
             <TextAnime>
               <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
             </TextAnime>
