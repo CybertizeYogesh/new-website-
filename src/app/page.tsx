@@ -41,12 +41,12 @@ export default function HomePage() {
           <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark Vignette Overlay for Crisp Readability */}
+        {/* Neutral Dark Overlay (Zero Blue Shade) */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.72) 0%, rgba(11, 43, 60, 0.95) 100%)',
+            background: 'radial-gradient(circle at center, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%)',
             zIndex: 2,
           }}
         ></div>

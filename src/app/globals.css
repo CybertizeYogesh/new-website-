@@ -1152,7 +1152,7 @@ img {
     overflow: hidden;
     padding: 160px 0 100px;
     text-align: center;
-    background-color: var(--primary-dark);
+    background-color: #000000;
 }
 
 .relocation-video-section .hero-content {
