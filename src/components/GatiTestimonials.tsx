@@ -7,7 +7,7 @@ const testimonialsData = [
     id: 1,
     name: 'Rahul Sharma',
     role: 'HOUSE SHIFTING',
-    initials: 'RS',
+    image: '/assets/images/testimonial-img.png',
     text: 'HSM Packers and Movers Electronic City provided smooth home shifting from Neeladri Nagar to Whitefield. The moving team packed, loaded, and delivered our goods safely on time with care.',
     rating: 5,
   },
@@ -15,7 +15,7 @@ const testimonialsData = [
     id: 2,
     name: 'Lankhshit',
     role: 'OFFICE RELOCATION',
-    initials: 'LK',
+    image: '/assets/images/C-1.jpg',
     text: 'HSM Packers and Movers Electronic City delivered excellent corporate office relocation. Their team handled server racks, IT desks, and office furniture safely with zero operational downtime.',
     rating: 5,
   },
@@ -23,7 +23,7 @@ const testimonialsData = [
     id: 3,
     name: 'Anjali Pareek',
     role: 'VEHICLE TRANSPORT',
-    initials: 'AP',
+    image: '/assets/images/C-2.jpg',
     text: 'HSM Packers and Movers Electronic City provided safe car and bike transportation from Bengaluru to Delhi. Their team loaded the vehicle onto an enclosed car carrier with zero scratches.',
     rating: 5,
   },
@@ -31,7 +31,7 @@ const testimonialsData = [
     id: 4,
     name: 'Sandeep Verma',
     role: 'DOMESTIC MOVING',
-    initials: 'SV',
+    image: '/assets/images/C-3.jpg',
     text: 'Shifted 3BHK household items from Neeladri Nagar to Gurgaon with HSM Packers and Movers Electronic City. The crew used multi-layer bubble wrapping and heavy boxes for all electronics.',
     rating: 5,
   },
@@ -39,7 +39,7 @@ const testimonialsData = [
     id: 5,
     name: 'Kavita Reddy',
     role: 'PACKING & UNPACKING',
-    initials: 'KR',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop',
     text: 'Extremely polite team from HSM Packers and Movers Electronic City! Unpacked and arranged all heavy furniture in our new flat in Bellandur within hours. Highly recommended moving service.',
     rating: 5,
   },
@@ -47,7 +47,7 @@ const testimonialsData = [
     id: 6,
     name: 'Vikramaditya Nair',
     role: 'CAR TRANSPORTATION',
-    initials: 'VN',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
     text: 'Booked vehicle carrier transport for my Honda City from Electronic City branch of HSM Packers and Movers to Kochi. Received real-time tracking updates and on-time safe delivery.',
     rating: 5,
   },
@@ -55,7 +55,7 @@ const testimonialsData = [
     id: 7,
     name: 'Pooja Deshmukh',
     role: 'WAREHOUSE STORAGE',
-    initials: 'PD',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
     text: 'Stored our household items in the secure Electronic City warehouse of HSM Packers and Movers Electronic City for 4 months. Everything remained dust-free, dry, and in pristine condition.',
     rating: 5,
   },
@@ -63,7 +63,7 @@ const testimonialsData = [
     id: 8,
     name: 'Rajesh R. Menon',
     role: 'INTERNATIONAL MOVING',
-    initials: 'RM',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&auto=format&fit=crop',
     text: 'Phenomenal international relocation coordination by HSM Packers and Movers Electronic City from Bengaluru to Dubai. Handled customs clearance, wooden crating, and door delivery seamlessly.',
     rating: 5,
   },
@@ -145,7 +145,9 @@ export default function GatiTestimonials() {
                   </div>
                   <div className="testimonial-one__single-inner">
                     <div className="author-box">
-                      <div className="img-box">{current.initials}</div>
+                      <div className="img-box">
+                        <img src={current.image} alt={current.name} />
+                      </div>
                       <div className="author-info">
                         <h2>{current.name}</h2>
                         <div className="bottom-text">
