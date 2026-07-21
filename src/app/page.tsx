@@ -191,7 +191,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Design */}
+      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Design (No Hover Animation & Lighter Red) */}
       <section className="process-speedex-section section" id="process">
         <div className="container">
           <div className="section-header text-center">
@@ -206,21 +206,21 @@ export default function HomePage() {
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Connecting Dotted Curved Lines */}
-            <svg className="speedex-curved-line" viewBox="0 0 1000 120" fill="none" preserveAspectRatio="none">
-              <path d="M 140 85 Q 260 20, 390 40" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
-              <path d="M 390 40 Q 515 115, 640 85" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
-              <path d="M 640 85 Q 765 20, 885 40" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
+            {/* SVG Connecting Dotted Curved Lines with Lighter Red #ff3b47 */}
+            <svg className="speedex-curved-line" viewBox="0 0 1000 110" fill="none" preserveAspectRatio="none">
+              <path d="M 140 85 Q 265 20, 390 40" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
+              <path d="M 390 40 Q 515 110, 640 85" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
+              <path d="M 640 85 Q 765 20, 885 40" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
               <defs>
                 <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fe1120" />
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ff3b47" />
                 </marker>
               </defs>
             </svg>
 
             <div className="speedex-grid">
               {/* Step 1 */}
-              <div className="speedex-step-item step-down fade-in-up" data-cursor-text="STEP 1">
+              <div className="speedex-step-item step-down fade-in-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-headset"></i>
@@ -232,7 +232,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 2 */}
-              <div className="speedex-step-item step-up fade-in-up delay-1" data-cursor-text="STEP 2">
+              <div className="speedex-step-item step-up fade-in-up delay-1">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-box-open"></i>
@@ -244,7 +244,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 3 */}
-              <div className="speedex-step-item step-down fade-in-up delay-2" data-cursor-text="STEP 3">
+              <div className="speedex-step-item step-down fade-in-up delay-2">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-truck-ramp-box"></i>
@@ -256,7 +256,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 4 */}
-              <div className="speedex-step-item step-up fade-in-up delay-3" data-cursor-text="STEP 4">
+              <div className="speedex-step-item step-up fade-in-up delay-3">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-house-chimney-check"></i>
@@ -317,7 +317,7 @@ export default function HomePage() {
       <section className="section bg-dark-grid">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(254, 17, 32, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
+            <span className="sub-title" style={{ background: 'rgba(255, 59, 71, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
             <TextAnime>
               <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
             </TextAnime>
