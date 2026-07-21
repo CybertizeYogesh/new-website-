@@ -173,31 +173,37 @@ export default function HeroVideoSection() {
             </div>
           </div>
 
-          {/* Right Side Vertical Social Bar (omrelocation socials-area) */}
-          <div
-            className="d-none d-lg-flex"
-            style={{
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '1.5rem',
-              background: 'rgba(15, 23, 42, 0.45)',
-              padding: '1.5rem 0.85rem',
-              borderRadius: '50px',
-              border: '1px solid rgba(255, 255, 255, 0.15)',
-              backdropFilter: 'blur(10px)',
-            }}
-          >
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <a href="#" style={{ color: '#ffffff', fontSize: '1rem', transition: 'color 0.2s ease' }} aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
-              <a href="#" style={{ color: '#ffffff', fontSize: '1rem', transition: 'color 0.2s ease' }} aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#" style={{ color: '#ffffff', fontSize: '1rem', transition: 'color 0.2s ease' }} aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" style={{ color: '#ffffff', fontSize: '1rem', transition: 'color 0.2s ease' }} aria-label="YouTube"><i className="fa-brands fa-youtube"></i></a>
-            </div>
-            <div style={{ width: '1px', height: '30px', background: 'rgba(255, 255, 255, 0.2)' }}></div>
-            <span style={{ writingMode: 'vertical-rl', color: '#ff4d26', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '2px' }}>FOLLOW US</span>
-          </div>
-
         </div>
+      </div>
+
+      {/* Right Side Vertical Social Bar (Pinned to Right Side of Page) */}
+      <div
+        className="d-none d-lg-flex"
+        style={{
+          position: 'absolute',
+          right: '2.5rem',
+          top: '52%',
+          transform: 'translateY(-50%)',
+          zIndex: 20,
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '1.25rem',
+          background: 'rgba(15, 23, 42, 0.55)',
+          padding: '1.5rem 0.85rem',
+          borderRadius: '50px',
+          border: '1px solid rgba(255, 255, 255, 0.18)',
+          backdropFilter: 'blur(12px)',
+          boxShadow: '0 10px 30px rgba(0, 0, 0, 0.35)',
+        }}
+      >
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
+          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
+          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="YouTube"><i className="fa-brands fa-youtube"></i></a>
+        </div>
+        <div style={{ width: '1px', height: '30px', background: 'rgba(255, 255, 255, 0.25)' }}></div>
+        <span style={{ writingMode: 'vertical-rl', color: '#ff4d26', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '2px' }}>FOLLOW US</span>
       </div>
     </section>
   );
