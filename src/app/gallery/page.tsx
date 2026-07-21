@@ -11,7 +11,7 @@ const galleryItems = [
     category: 'packing',
     title: 'Multi-Layer House Packing',
     subtitle: 'Bubble wrapping fragile electronics & furniture',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const galleryItems = [
     category: 'shifting',
     title: 'Intercity House Shifting',
     subtitle: 'Full household relocation with dedicated truck',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop',
   },
   {
     id: 9,
@@ -72,12 +72,7 @@ const galleryItems = [
 ];
 
 export default function GalleryPage() {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
   const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
-
-  const filteredItems = activeCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === activeCategory);
 
   return (
     <>
@@ -145,45 +140,6 @@ export default function GalleryPage() {
         <section style={{ padding: '80px 0 110px' }}>
           <div className="container">
 
-            {/* Category Filter Buttons */}
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                flexWrap: 'wrap',
-                gap: '0.85rem',
-                marginBottom: '3.5rem',
-              }}
-            >
-              {[
-                { id: 'all', label: 'All Photos' },
-                { id: 'packing', label: 'Packing & Wrapping' },
-                { id: 'shifting', label: 'House & Office Shifting' },
-                { id: 'transportation', label: 'Car & Bike Transport' },
-                { id: 'warehouse', label: 'Warehouse Storage' },
-              ].map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
-                  style={{
-                    padding: '0.75rem 1.6rem',
-                    borderRadius: '30px',
-                    fontSize: '0.92rem',
-                    fontWeight: 700,
-                    border: '1px solid',
-                    borderColor: activeCategory === cat.id ? '#ff4d26' : '#cbd5e1',
-                    background: activeCategory === cat.id ? '#ff4d26' : '#ffffff',
-                    color: activeCategory === cat.id ? '#ffffff' : '#0b2b3c',
-                    cursor: 'pointer',
-                    boxShadow: activeCategory === cat.id ? '0 8px 20px rgba(255, 77, 38, 0.3)' : '0 2px 8px rgba(0,0,0,0.04)',
-                    transition: 'all 0.3s ease',
-                  }}
-                >
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-
             {/* Gallery Grid */}
             <div
               style={{
@@ -192,7 +148,7 @@ export default function GalleryPage() {
                 gap: '2rem',
               }}
             >
-              {filteredItems.map((item) => (
+              {galleryItems.map((item) => (
                 <div
                   key={item.id}
                   onClick={() => setSelectedImage(item)}
