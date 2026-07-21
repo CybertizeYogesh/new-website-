@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const infoRoutes = [
     { path: '/about-us', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/contact-us', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/network-us', priority: 0.8, changeFreq: 'weekly' as const },
+    { path: '/gallery', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/packers-and-movers-in-electronic-city', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/packers-and-movers-in-begur', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/packers-and-movers-in-bellandur', priority: 0.8, changeFreq: 'weekly' as const },

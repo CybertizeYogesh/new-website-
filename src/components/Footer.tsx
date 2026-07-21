@@ -46,7 +46,7 @@ export default function Footer() {
               <ul className="footer-links-list">
                 <li><Link href="/"><i className="fa-solid fa-chevron-right link-icon"></i> Home</Link></li>
                 <li><Link href="/about-us"><i className="fa-solid fa-chevron-right link-icon"></i> About Us</Link></li>
-                <li><Link href="/network-us"><i className="fa-solid fa-chevron-right link-icon"></i> Our Network</Link></li>
+                <li><Link href="/gallery"><i className="fa-solid fa-chevron-right link-icon"></i> Our Gallery</Link></li>
                 <li><Link href="/contact-us"><i className="fa-solid fa-chevron-right link-icon"></i> Contact Us</Link></li>
                 <li><Link href="/privacy-policy"><i className="fa-solid fa-chevron-right link-icon"></i> Privacy Policy</Link></li>
                 <li><Link href="/terms-and-conditions"><i className="fa-solid fa-chevron-right link-icon"></i> Terms &amp; Conditions</Link></li>

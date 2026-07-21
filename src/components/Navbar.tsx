@@ -120,8 +120,8 @@ export default function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link href="/network-us" className={`nav-link ${isActive('/network-us') ? 'active' : ''}`}>
-                Network
+              <Link href="/gallery" className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}>
+                Gallery
               </Link>
             </li>
 
