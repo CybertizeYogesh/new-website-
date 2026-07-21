@@ -254,8 +254,7 @@ button[type="submit"]:hover::after,
 .btn-secondary:hover *,
 .btn-navy:hover *,
 .btn-accent:hover *,
-button[type="submit"]:hover *,
-.form-card button:hover * {
+button[type="submit"]:hover * {
     color: var(--primary-color) !important;
 }
 
@@ -1589,7 +1588,7 @@ img {
 .testimonial-one {
     position: relative;
     display: block;
-    background: #f4f7f9;
+    background: #F4F5F9;
     padding: 120px 0px 120px;
     z-index: 1;
     overflow: hidden;
@@ -1601,7 +1600,7 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: radial-gradient(rgba(11, 43, 60, 0.05) 1.2px, transparent 1.2px);
+    background-image: radial-gradient(rgba(11, 43, 60, 0.06) 1.2px, transparent 1.2px);
     background-size: 30px 30px;
     opacity: 0.40;
     z-index: -1;
@@ -1635,34 +1634,52 @@ img {
 }
 
 .testimonial-one__content .sec-title {
-    padding-bottom: 39px;
+    position: relative;
+    display: block;
+    margin-top: -8px;
+    padding-bottom: 49px;
+    z-index: 1;
 }
 
 .sec-title__tagline {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 15px;
 }
 
 .sec-title__tagline .line {
-    width: 35px;
+    position: relative;
+    display: block;
+    width: 20px;
     height: 2px;
-    background-color: var(--accent-color);
+    background: var(--accent-color);
+    margin-right: 10px;
 }
 
 .sec-title__tagline .text h4 {
-    color: var(--accent-color);
-    font-size: 14px;
+    color: var(--text-muted);
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 700;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    letter-spacing: 2px;
     margin: 0;
 }
 
 .sec-title__tagline .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.sec-title__tagline .icon span,
+.sec-title__tagline .icon i {
+    position: relative;
+    display: inline-block;
     color: var(--accent-color);
-    font-size: 0.9rem;
+    font-size: 20px;
+    top: 2px;
+    margin-left: 15px;
     animation: float-bob-x3 3s infinite ease-in-out;
 }
 
@@ -1672,15 +1689,29 @@ img {
 }
 
 .sec-title__title {
-    font-size: clamp(2rem, 4.2vw, 44px);
-    line-height: 54px;
-    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: 700;
+    text-transform: none;
     color: var(--primary-color);
     margin: 0;
 }
 
 .sec-title__title span {
+    position: relative;
+    display: inline-block;
     color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.sec-title__title span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 9px;
+    right: 3px;
+    height: 2px;
+    background-color: var(--accent-color);
 }
 
 .testimonial-one__single {
@@ -1821,7 +1852,7 @@ img {
 .testimonial-one__single-inner .text-box p {
     margin: 0;
     color: var(--text-muted);
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
 }
 

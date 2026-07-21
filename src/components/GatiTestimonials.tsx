@@ -94,7 +94,7 @@ export default function GatiTestimonials() {
       <div className="testimonial-one__pattern"></div>
 
       <div className="container">
-        <div className="row style-grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+        <div className="row style-grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
           {/* Start Testimonial One Content */}
           <div className="col-xl-6">
             <div className="testimonial-one__content">
