@@ -176,12 +176,12 @@ export default function HeroVideoSection() {
         </div>
       </div>
 
-      {/* Right Side Vertical Social Bar (Pinned to Right Side of Page) */}
+      {/* Right Side Vertical Social Bar (Desktop Only, Pinned Closer to Right Edge) */}
       <div
-        className="d-none d-lg-flex"
+        className="d-none d-xl-flex"
         style={{
           position: 'absolute',
-          right: '2.5rem',
+          right: '1.25rem',
           top: '52%',
           transform: 'translateY(-50%)',
           zIndex: 20,
