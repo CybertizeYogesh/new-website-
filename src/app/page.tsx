@@ -19,66 +19,70 @@ export default function HomePage() {
         </defs>
       </svg>
 
-      {/* 1. Fullscreen Video Background Hero Section */}
-      <header className="hero hero-video-header" id="home" style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', overflow: 'hidden', padding: '140px 0 80px' }}>
-        {/* HTML5 Video Element */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 1,
-            pointerEvents: 'none',
-          }}
-        >
-          <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
-          <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
-        </video>
+      {/* 1. Fullscreen Video Background Hero Section (Without Quote Form) */}
+      <header className="hero hero-video-header" id="home" style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '150px 0 100px', textAlign: 'center' }}>
+        {/* Logistics Video Background (HTML5 & HD Embed) */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A?autoplay=1&mute=1&loop=1&playlist=5qap5aO4i9A&controls=0&showinfo=0&rel=0&playsinline=1"
+            title="Packers and Movers Logistics Video"
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              width: '100vw',
+              height: '100vh',
+              minWidth: '177.77vh',
+              minHeight: '56.25vw',
+              transform: 'translate(-50%, -50%) scale(1.2)',
+              border: 0,
+              opacity: 0.85,
+            }}
+            allow="autoplay; encrypted-media"
+          />
+        </div>
 
-        {/* Dark Cinematic Vignette Overlay */}
+        {/* Dark Overlay for Ultra High Text Legibility */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.65) 0%, rgba(11, 43, 60, 0.92) 100%)',
+            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.7) 0%, rgba(11, 43, 60, 0.94) 100%)',
             zIndex: 2,
           }}
         ></div>
 
-        {/* Content Over Video */}
-        <div className="container hero-content" style={{ position: 'relative', zIndex: 3 }}>
-          <div className="hero-text">
-            <span className="badge" style={{ background: 'rgba(255, 77, 38, 0.25)', color: '#ffffff', border: '1px solid rgba(255, 77, 38, 0.6)' }}>
+        {/* Hero Content Centered */}
+        <div className="container" style={{ position: 'relative', zIndex: 3, maxWidth: '900px', margin: '0 auto' }}>
+          <div className="hero-text" style={{ textAlign: 'center', margin: '0 auto' }}>
+            <span className="badge" style={{ background: 'rgba(255, 77, 38, 0.25)', color: '#ffffff', border: '1px solid rgba(255, 77, 38, 0.6)', padding: '0.6rem 1.5rem', fontSize: '0.95rem', borderRadius: '50px', display: 'inline-block', marginBottom: '1.5rem' }}>
               #1 Trusted Packers &amp; Movers Electronic City
             </span>
             <TextAnime>
-              <h1 style={{ color: '#ffffff', fontSize: 'clamp(2.5rem, 5vw, 3.8rem)', fontWeight: 800, lineHeight: 1.15, marginBottom: '1.25rem', textShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-                Moving Made <span className="text-gradient-accent" style={{ color: '#ff4d26' }}>Seamless</span> &amp;{' '}
-                <span className="text-gradient-white">Stress-Free</span>
+              <h1 style={{ color: '#ffffff', fontSize: 'clamp(2.5rem, 5.2vw, 4rem)', fontWeight: 800, lineHeight: 1.15, marginBottom: '1.5rem', textShadow: '0 4px 25px rgba(0,0,0,0.6)' }}>
+                Professional Packers &amp; Movers <br />
+                <span className="text-gradient-accent" style={{ color: '#ff4d26' }}>Safe, Timely</span> &amp;{' '}
+                <span className="text-gradient-white">Insured Shifting</span>
               </h1>
             </TextAnime>
-            <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '1.15rem', lineHeight: 1.7, marginBottom: '2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-              Expert house relocation, corporate office shifting, vehicle transportation, and secure storage solutions across Bengaluru and major Indian cities.
+            <p style={{ color: 'rgba(255, 255, 255, 0.92)', fontSize: '1.18rem', lineHeight: 1.75, maxWidth: '780px', margin: '0 auto 2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
+              Expert house relocation, corporate office shifting, car &amp; bike transport, and secure storage solutions across Bengaluru and major Indian cities.
             </p>
 
-            <div className="hero-stats" style={{ display: 'flex', gap: '2rem', marginTop: '1.5rem' }}>
+            <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
+              <a href="tel:09980303730" className="btn btn-primary" style={{ padding: '1rem 2.25rem', fontSize: '1.05rem', fontWeight: 800 }}>
+                <i className="fa-solid fa-phone-volume" style={{ marginRight: '8px' }}></i> Call 099803 03730
+              </a>
+              <Link href="/contact-us" className="btn btn-outline" style={{ padding: '1rem 2.25rem', fontSize: '1.05rem', fontWeight: 800, color: '#ffffff', borderColor: '#ffffff' }}>
+                <i className="fa-solid fa-paper-plane" style={{ marginRight: '8px' }}></i> Contact Us
+              </Link>
+            </div>
+
+            <div className="hero-stats" style={{ display: 'flex', gap: '3rem', justifyContent: 'center', flexWrap: 'wrap', paddingTop: '1.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.15)' }}>
               <StatCounter target={9.5} suffix="k+" label="Happy Clients" />
               <StatCounter target={10} suffix="+" label="Years Exp." />
               <StatCounter target={50} suffix="+" label="Cities" />
             </div>
-          </div>
-
-          <div className="hero-form">
-            <QuoteForm />
           </div>
         </div>
       </header>
