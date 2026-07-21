@@ -191,55 +191,80 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Speedex Relocation Inspired 'OUR WORK PROCESS' Timeline */}
-      <section className="process section bg-gradient-shading" id="process">
+      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Design */}
+      <section className="process-speedex-section section" id="process">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title">OUR WORK PROCESS</span>
+            <div className="speedex-badge">
+              <i className="fa-solid fa-truck-fast"></i> OUR WORK PROCESS
+            </div>
             <TextAnime>
-              <h2>How We Work For Your Relocation</h2>
+              <h2 className="speedex-title">
+                Smooth, efficient relocations at<br />every step
+              </h2>
             </TextAnime>
-            <p>Our systematic step-by-step process ensures a seamless, hassle-free relocation experience from start to finish.</p>
           </div>
 
-          <div className="process-timeline-container">
-            <div className="process-timeline-line"></div>
+          <div className="speedex-process-wrapper">
+            {/* SVG Connecting Dotted Curved Lines */}
+            <svg className="speedex-curved-line" viewBox="0 0 1000 120" fill="none" preserveAspectRatio="none">
+              <path d="M 140 85 Q 260 20, 390 40" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
+              <path d="M 390 40 Q 515 115, 640 85" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
+              <path d="M 640 85 Q 765 20, 885 40" stroke="#fe1120" strokeWidth="2.5" strokeDasharray="6 6" markerEnd="url(#arrowhead)" />
+              <defs>
+                <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fe1120" />
+                </marker>
+              </defs>
+            </svg>
 
-            <div className="process-steps-grid">
-              <div className="process-step-card fade-in-up" data-cursor-text="STEP 1">
-                <div className="step-badge-number">01</div>
-                <div className="step-icon-box">
-                  <i className="fa-solid fa-clipboard-list"></i>
+            <div className="speedex-grid">
+              {/* Step 1 */}
+              <div className="speedex-step-item step-down fade-in-up" data-cursor-text="STEP 1">
+                <div className="speedex-circle-node">
+                  <div className="speedex-icon-inner">
+                    <i className="fa-solid fa-headset"></i>
+                  </div>
+                  <div className="speedex-number-badge">1</div>
                 </div>
-                <h3>Book &amp; Survey</h3>
-                <p>Submit your request online or call us. Our team conducts a quick pre-move survey to estimate your requirements.</p>
+                <h3>Request A Callback</h3>
+                <p>Reach out to us with your moving needs. Our team will contact you to understand your requirements in detail.</p>
               </div>
 
-              <div className="process-step-card fade-in-up delay-1" data-cursor-text="STEP 2">
-                <div className="step-badge-number">02</div>
-                <div className="step-icon-box">
-                  <i className="fa-solid fa-box"></i>
+              {/* Step 2 */}
+              <div className="speedex-step-item step-up fade-in-up delay-1" data-cursor-text="STEP 2">
+                <div className="speedex-circle-node">
+                  <div className="speedex-icon-inner">
+                    <i className="fa-solid fa-box-open"></i>
+                  </div>
+                  <div className="speedex-number-badge">2</div>
                 </div>
-                <h3>Packing &amp; Labeling</h3>
-                <p>Our expert crew packs all items using multi-layer protective materials and assigns clear inventory tags.</p>
+                <h3>Custom Move Planning</h3>
+                <p>We design a tailored relocation strategy, including packing, transportation, and delivery schedules.</p>
               </div>
 
-              <div className="process-step-card fade-in-up delay-2" data-cursor-text="STEP 3">
-                <div className="step-badge-number">03</div>
-                <div className="step-icon-box">
-                  <i className="fa-solid fa-truck-fast"></i>
+              {/* Step 3 */}
+              <div className="speedex-step-item step-down fade-in-up delay-2" data-cursor-text="STEP 3">
+                <div className="speedex-circle-node">
+                  <div className="speedex-icon-inner">
+                    <i className="fa-solid fa-truck-ramp-box"></i>
+                  </div>
+                  <div className="speedex-number-badge">3</div>
                 </div>
-                <h3>Safe Transit</h3>
-                <p>Your goods are loaded into specialized closed-container vehicles for secure, GPS-tracked transportation.</p>
+                <h3>Professional Moving</h3>
+                <p>Our skilled crew packs, loads, and transports your belongings with care using quality materials and tools.</p>
               </div>
 
-              <div className="process-step-card fade-in-up delay-3" data-cursor-text="STEP 4">
-                <div className="step-badge-number">04</div>
-                <div className="step-icon-box">
-                  <i className="fa-solid fa-house-chimney-check"></i>
+              {/* Step 4 */}
+              <div className="speedex-step-item step-up fade-in-up delay-3" data-cursor-text="STEP 4">
+                <div className="speedex-circle-node">
+                  <div className="speedex-icon-inner">
+                    <i className="fa-solid fa-house-chimney-check"></i>
+                  </div>
+                  <div className="speedex-number-badge">4</div>
                 </div>
-                <h3>Unpacking &amp; Setup</h3>
-                <p>We safely unload, unpack, and arrange your belongings in your new location for a smooth transition.</p>
+                <h3>Final Delivery &amp; Setup</h3>
+                <p>We unpack and help arrange your items at your new location, ensuring a comfortable and stress-free start.</p>
               </div>
             </div>
           </div>
