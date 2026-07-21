@@ -410,85 +410,88 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. The HSM Assurance - Modern Asymmetric Split Design */}
-      <section className="section" style={{ background: '#f8fafc', padding: '95px 0', borderTop: '1px solid #e2e8f0', position: 'relative', overflow: 'hidden' }}>
+      {/* 8. Why Choose Us Showcase Section */}
+      <section className="section" id="why-choose-us" style={{ background: '#ffffff', padding: '95px 0', borderTop: '1px solid #e2e8f0', position: 'relative', overflow: 'hidden' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '4rem', alignItems: 'center' }}>
             
-            {/* Left Column: Brand Statement & Highlights */}
+            {/* Left Column: Animated why.gif image */}
+            <div style={{ position: 'relative', textAlign: 'center' }}>
+              <div style={{
+                position: 'relative',
+                display: 'inline-block',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 40px rgba(11, 43, 60, 0.12)',
+                border: '4px solid #ffffff',
+                background: '#f8fafc'
+              }}>
+                <img
+                  src="/assets/images/why.gif"
+                  alt="Why Choose HSM Packers and Movers Electronic City"
+                  style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', borderRadius: '20px' }}
+                />
+              </div>
+            </div>
+
+            {/* Right Column: Why Choose Us Content & Features */}
             <div>
-              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>THE HSM ASSURANCE</span>
+              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>WHY CHOOSE US</span>
               <TextAnime>
                 <h2 style={{ fontSize: 'clamp(2.1rem, 3.8vw, 2.8rem)', fontWeight: 800, color: '#0b2b3c', lineHeight: 1.25, marginBottom: '1.25rem' }}>
-                  Safety, Timeliness & Complete Peace of Mind
+                  Why Choose HSM Packers and Movers Electronic City?
                 </h2>
               </TextAnime>
               <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Every house shifting, office relocation, and vehicle transit project with HSM Packers and Movers Electronic City is backed by strict quality controls, trained moving staff, and insured handling.
+                HSM Packers and Movers Electronic City offers stress-free, reliable, and affordable relocation solutions. We ensure complete safety, timely delivery, and professional handling for all your home, office, and vehicle transport needs.
               </p>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2.5rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: '#ffffff', padding: '0.9rem 1.25rem', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-                  <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0 }}>
-                    <i className="fa-solid fa-check"></i>
+              {/* 2x2 Feature Grid matching website design */}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
+                <div style={{ background: '#f8fafc', padding: '1.25rem 1.15rem', borderRadius: '16px', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.12)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.35rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-box-open"></i>
                   </div>
-                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>ISO Certified Packing Standards & Wooden Crating</span>
+                  <div>
+                    <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.25rem' }}>Multi-Layer Packing</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.85rem', lineHeight: 1.5, margin: 0 }}>High grade bubble wraps & crates.</p>
+                  </div>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: '#ffffff', padding: '0.9rem 1.25rem', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-                  <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0 }}>
-                    <i className="fa-solid fa-check"></i>
+                <div style={{ background: '#f8fafc', padding: '1.25rem 1.15rem', borderRadius: '16px', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(11, 43, 60, 0.1)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.35rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-truck-ramp-box"></i>
                   </div>
-                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>Live GPS Shipment Tracking & Real-Time Updates</span>
+                  <div>
+                    <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.25rem' }}>On-Time Shifting</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.85rem', lineHeight: 1.5, margin: 0 }}>Dedicated GPS-tracked vehicles.</p>
+                  </div>
+                </div>
+
+                <div style={{ background: '#f8fafc', padding: '1.25rem 1.15rem', borderRadius: '16px', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(11, 43, 60, 0.1)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.35rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-shield-heart"></i>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.25rem' }}>Goods Insurance</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.85rem', lineHeight: 1.5, margin: 0 }}>Full transit cover protection.</p>
+                  </div>
+                </div>
+
+                <div style={{ background: '#f8fafc', padding: '1.25rem 1.15rem', borderRadius: '16px', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
+                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.12)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.35rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-tags"></i>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.25rem' }}>Affordable Rates</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.85rem', lineHeight: 1.5, margin: 0 }}>100% transparent pricing.</p>
+                  </div>
                 </div>
               </div>
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
                 <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Get Free Quote</Link>
                 <a href="tel:09980303730" className="btn btn-navy" data-cursor-text="CALL">Call 099803 03730</a>
-              </div>
-            </div>
-
-            {/* Right Column: 2x2 Staggered Feature Metric Cards */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem' }}>
-              <div style={{ background: '#ffffff', padding: '2rem 1.5rem', borderRadius: '20px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(11, 43, 60, 0.05)' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-                  <i className="fa-solid fa-shield-halved"></i>
-                </div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.4rem' }}>100% Goods Safety</h3>
-                <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>
-                  Multi-layer bubble wrap & heavy boxes ensure zero damage.
-                </p>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '2rem 1.5rem', borderRadius: '20px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(11, 43, 60, 0.05)' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: 'rgba(11, 43, 60, 0.08)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-                  <i className="fa-solid fa-file-invoice-dollar"></i>
-                </div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.4rem' }}>Fixed Fair Price</h3>
-                <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>
-                  Upfront transparent quotation with zero surprise fees.
-                </p>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '2rem 1.5rem', borderRadius: '20px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(11, 43, 60, 0.05)' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: 'rgba(11, 43, 60, 0.08)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-                  <i className="fa-solid fa-truck-fast"></i>
-                </div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.4rem' }}>Express Transit</h3>
-                <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>
-                  Dedicated GPS-tracked trucks for fast, punctual deliveries.
-                </p>
-              </div>
-
-              <div style={{ background: '#ffffff', padding: '2rem 1.5rem', borderRadius: '20px', border: '1px solid #e2e8f0', boxShadow: '0 10px 30px rgba(11, 43, 60, 0.05)' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '14px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', marginBottom: '1.25rem' }}>
-                  <i className="fa-solid fa-user-gear"></i>
-                </div>
-                <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.4rem' }}>Move Manager</h3>
-                <p style={{ color: '#64748b', fontSize: '0.88rem', lineHeight: 1.6, margin: 0 }}>
-                  Dedicated single point contact for 24/7 personal support.
-                </p>
               </div>
             </div>
 
