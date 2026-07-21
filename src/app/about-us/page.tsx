@@ -2,6 +2,8 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageReveal from '@/components/ImageReveal';
+import StatCounter from '@/components/StatCounter';
+import TextAnime from '@/components/TextAnime';
 
 export const metadata: Metadata = {
   title: 'About Us | Speed Ex Relocation Packers and Movers',
@@ -72,32 +74,53 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      <section className="section bg-light">
-        <div className="container">
-          <div className="process-steps">
-            <div className="step-card fade-in-up">
-              <div className="step-number" style={{ border: 'none', fontSize: '2.5rem', width: 'auto', height: 'auto' }}>10+</div>
-              <div className="step-content">
-                <h4>Years Experience</h4>
+      {/* Key Stats & Achievements Counter Bar */}
+      <section className="section" style={{ background: 'linear-gradient(135deg, #0b2b3c 0%, #0f172a 100%)', color: '#ffffff', padding: '90px 0', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '350px', height: '350px', background: 'radial-gradient(circle, rgba(255, 77, 38, 0.15) 0%, rgba(255, 77, 38, 0) 70%)', pointerEvents: 'none' }}></div>
+        <div style={{ position: 'absolute', bottom: '-100px', left: '-100px', width: '350px', height: '350px', background: 'radial-gradient(circle, rgba(255, 77, 38, 0.1) 0%, rgba(255, 77, 38, 0) 70%)', pointerEvents: 'none' }}></div>
+
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="section-header text-center" style={{ marginBottom: '3.5rem' }}>
+            <span className="sub-title" style={{ color: '#ff4d26', background: 'rgba(255, 77, 38, 0.1)', border: '1px solid rgba(255, 77, 38, 0.2)' }}>
+              OUR MILESTONES
+            </span>
+            <TextAnime>
+              <h2 style={{ color: '#ffffff', fontSize: 'clamp(2.1rem, 3.5vw, 2.7rem)', fontWeight: 800 }}>
+                Proven Track Record of Operational Excellence
+              </h2>
+            </TextAnime>
+            <p style={{ color: '#94a3b8', maxWidth: '650px', margin: '0 auto' }}>
+              Delivering reliability, safety, and customer satisfaction across India with measurable achievements.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem' }}>
+            <div style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', transition: 'transform 0.3s ease, border-color 0.3s ease', backdropFilter: 'blur(10px)' }}>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.15)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem' }}>
+                <i className="fa-solid fa-award"></i>
               </div>
+              <StatCounter target={10} suffix="+" label="Years Experience" />
             </div>
-            <div className="step-card fade-in-up delay-1">
-              <div className="step-number" style={{ border: 'none', fontSize: '2.5rem', width: 'auto', height: 'auto' }}>9.5k+</div>
-              <div className="step-content">
-                <h4>Happy Clients</h4>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', transition: 'transform 0.3s ease, border-color 0.3s ease', backdropFilter: 'blur(10px)' }}>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.15)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem' }}>
+                <i className="fa-solid fa-face-smile"></i>
               </div>
+              <StatCounter target={9.5} suffix="k+" label="Happy Clients" />
             </div>
-            <div className="step-card fade-in-up delay-2">
-              <div className="step-number" style={{ border: 'none', fontSize: '2.5rem', width: 'auto', height: 'auto' }}>110+</div>
-              <div className="step-content">
-                <h4>Team Members</h4>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', transition: 'transform 0.3s ease, border-color 0.3s ease', backdropFilter: 'blur(10px)' }}>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.15)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem' }}>
+                <i className="fa-solid fa-user-shield"></i>
               </div>
+              <StatCounter target={110} suffix="+" label="Team Members" />
             </div>
-            <div className="step-card fade-in-up delay-3">
-              <div className="step-number" style={{ border: 'none', fontSize: '2.5rem', width: 'auto', height: 'auto' }}>50+</div>
-              <div className="step-content">
-                <h4>Cities Covered</h4>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', transition: 'transform 0.3s ease, border-color 0.3s ease', backdropFilter: 'blur(10px)' }}>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.15)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem' }}>
+                <i className="fa-solid fa-map-location-dot"></i>
               </div>
+              <StatCounter target={50} suffix="+" label="Cities Covered" />
             </div>
           </div>
         </div>
