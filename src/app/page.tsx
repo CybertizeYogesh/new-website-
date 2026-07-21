@@ -204,11 +204,11 @@ export default function HomePage() {
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Curved Dotted Connection Line - Exact Arc Matching User Screenshot */}
+            {/* SVG Curved Dotted Connection Line - Meticulously Proportioned 140px Circle Arcs */}
             <svg className="speedex-curved-line" viewBox="0 0 1200 220" fill="none" preserveAspectRatio="none">
               {/* Arc 1: Circle 1 top-right to Circle 2 left-bottom */}
               <path
-                d="M 230 90 C 275 48, 315 62, 355 98"
+                d="M 194 96 C 250 45, 310 50, 369 88"
                 stroke="#ff4d26"
                 strokeWidth="2.2"
                 strokeDasharray="5 5"
@@ -216,7 +216,7 @@ export default function HomePage() {
               />
               {/* Arc 2: Circle 2 right-bottom to Circle 3 left-top */}
               <path
-                d="M 530 98 C 575 132, 615 118, 655 86"
+                d="M 504 124 C 560 165, 620 160, 679 132"
                 stroke="#ff4d26"
                 strokeWidth="2.2"
                 strokeDasharray="5 5"
@@ -224,7 +224,7 @@ export default function HomePage() {
               />
               {/* Arc 3: Circle 3 top-right to Circle 4 left-bottom */}
               <path
-                d="M 830 90 C 875 48, 915 62, 955 98"
+                d="M 814 96 C 870 45, 930 50, 989 88"
                 stroke="#ff4d26"
                 strokeWidth="2.2"
                 strokeDasharray="5 5"
@@ -242,7 +242,7 @@ export default function HomePage() {
               <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                       <path d="M15 2a4 4 0 0 1 4 4"/>
                       <circle cx="18" cy="4" r="1.5" fill="#ffffff" />
@@ -258,7 +258,7 @@ export default function HomePage() {
               <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 2a8 8 0 0 0-8 8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4a8 8 0 0 0-8-8z"/>
                       <path d="M4 10l5 7"/>
                       <path d="M20 10l-5 7"/>
@@ -276,7 +276,7 @@ export default function HomePage() {
               <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
                       <path d="m3.3 7 8.7 5 8.7-5"/>
                       <path d="M12 22V12"/>
@@ -292,7 +292,7 @@ export default function HomePage() {
               <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
                       <circle cx="12" cy="12" r="10"/>
                       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
                       <path d="M2 12h20"/>

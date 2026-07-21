@@ -577,12 +577,12 @@ img {
     overflow: hidden;
 }
 
-/* Speedex Relocation Exact Work Process Section (#ff4d26 Coral Red & #0b2b3c Dark Teal Navy) */
+/* Speedex Relocation Exact Work Process Section (140px nodes & exact proportions) */
 .process-speedex-section {
     background-color: #0b2b3c;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1.2px, transparent 1.2px);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1.2px, transparent 1.2px);
     background-size: 28px 28px;
-    padding: 90px 0 110px;
+    padding: 85px 0 115px;
     position: relative;
     overflow: hidden;
     color: #ffffff;
@@ -620,8 +620,8 @@ img {
 
 .speedex-process-wrapper {
     position: relative;
-    margin-top: 5rem;
-    min-height: 380px;
+    margin-top: 4.5rem;
+    min-height: 350px;
 }
 
 .speedex-curved-line {
@@ -629,7 +629,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 220px;
     pointer-events: none;
     z-index: 1;
 }
@@ -650,32 +650,32 @@ img {
 }
 
 .speedex-step-item.step-up {
-    transform: translateY(-25px) !important;
+    transform: translateY(-35px) !important;
 }
 
 .speedex-step-item.step-down {
-    transform: translateY(45px) !important;
+    transform: translateY(35px) !important;
 }
 
 .speedex-circle-node {
     position: relative;
-    width: 170px;
-    height: 170px;
+    width: 140px;
+    height: 140px;
     background: #ff4d26;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 15px 35px rgba(255, 77, 38, 0.35);
-    margin-bottom: 1.75rem;
+    box-shadow: 0 12px 30px rgba(255, 77, 38, 0.35);
+    margin-bottom: 1.5rem;
 }
 
 .speedex-circle-node::before {
     content: '';
     position: absolute;
-    inset: -10px;
+    inset: -7px;
     border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border: 2px dashed rgba(255, 255, 255, 0.45);
 }
 
 .speedex-icon-inner {
@@ -687,16 +687,16 @@ img {
 
 .speedex-number-badge {
     position: absolute;
-    bottom: -16px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     background: #ffffff;
     color: #ff4d26;
     font-weight: 800;
     font-family: var(--font-heading);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -706,7 +706,7 @@ img {
 
 .speedex-step-item h3 {
     color: #ffffff !important;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 0.75rem;
     line-height: 1.3;
