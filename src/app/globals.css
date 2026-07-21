@@ -2127,14 +2127,19 @@ img {
     justify-content: center;
     color: #ffffff;
     font-size: 1rem;
-    transition: var(--transition-smooth);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-btn:hover {
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    background: #ff4d26 !important;
+    color: #ffffff !important;
+    border-color: #ff4d26 !important;
     transform: translateY(-4px) scale(1.1);
-    border-color: transparent;
-    box-shadow: 0 8px 20px rgba(255, 77, 38, 0.4);
+    box-shadow: 0 8px 22px rgba(255, 77, 38, 0.5);
+}
+
+.social-btn:hover i {
+    color: #ffffff !important;
 }
 
 .footer-heading {
