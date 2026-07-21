@@ -531,46 +531,157 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. SEO Keyword Rich Feature Section */}
-      <section className="section" style={{ backgroundColor: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
+      {/* 9. Working Process Showcase Section */}
+      <section className="section" style={{ backgroundColor: '#ffffff', padding: '90px 0', borderTop: '1px solid #e2e8f0' }}>
         <div className="container">
-          <div className="section-header text-center" style={{ marginBottom: '3rem' }}>
-            <span className="sub-title">Top Rated Relocation Services</span>
+          <div className="section-header text-center" style={{ marginBottom: '3.5rem' }}>
+            <span className="sub-title">OUR WORKING PROCESS</span>
             <TextAnime>
-              <h2>Best Packers and Movers in Ahmedabad &amp; India</h2>
+              <h2>How We Ensure a Stress-Free Relocation</h2>
             </TextAnime>
-            <p style={{ maxWidth: '800px', margin: '0 auto', color: '#64748b' }}>
-              Speed Ex Relocation is a licensed <strong>transport logistics company</strong> and <strong>shifting company</strong> providing complete <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> across Ahmedabad and pan-India.
+            <p style={{ maxWidth: '750px', margin: '0 auto', color: '#64748b', fontSize: '1.02rem', lineHeight: 1.7 }}>
+              Speed Ex Relocation Packers and Movers follows a proven step-by-step moving process for <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> near me.
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <i className="fa-solid fa-house" style={{ color: '#ff4d26' }}></i> Household Shifting Services Near Me
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
+            
+            {/* Step 1 */}
+            <div
+              style={{
+                background: '#f8fafc',
+                padding: '2.25rem 1.75rem',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                position: 'relative',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '1.5rem',
+                  right: '1.5rem',
+                  fontSize: '2rem',
+                  fontWeight: 900,
+                  color: 'rgba(255, 77, 38, 0.15)',
+                }}
+              >
+                01
+              </span>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
+                <i className="fa-solid fa-clipboard-check"></i>
+              </div>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
+                1. Inspection &amp; Free Quote
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
-                Looking for <strong>household shifting services near me</strong> or the <strong>best packers and movers</strong> in your area? Our experienced <strong>relocation movers near me</strong> provide end-to-end packing, loading, transport, and unloading for 1BHK, 2BHK, 3BHK, and villa moves.
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
+                Our <strong>best packers and movers in ahmedabad</strong> evaluate your goods, suggest custom packing, and provide an all-inclusive transparent quote.
               </p>
             </div>
 
-            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <i className="fa-solid fa-building" style={{ color: '#ff4d26' }}></i> Corporate Office Moving Services
+            {/* Step 2 */}
+            <div
+              style={{
+                background: '#f8fafc',
+                padding: '2.25rem 1.75rem',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                position: 'relative',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '1.5rem',
+                  right: '1.5rem',
+                  fontSize: '2rem',
+                  fontWeight: 900,
+                  color: 'rgba(255, 77, 38, 0.15)',
+                }}
+              >
+                02
+              </span>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
+                <i className="fa-solid fa-box-open"></i>
+              </div>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
+                2. Multi-Layer Packing
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
-                As an accredited <strong>shifting company</strong> and <strong>transport logistics company</strong>, we deliver structured <strong>office moving services</strong> for IT companies, corporate headquarters, and retail businesses with zero operational downtime.
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
+                Heavy-duty corrugated sheets, bubble wrap, and waterproof stretch film ensure maximum protection for delicate items and furniture.
               </p>
             </div>
 
-            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <i className="fa-solid fa-car" style={{ color: '#ff4d26' }}></i> Vehicle Moving Services &amp; Logistics
+            {/* Step 3 */}
+            <div
+              style={{
+                background: '#f8fafc',
+                padding: '2.25rem 1.75rem',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                position: 'relative',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '1.5rem',
+                  right: '1.5rem',
+                  fontSize: '2rem',
+                  fontWeight: 900,
+                  color: 'rgba(255, 77, 38, 0.15)',
+                }}
+              >
+                03
+              </span>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
+                <i className="fa-solid fa-truck-ramp-box"></i>
+              </div>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
+                3. Safe Express Transport
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
-                Trust the top <strong>packers and movers ahmedabad</strong> for specialized car carriers and enclosed bike carriers. Our <strong>vehicle moving services</strong> ensure scratch-free intercity vehicle transport across all major hubs in India.
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
+                Our licensed <strong>transport logistics company</strong> uses enclosed GPS-tracked container trucks driven by experienced route specialists.
               </p>
             </div>
+
+            {/* Step 4 */}
+            <div
+              style={{
+                background: '#f8fafc',
+                padding: '2.25rem 1.75rem',
+                borderRadius: '20px',
+                border: '1px solid #e2e8f0',
+                position: 'relative',
+                transition: 'all 0.3s ease',
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  top: '1.5rem',
+                  right: '1.5rem',
+                  fontSize: '2rem',
+                  fontWeight: 900,
+                  color: 'rgba(255, 77, 38, 0.15)',
+                }}
+              >
+                04
+              </span>
+              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
+                <i className="fa-solid fa-house-chimney-user"></i>
+              </div>
+              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
+                4. Unpacking &amp; Placement
+              </h3>
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
+                Our <strong>relocation movers near me</strong> unpack, reassemble, and carefully position every item in your new destination home or office.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
