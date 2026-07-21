@@ -366,55 +366,127 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Client Testimonials - Dark Theme */}
-      <section className="section bg-dark-grid">
+      {/* 6. Client Testimonials - Speedex Luxury Theme */}
+      <section className="testimonials-speedex-section" id="testimonials">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(255, 77, 38, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
-            <TextAnime>
-              <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
-            </TextAnime>
+            <div className="speedex-badge">
+              <i className="fa-solid fa-comments"></i> CLIENT TESTIMONIALS
+            </div>
+            <h2 className="speedex-title">
+              What Our Happy Clients Say About Us
+            </h2>
           </div>
-          <div className="grid-3">
-            <div className="feature-card fade-in-up" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
-              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
-                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
+
+          <div className="testimonials-grid">
+            {/* Testimonial 1 */}
+            <div className="testimonial-card fade-in-up" data-cursor-text="REVIEW">
+              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
+              <div className="testimonial-header">
+                <div className="testimonial-stars">
+                  <span>5.0</span>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <span className="testimonial-tag">House Shifting</span>
               </div>
-              <p style={{ color: '#cbd5e1' }}>"Excellent service! The team was professional, punctual, and handled all my furniture with great care. Highly recommended for house shifting."</p>
-              <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>RK</div>
+              <p className="testimonial-text">
+                "HSM Packers and Movers Electronic City handled our complete 3BHK house shifting with utmost care. The multi-layer bubble wrapping of fragile glass items and heavy furniture was top-notch!"
+              </p>
+              <div className="testimonial-footer">
+                <div className="testimonial-avatar">RK</div>
                 <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Rahul Kumar</h4>
-                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Bengaluru to Delhi</span>
+                  <h4 className="testimonial-author-name">Rahul Kumar</h4>
+                  <div className="testimonial-route">
+                    <i className="fa-solid fa-location-dot"></i> Bengaluru to Delhi
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-1" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
-              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
-                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
+            {/* Testimonial 2 */}
+            <div className="testimonial-card fade-in-up delay-1" data-cursor-text="REVIEW">
+              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
+              <div className="testimonial-header">
+                <div className="testimonial-stars">
+                  <span>5.0</span>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                </div>
+                <span className="testimonial-tag">Vehicle Shifting</span>
               </div>
-              <p style={{ color: '#cbd5e1' }}>"I used their bike transport service from Pune to Bangalore. I received my bike in perfect condition and on time. Great job team!"</p>
-              <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>AS</div>
+              <p className="testimonial-text">
+                "Transported my Hyundai Creta and Royal Enfield from Pune to Bangalore. I received real-time tracking updates throughout the transit. Delivered right on schedule without a single scratch!"
+              </p>
+              <div className="testimonial-footer">
+                <div className="testimonial-avatar">AS</div>
                 <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Amit Sharma</h4>
-                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Pune to Bangalore</span>
+                  <h4 className="testimonial-author-name">Amit Sharma</h4>
+                  <div className="testimonial-route">
+                    <i className="fa-solid fa-location-dot"></i> Pune to Bangalore
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-2" data-cursor-text="REVIEW" style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(20px)', borderColor: 'rgba(255, 255, 255, 0.1)', color: '#ffffff' }}>
-              <div style={{ color: '#f59e0b', fontSize: '1.2rem', marginBottom: '1rem' }}>
-                <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
-              </div>
-              <p style={{ color: '#cbd5e1' }}>"Very professional office relocation service. They minimized our downtime and set up everything perfectly at the new office."</p>
-              <div style={{ marginTop: '1.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <div style={{ width: '45px', height: '45px', background: 'linear-gradient(135deg, var(--accent-color), var(--secondary-color))', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'white' }}>PS</div>
-                <div>
-                  <h4 style={{ margin: 0, fontSize: '1rem', color: '#ffffff' }}>Priya Singh</h4>
-                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Corporate Client</span>
+            {/* Testimonial 3 */}
+            <div className="testimonial-card fade-in-up delay-2" data-cursor-text="REVIEW">
+              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
+              <div className="testimonial-header">
+                <div className="testimonial-stars">
+                  <span>5.0</span>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
+                  <i className="fa-solid fa-star"></i>
                 </div>
+                <span className="testimonial-tag">Corporate Relocation</span>
+              </div>
+              <p className="testimonial-text">
+                "Outstanding office relocation service! Their crew packed 60+ workstations and IT servers over the weekend with zero disruption to our Monday business operations. Truly professional!"
+              </p>
+              <div className="testimonial-footer">
+                <div className="testimonial-avatar">PS</div>
+                <div>
+                  <h4 className="testimonial-author-name">Priya Singh</h4>
+                  <div className="testimonial-route">
+                    <i className="fa-solid fa-briefcase"></i> IT Park, Electronic City
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Trust Bar Badges */}
+          <div className="testimonial-trust-bar">
+            <div className="trust-item">
+              <div className="trust-item-icon"><i className="fa-brands fa-google"></i></div>
+              <div>
+                <div className="trust-item-title">Google 4.9 ★ Rating</div>
+                <div className="trust-item-subtitle">1,250+ Verified Client Reviews</div>
+              </div>
+            </div>
+
+            <div className="trust-item">
+              <div className="trust-item-icon"><i className="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <div className="trust-item-title">100% Transit Insurance</div>
+                <div className="trust-item-subtitle">Zero Damage Guarantee</div>
+              </div>
+            </div>
+
+            <div className="trust-item">
+              <div className="trust-item-icon"><i className="fa-solid fa-truck-ramp-box"></i></div>
+              <div>
+                <div className="trust-item-title">9,500+ Relocations</div>
+                <div className="trust-item-subtitle">Across India &amp; Worldwide</div>
               </div>
             </div>
           </div>
