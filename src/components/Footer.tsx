@@ -100,6 +100,20 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        {/* Footer Bottom Copyright Bar */}
+        <div className="footer-bottom-bar" style={{
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+          paddingTop: '1.5rem',
+          marginTop: '2rem',
+          textAlign: 'center',
+          color: '#94a3b8',
+          fontSize: '0.88rem'
+        }}>
+          <p style={{ margin: 0 }}>
+            &copy; Copyright {currentYear} speed ex relocation Packers &amp; Movers All Rights Reserved
+          </p>
+        </div>
       </div>
     </footer>
   );
