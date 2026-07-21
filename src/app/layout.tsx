@@ -24,13 +24,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'HSM Packers and Movers Electronic City Bengaluru',
-  description: 'HSM Packers and Movers Electronic City provides reliable house shifting, office relocation, vehicle transport, and warehousing services across India.',
-  keywords: 'packers and movers electronic city, house shifting electronic city, relocation services bangalore',
-  authors: [{ name: 'HSM Packers and Movers' }],
-  metadataBase: new URL('https://hsmpackersandmovers.in'),
+  title: 'Speed Ex Relocation Packers and Movers | Ahmedabad',
+  description: 'Speed Ex Relocation Packers and Movers provides reliable house shifting, office relocation, vehicle transport, and warehousing services across India. Call: 9624644006 / 9211206101.',
+  keywords: 'speed ex relocation packers and movers, packers and movers aslali ahmedabad, house shifting ahmedabad, relocation services ahmedabad',
+  authors: [{ name: 'Speed Ex Relocation Packers and Movers' }],
+  metadataBase: new URL('https://speedexrelocation.com'),
   openGraph: {
-    title: 'HSM Packers and Movers Electronic City Bengaluru',
+    title: 'Speed Ex Relocation Packers and Movers | Ahmedabad',
     description: 'Reliable house shifting, office relocation, and vehicle transport services.',
     type: 'website',
     locale: 'en_IN',

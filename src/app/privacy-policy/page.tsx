@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | HSM Packers and Movers Electronic City',
-  description: 'Privacy Policy of HSM Packers and Movers Electronic City explaining how we collect, use, and protect your data.',
-  keywords: 'HSM packers movers privacy policy, packers movers data policy bengaluru',
+  title: 'Privacy Policy | Speed Ex Relocation Packers and Movers',
+  description: 'Privacy Policy of Speed Ex Relocation Packers and Movers explaining how we collect, use, and protect your data.',
+  keywords: 'speed ex relocation privacy policy, packers movers data policy ahmedabad',
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -28,11 +28,11 @@ export default function PrivacyPolicyPage() {
       </header>
 
       <section className="section">
-        <div className="container">
-          <div className="about-content">
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <div className="policy-content" style={{ lineHeight: 1.8, color: '#334155' }}>
             <h2 style={{ marginBottom: '1.5rem' }}>Privacy Policy</h2>
-            <p>
-              At HSM Packers and Movers Electronic City, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+              At Speed Ex Relocation Packers and Movers, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website or use our services.
             </p>
             <br />
 

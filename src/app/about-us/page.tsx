@@ -4,9 +4,9 @@ import Link from 'next/link';
 import ImageReveal from '@/components/ImageReveal';
 
 export const metadata: Metadata = {
-  title: 'About Us | HSM Packers and Movers Electronic City',
-  description: 'Learn about HSM Packers and Movers Electronic City, our mission, vision, and the expert team behind Indias trusted relocation services.',
-  keywords: 'about HSM packers and movers, trusted packers movers bengaluru, experienced movers bengaluru, reliable relocation company bengaluru, best moving company electronic city',
+  title: 'About Us | Speed Ex Relocation Packers and Movers',
+  description: 'Learn about Speed Ex Relocation Packers and Movers, our mission, vision, and the expert team behind Indias trusted relocation services.',
+  keywords: 'about speed ex relocation, trusted packers movers ahmedabad, experienced movers aslali, reliable relocation company ahmedabad',
 };
 
 export default function AboutUsPage() {
@@ -47,7 +47,7 @@ export default function AboutUsPage() {
               <span className="sub-title">Who We Are</span>
               <h2>Leading the Way in Relocation Services</h2>
               <p>
-                HSM Packers and Movers Electronic City has established itself as a premier relocation service provider in India. With over 10+ years of experience, we understand the emotional and physical challenges that come with moving. Our goal is to shoulder that burden so you can focus on the excitement of your new beginning.
+                Speed Ex Relocation Packers and Movers has established itself as a premier relocation service provider in India. With over 10+ years of experience, we understand the emotional and physical challenges that come with moving. Our goal is to shoulder that burden so you can focus on the excitement of your new beginning.
               </p>
               <p>
                 We combine cutting-edge logistics technology with a human touch. Our team is rigorously trained in the art of packing, handling, and transporting goods of all kinds—from fragile heirlooms to heavy industrial equipment.

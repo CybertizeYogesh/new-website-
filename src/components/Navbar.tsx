@@ -58,7 +58,7 @@ export default function Navbar() {
           <Link href="/" className="logo" onClick={closeMenu}>
             <Image 
               src="/assets/images/logo.png" 
-              alt="HSM Packers and Movers Electronic City" 
+              alt="Speed Ex Relocation Packers and Movers" 
               width={170} 
               height={50} 
               className="logo-img" 

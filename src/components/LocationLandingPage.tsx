@@ -123,33 +123,33 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Other Areas We Serve</span>
-            <h2>Packers and Movers in Bengaluru</h2>
+            <h2>Packers and Movers in Ahmedabad &amp; Gujarat Hubs</h2>
           </div>
 
           <div className="cities-grid">
             <Link href="/packers-and-movers-in-electronic-city" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Electronic City</h3>
+              <h3>Aslali Circle</h3>
             </Link>
             <Link href="/packers-and-movers-in-begur" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Begur</h3>
+              <h3>SG Highway</h3>
             </Link>
             <Link href="/packers-and-movers-in-bellandur" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Bellandur</h3>
+              <h3>Satellite</h3>
             </Link>
             <Link href="/packers-and-movers-in-marathahalli" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Marathahalli</h3>
+              <h3>Prahlad Nagar</h3>
             </Link>
             <Link href="/packers-and-movers-in-bommasandra" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Bommasandra</h3>
+              <h3>Narol</h3>
             </Link>
             <Link href="/packers-and-movers-in-hulimangala" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Hulimangala</h3>
+              <h3>Changodar</h3>
             </Link>
           </div>
         </div>

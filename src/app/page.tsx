@@ -370,7 +370,7 @@ export default function HomePage() {
                 <h2>Trusted Relocation Partner Since 2012</h2>
               </TextAnime>
               <p>
-                HSM Packers and Movers Electronic City is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
+                Speed Ex Relocation Packers and Movers is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
               </p>
 
               <ul className="about-list">
@@ -388,7 +388,7 @@ export default function HomePage() {
                   <div className="img-wrapper">
                     <img
                       src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
-                      alt="About HSM Packers and Movers Electronic City"
+                      alt="About Speed Ex Relocation Packers and Movers"
                     />
                     <div className="exp-badge">
                       <span className="years">10+</span>
@@ -411,55 +411,55 @@ export default function HomePage() {
           <div className="section-header text-center">
             <span className="sub-title">Areas We Serve</span>
             <TextAnime>
-              <h2>Packers and Movers in Bengaluru – All Areas</h2>
+              <h2>Packers and Movers – Nationwide Network</h2>
             </TextAnime>
-            <p>HSM Packers and Movers Electronic City provides reliable house shifting, office relocation and vehicle transport across all areas of Bengaluru.</p>
+            <p>Speed Ex Relocation Packers and Movers provides reliable house shifting, office relocation and vehicle transport across all major cities and hubs.</p>
           </div>
 
           <div className="cities-grid">
             <Link href="/packers-and-movers-in-electronic-city" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Electronic City</h3>
+              <h3>Packers and Movers in Aslali Ahmedabad</h3>
             </Link>
             <Link href="/packers-and-movers-in-begur" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Begur</h3>
+              <h3>Packers and Movers in SG Highway</h3>
             </Link>
             <Link href="/packers-and-movers-in-bellandur" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Bellandur</h3>
+              <h3>Packers and Movers in Satellite</h3>
             </Link>
             <Link href="/packers-and-movers-in-marathahalli" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Marathahalli</h3>
+              <h3>Packers and Movers in Prahlad Nagar</h3>
             </Link>
             <Link href="/packers-and-movers-in-bommasandra" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Bommasandra</h3>
+              <h3>Packers and Movers in Narol</h3>
             </Link>
             <Link href="/packers-and-movers-in-hulimangala" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Hulimangala</h3>
+              <h3>Packers and Movers in Changodar</h3>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 8. The HSM Assurance - Modern Asymmetric Split Design */}
+      {/* 8. The Speed Ex Assurance - Modern Asymmetric Split Design */}
       <section className="section" style={{ background: '#f8fafc', padding: '95px 0', borderTop: '1px solid #e2e8f0', position: 'relative', overflow: 'hidden' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
             
             {/* Left Column: Brand Statement & Highlights */}
             <div>
-              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>THE HSM ASSURANCE</span>
+              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>THE SPEED EX ASSURANCE</span>
               <TextAnime>
                 <h2 style={{ fontSize: 'clamp(2.1rem, 3.8vw, 2.8rem)', fontWeight: 800, color: '#0b2b3c', lineHeight: 1.25, marginBottom: '1.25rem' }}>
-                  Safety, Timeliness & Complete Peace of Mind
+                  Safety, Timeliness &amp; Complete Peace of Mind
                 </h2>
               </TextAnime>
               <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Every house shifting, office relocation, and vehicle transit project with HSM Packers and Movers Electronic City is backed by strict quality controls, trained moving staff, and insured handling.
+                Every house shifting, office relocation, and vehicle transit project with Speed Ex Relocation Packers and Movers is backed by strict quality controls, trained moving staff, and insured handling.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2.5rem' }}>
@@ -467,20 +467,20 @@ export default function HomePage() {
                   <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0 }}>
                     <i className="fa-solid fa-check"></i>
                   </div>
-                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>ISO Certified Packing Standards & Wooden Crating</span>
+                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>ISO Certified Packing Standards &amp; Wooden Crating</span>
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', background: '#ffffff', padding: '0.9rem 1.25rem', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
                   <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.9rem', flexShrink: 0 }}>
                     <i className="fa-solid fa-check"></i>
                   </div>
-                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>Live GPS Shipment Tracking & Real-Time Updates</span>
+                  <span style={{ fontWeight: 700, color: '#0b2b3c', fontSize: '0.98rem' }}>Live GPS Shipment Tracking &amp; Real-Time Updates</span>
                 </div>
               </div>
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
                 <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Get Free Quote</Link>
-                <a href="tel:09980303730" className="btn btn-navy" data-cursor-text="CALL">Call 099803 03730</a>
+                <a href="tel:09624644006" className="btn btn-navy" data-cursor-text="CALL">Call 9624644006</a>
               </div>
             </div>
 

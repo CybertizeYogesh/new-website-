@@ -22,16 +22,21 @@ export default function Footer() {
             <Link href="/" className="footer-logo">
               <Image 
                 src="/assets/images/logo.png" 
-                alt="HSM Packers and Movers Electronic City" 
+                alt="Speed Ex Relocation Packers and Movers" 
                 width={190} 
                 height={60} 
                 className="footer-logo-img" 
               />
             </Link>
             <p className="footer-bio">
-              HSM Packers and Movers Electronic City is India’s premier relocation partner, ensuring 100% safe, seamless, and stress-free house shifting, office moving, and vehicle transport.
+              Speed Ex Relocation Packers and Movers is India’s premier relocation partner, ensuring 100% safe, seamless, and stress-free house shifting, office moving, and vehicle transport.
             </p>
-            <div className="footer-social-glow">
+            <div style={{ marginTop: '1rem', color: '#cbd5e1', fontSize: '0.88rem', lineHeight: '1.6' }}>
+              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-location-dot" style={{ color: '#ff4d26', marginRight: '8px' }}></i> B 107, Bijal Business Centre, Aslali Circle, Aslali, Ahmedabad - 382427</p>
+              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-phone" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="tel:09624644006" style={{ color: '#ffffff' }}>9624644006</a> / <a href="tel:09211206101" style={{ color: '#ffffff' }}>9211206101</a></p>
+              <p><i className="fa-solid fa-envelope" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="mailto:speedexrelocation3@gmail.com" style={{ color: '#ffffff' }}>speedexrelocation3@gmail.com</a></p>
+            </div>
+            <div className="footer-social-glow" style={{ marginTop: '1.2rem' }}>
               <a href="#" aria-label="Facebook" className="social-btn"><i className="fa-brands fa-facebook-f"></i></a>
               <a href="#" aria-label="Twitter" className="social-btn"><i className="fa-brands fa-twitter"></i></a>
               <a href="#" aria-label="Instagram" className="social-btn"><i className="fa-brands fa-instagram"></i></a>
@@ -67,16 +72,16 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Bengaluru Suburbs Column & Newsletter */}
+          {/* Ahmedabad Areas Column & Newsletter */}
           <div className="footer-col">
-            <h4 className="footer-heading">Bengaluru Suburbs</h4>
+            <h4 className="footer-heading">Ahmedabad Areas</h4>
             <ul className="footer-links-list" style={{ marginBottom: '2rem' }}>
-              <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Electronic City</Link></li>
-              <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> Begur</Link></li>
-              <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Bellandur</Link></li>
-              <li><Link href="/packers-and-movers-in-bommasandra"><i className="fa-solid fa-location-dot link-icon"></i> Bommasandra</Link></li>
-              <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Hulimangala</Link></li>
-              <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Marathahalli</Link></li>
+              <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Aslali Circle</Link></li>
+              <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> SG Highway</Link></li>
+              <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Satellite</Link></li>
+              <li><Link href="/packers-and-movers-in-bommasandra"><i className="fa-solid fa-location-dot link-icon"></i> Prahlad Nagar</Link></li>
+              <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Narol</Link></li>
+              <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Changodar</Link></li>
             </ul>
 
             <div className="footer-newsletter">
@@ -93,7 +98,7 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="footer-bottom-bar">
           <p>
-            &copy; {currentYear} <strong>HSM Packers and Movers Electronic City</strong>. All Rights Reserved. <br />
+            &copy; {currentYear} <strong>Speed Ex Relocation Packers and Movers</strong>. All Rights Reserved. <br />
             Developed &amp; Designed By{' '}
             <a 
               href="https://altgs.in" 

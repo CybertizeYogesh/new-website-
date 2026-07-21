@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Bike Transportation | HSM Packers and Movers Electronic City',
+  title: 'Bike Transportation | Speed Ex Relocation Packers and Movers',
   description: 'Scratch-free two-wheeler & bike transport services across India with closed container carriers.',
   keywords: 'bike transport bengaluru, bike shifting electronic city, two wheeler transport india, motor bike relocation',
 };
@@ -34,7 +34,7 @@ export default function BikeTransportationPage() {
               <span className="sub-title">Two-Wheeler Moving</span>
               <h2>Safe &amp; Scratch-Free Bike Transport</h2>
               <p>
-                Your two-wheeler is a valuable asset. HSM Packers and Movers Electronic City provides specialized bike transportation services using high-quality protective wrapping materials and specialized vehicle containers.
+                Your two-wheeler is a valuable asset. Speed Ex Relocation Packers and Movers provides specialized bike transportation services using high-quality protective wrapping materials and specialized vehicle containers.
               </p>
               <p>
                 We cover bikes of all types—from standard commuter motorcycles to premium sports bikes and scooters—ensuring safe transit without a single scratch.

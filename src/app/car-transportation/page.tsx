@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Car Transportation | HSM Packers and Movers Electronic City',
-  description: 'Reliable car carrier and car transportation services in Bengaluru for hassle-free pan-India delivery.',
-  keywords: 'car transport bengaluru, car carrier electronic city, car shifting services, luxury car transport india',
+  title: 'Car Transportation | Speed Ex Relocation Packers and Movers',
+  description: 'Enclosed car container transport services across India with door-to-door delivery and live tracking.',
+  keywords: 'car transport bengaluru, car shifting electronic city, car carrier container india',
 };
 
 export default function CarTransportationPage() {

@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms and conditions | HSM Packers and Movers Electronic City',
-  description: 'Terms and Conditions of HSM Packers and Movers Electronic City regarding services, payments, liability, and cancellations.',
-  keywords: 'HSM packers movers terms conditions, movers terms bengaluru, relocation service terms india',
+  title: 'Terms and Conditions | Speed Ex Relocation Packers and Movers',
+  description: 'Terms and Conditions of Speed Ex Relocation Packers and Movers regarding services, payments, liability, and cancellations.',
+  keywords: 'speed ex relocation terms conditions, movers terms ahmedabad, relocation service terms india',
 };
 
 export default function TermsAndConditionsPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -20,20 +20,18 @@ export default function TermsAndConditionsPage() {
         color: 'white',
       }}>
         <div className="container">
-          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Terms and Conditions</h1>
+          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Terms &amp; Conditions</h1>
           <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.9rem' }}>
-            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span style={{ color: 'var(--accent-color)' }}>Terms and Conditions</span>
+            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span style={{ color: 'var(--accent-color)' }}>Terms &amp; Conditions</span>
           </div>
         </div>
       </header>
 
       <section className="section">
-        <div className="container">
-          <div className="about-content">
-            <h2 style={{ marginBottom: '1.5rem' }}>Terms and Conditions</h2>
-
-            <p>
-              Welcome to HSM Packers and Movers Electronic City. By accessing our website and using our services, you agree to comply with the following terms and conditions.
+        <div className="container" style={{ maxWidth: '900px' }}>
+          <div className="policy-content" style={{ lineHeight: 1.8, color: '#334155' }}>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+              Welcome to Speed Ex Relocation Packers and Movers. By accessing our website and using our services, you agree to comply with the following terms and conditions.
             </p>
             <br />
 

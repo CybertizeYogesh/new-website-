@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Network | HSM Packers and Movers Electronic City',
-  description: 'View our extensive network across India. HSM Packers and Movers Electronic City serves major areas in Bengaluru including Electronic City, Begur, Bellandur, Marathahalli, Bommasandra and Hulimangala.',
-  keywords: 'packers movers network india, HSM movers service area, bengaluru packers movers locations, pan india movers network',
+  title: 'Our Network | Speed Ex Relocation Packers and Movers',
+  description: 'View our extensive network across India. Speed Ex Relocation Packers and Movers serves major areas in Ahmedabad including Aslali, SG Highway, Satellite, Prahlad Nagar, Narol and Changodar.',
+  keywords: 'packers movers network india, speed ex relocation service area, ahmedabad packers movers locations, pan india movers network',
 };
 
 export default function NetworkPage() {
@@ -32,41 +32,41 @@ export default function NetworkPage() {
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Areas We Serve</span>
-            <h2>Packers and Movers in Bengaluru &ndash; All Areas</h2>
+            <h2>Packers and Movers in Ahmedabad &ndash; All Major Hubs</h2>
             <p>
-              HSM Packers and Movers Electronic City provides reliable house shifting, office relocation and vehicle transport across all major areas of Bengaluru. Click on your area to get details and rates.
+              Speed Ex Relocation Packers and Movers provides reliable house shifting, office relocation and vehicle transport across all major hubs in Ahmedabad and Gujarat.
             </p>
           </div>
 
           <div className="cities-grid">
             <Link href="/packers-and-movers-in-electronic-city" className="city-card fade-in-up">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Electronic City</h3>
+              <h3>Packers and Movers in Aslali Ahmedabad</h3>
             </Link>
 
             <Link href="/packers-and-movers-in-begur" className="city-card fade-in-up delay-1">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Begur</h3>
+              <h3>Packers and Movers in SG Highway</h3>
             </Link>
 
             <Link href="/packers-and-movers-in-bellandur" className="city-card fade-in-up delay-2">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Bellandur</h3>
+              <h3>Packers and Movers in Satellite</h3>
             </Link>
 
             <Link href="/packers-and-movers-in-marathahalli" className="city-card fade-in-up">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Marathahalli</h3>
+              <h3>Packers and Movers in Prahlad Nagar</h3>
             </Link>
 
             <Link href="/packers-and-movers-in-bommasandra" className="city-card fade-in-up delay-1">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Bommasandra</h3>
+              <h3>Packers and Movers in Narol</h3>
             </Link>
 
             <Link href="/packers-and-movers-in-hulimangala" className="city-card fade-in-up delay-2">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Hulimangala</h3>
+              <h3>Packers and Movers in Changodar</h3>
             </Link>
           </div>
         </div>

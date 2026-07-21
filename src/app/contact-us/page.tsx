@@ -4,9 +4,9 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | HSM Packers and Movers Electronic City',
-  description: 'Get in touch with HSM Packers and Movers Electronic City for quotes, queries, or support. We are available 24/7.',
-  keywords: 'contact HSM packers movers, packers movers phone number bengaluru, packers movers electronic city contact, shifting service enquiry bengaluru',
+  title: 'Contact Us | Speed Ex Relocation Packers and Movers',
+  description: 'Get in touch with Speed Ex Relocation Packers and Movers in Aslali, Ahmedabad for quotes, queries, or support. Call 9624644006 / 9211206101.',
+  keywords: 'contact speed ex relocation, packers movers phone number ahmedabad, packers movers aslali contact, shifting service enquiry ahmedabad',
 };
 
 export default function ContactUsPage() {
@@ -45,15 +45,15 @@ export default function ContactUsPage() {
                   <div className="icon"><i className="fa-solid fa-location-dot"></i></div>
                   <div className="details">
                     <h4>Head Office</h4>
-                    <p>No.93, Maragondanahalli, Hulimangala, Electronic City, Bommasandra, Bengaluru, Karnataka 560105</p>
+                    <p>B 107, Bijal Business Centre, Aslali Circle, Aslali, Ahmedabad, Gujarat - 382427</p>
                   </div>
                 </div>
 
                 <div className="contact-item" style={{ marginTop: '1rem' }}>
                   <div className="icon"><i className="fa-solid fa-phone"></i></div>
                   <div className="details">
-                    <h4>Phone Number</h4>
-                    <p><a href="tel:09980303730">099803 03730</a></p>
+                    <h4>Phone Numbers</h4>
+                    <p><a href="tel:09624644006">9624644006</a> / <a href="tel:09211206101">9211206101</a></p>
                   </div>
                 </div>
 
@@ -61,7 +61,7 @@ export default function ContactUsPage() {
                   <div className="icon"><i className="fa-solid fa-envelope"></i></div>
                   <div className="details">
                     <h4>Email Address</h4>
-                    <p><a href="mailto:info@hsmpackersandmovers.in">info@hsmpackersandmovers.in</a></p>
+                    <p><a href="mailto:speedexrelocation3@gmail.com">speedexrelocation3@gmail.com</a></p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function ContactUsPage() {
           <h3 className="text-center" style={{ marginBottom: '2rem' }}>Our Location</h3>
           <div style={{ height: '400px', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4386.6178143709585!2d77.64877111113913!3d12.829655887420545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6b225c41733f%3A0x4d6c3ea91c710c1!2sHsm%20packers%20and%20movers%20electronic%20city!5e1!3m2!1sen!2sin!4v1781079105787!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.3168877543883!2d72.58552197591605!3d22.938556519453714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8f4955555555%3A0x1111111111111111!2sAslali%20Circle%2C%20Aslali%2C%20Ahmedabad%2C%20Gujarat%20382427!5e0!3m2!1sen!2sin!4v1781080000000!5m2!1sen!2sin"
               width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
