@@ -6,6 +6,7 @@ import StatCounter from '@/components/StatCounter';
 import TextAnime from '@/components/TextAnime';
 import ImageReveal from '@/components/ImageReveal';
 import GatiTestimonials from '@/components/GatiTestimonials';
+import HeroVideoSection from '@/components/HeroVideoSection';
 
 export default function HomePage() {
   return (
@@ -19,7 +20,8 @@ export default function HomePage() {
         </defs>
       </svg>
 
-
+      {/* 1. Hero Video Section with user's video 1.mp4 and video 2.mp4 background */}
+      <HeroVideoSection />
 
       {/* 2. Why Choose Us Section - Modern 2-Column Split Showcase with why.gif */}
       <section className="features section" style={{ backgroundColor: '#f8fafc', padding: '90px 0', borderBottom: '1px solid #e2e8f0' }}>
