@@ -8,7 +8,7 @@ const testimonialsData = [
     name: 'Rahul Sharma',
     role: 'HOUSE SHIFTING',
     initials: 'RS',
-    text: 'Gati packers and movers Bangalore provided smooth home shifting service. Their packers and movers team packed, loaded and delivered our goods safely on time with professional support and careful handling.',
+    text: 'HSM Packers and Movers Electronic City provided smooth home shifting from Neeladri Nagar, Phase I to Whitefield. Their experienced moving team packed, loaded, and delivered our household goods safely on time with utmost care.',
     rating: 5,
   },
   {
@@ -16,7 +16,7 @@ const testimonialsData = [
     name: 'Lankhshit',
     role: 'OFFICE RELOCATION',
     initials: 'LK',
-    text: 'Gati packers and movers Bangalore delivered excellent home shifting support. Their packers and movers team handled packing, loading and transport safely while ensuring timely delivery and smooth relocation.',
+    text: 'HSM Packers and Movers Electronic City delivered excellent corporate office relocation. Their professional team handled server racks, IT desks, and office furniture safely while ensuring zero operational downtime.',
     rating: 5,
   },
   {
@@ -24,7 +24,7 @@ const testimonialsData = [
     name: 'Anjali Pareek',
     role: 'VEHICLE TRANSPORT',
     initials: 'AP',
-    text: 'Gati packers and movers Bangalore provide safe home shifting service for families across city areas. Gati packers and movers team carefully packs household goods and ensures secure transport for every relocation project.',
+    text: 'HSM Packers and Movers Electronic City provided safe car and bike transportation from Bengaluru to Delhi. Their team carefully loaded the vehicle onto an enclosed car carrier and delivered it spotless.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const testimonialsData = [
     name: 'Sandeep Verma',
     role: 'DOMESTIC MOVING',
     initials: 'SV',
-    text: 'Shifted my 3BHK household items from Electronic City, Bengaluru to Gurgaon. The team used heavy multi-layer bubble wrap and corrugated boxes for all electronics. Not a single scratch on my 65-inch OLED TV!',
+    text: 'Shifted my 3BHK household items from Neeladri Nagar, Electronic City to Gurgaon with HSM Packers and Movers Electronic City. The crew used multi-layer bubble wrapping and heavy corrugated boxes for all electronics. Not a single scratch!',
     rating: 5,
   },
   {
@@ -40,7 +40,7 @@ const testimonialsData = [
     name: 'Kavita Reddy',
     role: 'PACKING & UNPACKING',
     initials: 'KR',
-    text: 'Extremely polite and hardworking staff! They unpacked and arranged all heavy furniture in our new apartment in Bellandur within just a few hours. Highly recommended for hassle-free house shifting.',
+    text: 'Extremely polite and hardworking team from HSM Packers and Movers Electronic City! They unpacked and arranged all heavy furniture in our new flat in Bellandur within a few hours. Highly recommended for house shifting in Bengaluru.',
     rating: 5,
   },
   {
@@ -48,7 +48,7 @@ const testimonialsData = [
     name: 'Vikramaditya Nair',
     role: 'CAR TRANSPORTATION',
     initials: 'VN',
-    text: 'Booked enclosed car carrier transportation for my Honda City from Bangalore to Kochi. Received live tracking updates throughout transit. Car arrived spotless and right on schedule!',
+    text: 'Booked vehicle carrier transport for my Honda City from Electronic City Phase 1 branch of HSM Packers and Movers to Kochi. Received real-time GPS tracking updates throughout transit. Delivered right on schedule!',
     rating: 5,
   },
   {
@@ -56,7 +56,7 @@ const testimonialsData = [
     name: 'Pooja Deshmukh',
     role: 'WAREHOUSE STORAGE',
     initials: 'PD',
-    text: 'Stored our complete household items in their Electronic City warehouse facility for 4 months during house renovation. Everything remained dust-free, moisture-proof, and in pristine condition when delivered back.',
+    text: 'Stored our complete household items in the secure Electronic City warehouse of HSM Packers and Movers Electronic City for 4 months during home renovation. Everything remained dust-free, dry, and in pristine condition.',
     rating: 5,
   },
   {
@@ -64,7 +64,7 @@ const testimonialsData = [
     name: 'Rajesh R. Menon',
     role: 'INTERNATIONAL MOVING',
     initials: 'RM',
-    text: 'Phenomenal international shifting coordination from Bengaluru to Dubai. The team handled custom clearance documentation, sea freight wooden crating, and door-to-door delivery seamlessly.',
+    text: 'Phenomenal international relocation coordination by HSM Packers and Movers Electronic City from Bengaluru to Dubai. Handled customs documentation, heavy-duty wooden crating, and door delivery seamlessly.',
     rating: 5,
   },
 ];
@@ -91,7 +91,7 @@ export default function GatiTestimonials() {
 
   return (
     <section className="gati-testimonial-section" id="testimonials">
-      {/* Big Watermark Title matching Gati.com */}
+      {/* Big Watermark Title */}
       <div className="big-title-watermark">
         <h2>TESTIMONIALS</h2>
       </div>
@@ -163,7 +163,7 @@ export default function GatiTestimonials() {
             <div className="gati-testimonial-img-box">
               <img
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
-                alt="Packers and Movers Customer Service"
+                alt="HSM Packers and Movers Customer Service"
               />
             </div>
 
@@ -177,7 +177,7 @@ export default function GatiTestimonials() {
               </ul>
               <div className="badge-text-box">
                 <h3>Customer Satisfied</h3>
-                <p>4.8 (15k Reviews)</p>
+                <p>4.9 (15k Reviews)</p>
               </div>
             </div>
           </div>
