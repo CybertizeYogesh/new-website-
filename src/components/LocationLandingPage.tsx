@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import QuoteForm from '@/components/QuoteForm';
 import StatCounter from '@/components/StatCounter';
-import RateTable from '@/components/RateTable';
 
 interface LocationLandingPageProps {
   locationName: string;
@@ -118,9 +117,6 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
           </div>
         </div>
       </section>
-
-      {/* Rate List */}
-      <RateTable />
 
       {/* Other Network Cities */}
       <section className="section bg-light">
