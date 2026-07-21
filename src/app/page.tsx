@@ -366,127 +366,98 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Client Testimonials - Speedex Luxury Theme */}
-      <section className="testimonials-speedex-section" id="testimonials">
+      {/* 6. Client Testimonials - Gati Safe Packer Exact Redesign */}
+      <section className="gati-testimonial-section" id="testimonials">
+        <div className="big-watermark-title">TESTIMONIALS</div>
         <div className="container">
-          <div className="section-header text-center">
-            <div className="speedex-badge">
-              <i className="fa-solid fa-comments"></i> CLIENT TESTIMONIALS
-            </div>
-            <h2 className="speedex-title">
-              What Our Happy Clients Say About Us
-            </h2>
-          </div>
-
-          <div className="testimonials-grid">
-            {/* Testimonial 1 */}
-            <div className="testimonial-card fade-in-up" data-cursor-text="REVIEW">
-              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
-              <div className="testimonial-header">
-                <div className="testimonial-stars">
-                  <span>5.0</span>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <span className="testimonial-tag">House Shifting</span>
+          <div className="gati-testimonial-grid">
+            {/* Left Column: Title & Testimonial Card */}
+            <div className="gati-testimonial-left fade-in-left">
+              <div className="gati-tagline">
+                <div className="line"></div>
+                <i className="fa-solid fa-plane"></i> CLIENT TESTIMONIAL
               </div>
-              <p className="testimonial-text">
-                "HSM Packers and Movers Electronic City handled our complete 3BHK house shifting with utmost care. The multi-layer bubble wrapping of fragile glass items and heavy furniture was top-notch!"
-              </p>
-              <div className="testimonial-footer">
-                <div className="testimonial-avatar">RK</div>
-                <div>
-                  <h4 className="testimonial-author-name">Rahul Kumar</h4>
-                  <div className="testimonial-route">
-                    <i className="fa-solid fa-location-dot"></i> Bengaluru to Delhi
+              <h2 className="gati-testimonial-title">
+                What Our Customers <br /> Say <span>About Us</span>
+              </h2>
+
+              <div className="gati-testimonial-cards-wrapper">
+                {/* Single Testimonial Item 1 */}
+                <div className="gati-testimonial-single" data-cursor-text="REVIEW">
+                  <div className="gati-quote-icon">
+                    <i className="fa-solid fa-quote-right"></i>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="testimonial-card fade-in-up delay-1" data-cursor-text="REVIEW">
-              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
-              <div className="testimonial-header">
-                <div className="testimonial-stars">
-                  <span>5.0</span>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <span className="testimonial-tag">Vehicle Shifting</span>
-              </div>
-              <p className="testimonial-text">
-                "Transported my Hyundai Creta and Royal Enfield from Pune to Bangalore. I received real-time tracking updates throughout the transit. Delivered right on schedule without a single scratch!"
-              </p>
-              <div className="testimonial-footer">
-                <div className="testimonial-avatar">AS</div>
-                <div>
-                  <h4 className="testimonial-author-name">Amit Sharma</h4>
-                  <div className="testimonial-route">
-                    <i className="fa-solid fa-location-dot"></i> Pune to Bangalore
+                  <div className="gati-author-box">
+                    <div className="gati-author-avatar">RS</div>
+                    <div className="gati-author-info">
+                      <h3>Rahul Sharma</h3>
+                      <div className="gati-author-meta">
+                        <span className="gati-author-role">HOUSE SHIFTING</span>
+                        <div className="gati-rating-stars">
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                  <p className="gati-testimonial-text">
+                    "HSM Packers and Movers Electronic City provided smooth home shifting service. Their packers and movers team packed, loaded, and delivered our goods safely on time with professional support and careful handling."
+                  </p>
                 </div>
-              </div>
-            </div>
 
-            {/* Testimonial 3 */}
-            <div className="testimonial-card fade-in-up delay-2" data-cursor-text="REVIEW">
-              <i className="fa-solid fa-quote-right testimonial-quote-watermark"></i>
-              <div className="testimonial-header">
-                <div className="testimonial-stars">
-                  <span>5.0</span>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                  <i className="fa-solid fa-star"></i>
-                </div>
-                <span className="testimonial-tag">Corporate Relocation</span>
-              </div>
-              <p className="testimonial-text">
-                "Outstanding office relocation service! Their crew packed 60+ workstations and IT servers over the weekend with zero disruption to our Monday business operations. Truly professional!"
-              </p>
-              <div className="testimonial-footer">
-                <div className="testimonial-avatar">PS</div>
-                <div>
-                  <h4 className="testimonial-author-name">Priya Singh</h4>
-                  <div className="testimonial-route">
-                    <i className="fa-solid fa-briefcase"></i> IT Park, Electronic City
+                {/* Single Testimonial Item 2 */}
+                <div className="gati-testimonial-single" data-cursor-text="REVIEW">
+                  <div className="gati-quote-icon">
+                    <i className="fa-solid fa-quote-right"></i>
                   </div>
+                  <div className="gati-author-box">
+                    <div className="gati-author-avatar">AP</div>
+                    <div className="gati-author-info">
+                      <h3>Anjali Pareek</h3>
+                      <div className="gati-author-meta">
+                        <span className="gati-author-role">VEHICLE TRANSPORT</span>
+                        <div className="gati-rating-stars">
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                          <i className="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="gati-testimonial-text">
+                    "Very impressive service! Transported my car and household items safely across states. Gati safe packers team carefully packs household goods and ensures secure transport for every relocation project."
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Trust Bar Badges */}
-          <div className="testimonial-trust-bar">
-            <div className="trust-item">
-              <div className="trust-item-icon"><i className="fa-brands fa-google"></i></div>
-              <div>
-                <div className="trust-item-title">Google 4.9 ★ Rating</div>
-                <div className="trust-item-subtitle">1,250+ Verified Client Reviews</div>
+            {/* Right Column: Visual Showcase Image & Customer Satisfaction Badge */}
+            <div className="gati-testimonial-right fade-in-right">
+              <div className="gati-img-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
+                  alt="Customer Relocation Experience"
+                />
               </div>
-            </div>
 
-            <div className="trust-item">
-              <div className="trust-item-icon"><i className="fa-solid fa-shield-halved"></i></div>
-              <div>
-                <div className="trust-item-title">100% Transit Insurance</div>
-                <div className="trust-item-subtitle">Zero Damage Guarantee</div>
-              </div>
-            </div>
-
-            <div className="trust-item">
-              <div className="trust-item-icon"><i className="fa-solid fa-truck-ramp-box"></i></div>
-              <div>
-                <div className="trust-item-title">9,500+ Relocations</div>
-                <div className="trust-item-subtitle">Across India &amp; Worldwide</div>
+              {/* Floating Satisfaction Avatar Stack Badge */}
+              <div className="gati-satisfied-badge">
+                <div className="gati-avatar-stack">
+                  <div className="gati-avatar-stack-item">RK</div>
+                  <div className="gati-avatar-stack-item">AS</div>
+                  <div className="gati-avatar-stack-item">PS</div>
+                </div>
+                <div className="gati-satisfied-info">
+                  <h4>Customer Satisfied</h4>
+                  <p>
+                    <i className="fa-solid fa-star"></i> 4.8 (15k Reviews)
+                  </p>
+                </div>
               </div>
             </div>
           </div>

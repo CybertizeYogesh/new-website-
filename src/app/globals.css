@@ -1583,233 +1583,266 @@ img {
     font-size: 1.35rem;
 }
 
-/* ==========================================
-   SPEEDEX LUXURY TESTIMONIALS SECTION
-   ========================================== */
-.testimonials-speedex-section {
-    background-color: #0b2b3c;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1.2px, transparent 1.2px);
-    background-size: 30px 30px;
-    padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+/* ==========================================================================
+   GATI SAFE PACKER EXACT STYLED TESTIMONIAL SECTION
+   ========================================================================== */
+.gati-testimonial-section {
     position: relative;
+    padding: clamp(4.5rem, 8vw, 7.5rem) 0;
+    background-color: var(--light-bg);
     overflow: hidden;
-    color: #ffffff;
 }
 
-.testimonials-speedex-section::before {
-    content: '';
+.gati-testimonial-section .big-watermark-title {
     position: absolute;
-    top: -150px;
-    right: -150px;
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(circle, rgba(255, 77, 38, 0.15) 0%, transparent 70%);
+    top: 1.5rem;
+    left: 2rem;
+    font-size: clamp(4.5rem, 11vw, 9.5rem);
+    font-weight: 900;
+    font-family: var(--font-heading);
+    color: rgba(11, 43, 60, 0.045);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 1;
     pointer-events: none;
+    user-select: none;
     z-index: 0;
 }
 
-.testimonials-speedex-section::after {
-    content: '';
-    position: absolute;
-    bottom: -150px;
-    left: -150px;
-    width: 450px;
-    height: 450px;
-    background: radial-gradient(circle, rgba(16, 60, 83, 0.3) 0%, transparent 70%);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.testimonials-grid {
+.gati-testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(1.5rem, 3vw, 2.5rem);
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(2.5rem, 5vw, 5rem);
+    align-items: center;
     position: relative;
     z-index: 2;
-    margin-top: 3.5rem;
 }
 
-.testimonial-card {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1.5rem;
-    padding: clamp(1.75rem, 3.5vw, 2.25rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* Left Column: Title & Testimonial Cards Slider/List */
+.gati-testimonial-left {
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.45s ease, box-shadow 0.45s ease;
 }
 
-.testimonial-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(255, 77, 38, 0.45);
-    box-shadow: 0 30px 60px rgba(255, 77, 38, 0.15);
-}
-
-.testimonial-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, #ff4d26 0%, #0b2b3c 100%);
-    opacity: 0.8;
-}
-
-.testimonial-quote-watermark {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 3.8rem;
-    color: #ff4d26;
-    opacity: 0.15;
-    pointer-events: none;
-    line-height: 1;
-}
-
-.testimonial-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 1.25rem;
-}
-
-.testimonial-stars {
+.gati-tagline {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
-    background: rgba(245, 158, 11, 0.12);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    padding: 0.3rem 0.75rem;
-    border-radius: 50px;
-    color: #fbbf24;
+    gap: 10px;
+    color: var(--accent-color);
     font-size: 0.85rem;
-    font-weight: 700;
-}
-
-.testimonial-stars i {
-    color: #fbbf24;
-}
-
-.testimonial-tag {
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: rgba(255, 255, 255, 0.75);
-    background: rgba(255, 255, 255, 0.08);
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 0.75rem;
 }
 
-.testimonial-text {
-    color: rgba(241, 245, 249, 0.92);
-    font-size: 0.98rem;
-    line-height: 1.75;
-    font-weight: 400;
+.gati-tagline .line {
+    width: 35px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.gati-tagline i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.gati-testimonial-title {
+    font-size: clamp(2rem, 4.2vw, 3rem);
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1.2;
     margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
 }
 
-.testimonial-footer {
+.gati-testimonial-title span {
+    color: var(--accent-color);
+}
+
+/* Gati Testimonial Cards Container */
+.gati-testimonial-cards-wrapper {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding-top: 1.25rem;
-    margin-top: auto;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.testimonial-avatar {
-    width: 48px;
-    height: 48px;
+.gati-testimonial-single {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: clamp(1.75rem, 3.5vw, 2.25rem);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.gati-testimonial-single:hover {
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.gati-quote-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 77, 38, 0.1);
+    color: var(--accent-color);
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff4d26 0%, #0b2b3c 100%);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.35rem;
+}
+
+.gati-author-box {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.gati-author-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    color: var(--white);
     font-weight: 800;
-    font-size: 1.05rem;
-    color: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
     flex-shrink: 0;
 }
 
-.testimonial-author-name {
-    color: #ffffff !important;
-    font-size: 1.05rem;
+.gati-author-info h3 {
+    font-size: 1.15rem;
     font-weight: 800;
-    margin: 0 0 0.2rem 0;
+    color: var(--primary-color);
+    margin: 0 0 0.15rem 0;
+}
+
+.gati-author-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gati-author-role {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.gati-rating-stars {
+    display: flex;
+    gap: 3px;
+    color: #f59e0b;
+    font-size: 0.85rem;
+}
+
+.gati-testimonial-text {
+    color: var(--text-color);
+    font-size: 0.98rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Right Column: Visual Image & Floating Satisfaction Card */
+.gati-testimonial-right {
+    position: relative;
+}
+
+.gati-img-wrapper {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.gati-img-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Floating Satisfaction Badge (Matching Gati's C-1, C-2, C-3 stack + 4.8 Rating) */
+.gati-satisfied-badge {
+    position: absolute;
+    bottom: -25px;
+    left: 25px;
+    background: var(--white);
+    padding: 1.25rem 1.75rem;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 40px rgba(11, 43, 60, 0.18);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    z-index: 10;
+}
+
+.gati-avatar-stack {
+    display: flex;
+    align-items: center;
+}
+
+.gati-avatar-stack-item {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: var(--white);
+    font-weight: 800;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gati-avatar-stack-item:first-child {
+    margin-left: 0;
+}
+
+.gati-satisfied-info h4 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 0 0 0.1rem 0;
     line-height: 1.2;
 }
 
-.testimonial-route {
+.gati-satisfied-info p {
     font-size: 0.82rem;
-    color: rgba(203, 213, 225, 0.8);
+    color: var(--text-muted);
+    font-weight: 700;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.testimonial-route i {
-    color: #ff4d26;
-    font-size: 0.75rem;
-}
-
-.testimonial-trust-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(1.5rem, 4vw, 4rem);
-    margin-top: 4rem;
-    padding-top: 2.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    flex-wrap: wrap;
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.trust-item-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 77, 38, 0.15);
-    border: 1px solid rgba(255, 77, 38, 0.3);
-    color: #ff4d26;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-}
-
-.trust-item-title {
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 1.2;
-}
-
-.trust-item-subtitle {
-    font-size: 0.8rem;
-    color: rgba(203, 213, 225, 0.75);
+.gati-satisfied-info p i {
+    color: #f59e0b;
 }
 
 @media (max-width: 992px) {
-    .testimonials-grid {
+    .gati-testimonial-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 3.5rem;
+    }
+    .gati-img-wrapper img {
+        height: 380px;
     }
 }
 
