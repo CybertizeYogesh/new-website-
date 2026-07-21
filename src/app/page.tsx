@@ -51,41 +51,90 @@ export default function HomePage() {
         </div>
       </header>
 
-      {/* 2. Why Choose Us Section - Gradient Shading Pattern */}
-      <section className="features section bg-gradient-shading">
+      {/* 2. Why Choose Us Section - Redesigned 2-Column Layout */}
+      <section className="section bg-shading" id="why-us" style={{ padding: '90px 0' }}>
         <div className="container">
-          <div className="section-header text-center">
-            <span className="sub-title">Why Choose Us</span>
-            <TextAnime>
-              <h2>We Make Moving <span className="highlight">Easier</span></h2>
-            </TextAnime>
-            <p>Experience the difference with our premium relocation services designed for your peace of mind.</p>
-          </div>
-
-          <div className="grid-3">
-            <div className="feature-card fade-in-up" data-cursor-text="WHY US">
-              <div className="icon-box">
-                <i className="fa-solid fa-clock"></i>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
+            
+            {/* Left Side: Animated GIF Showcase */}
+            <div style={{ position: 'relative', textAlign: 'center' }}>
+              <div style={{
+                position: 'relative',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 40px rgba(11, 43, 60, 0.12)',
+                border: '4px solid #ffffff',
+                background: '#ffffff',
+                display: 'inline-block',
+                width: '100%',
+                maxWidth: '480px'
+              }}>
+                <Image
+                  src="/assets/images/why.gif"
+                  alt="Why Choose HSM Packers and Movers Electronic City"
+                  width={480}
+                  height={380}
+                  style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
+                  unoptimized
+                />
               </div>
-              <h3>Timely Delivery</h3>
-              <p>We respect your schedule, ensuring on-time pickup, transit, and delivery for a stress-free experience.</p>
             </div>
 
-            <div className="feature-card fade-in-up delay-1" data-cursor-text="SAFE">
-              <div className="icon-box">
-                <i className="fa-solid fa-shield-halved"></i>
+            {/* Right Side: Matching Website Content & Feature Cards */}
+            <div>
+              <div className="sec-title" style={{ marginBottom: '2rem' }}>
+                <span className="sub-title">WHY CHOOSE US</span>
+                <TextAnime>
+                  <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.6rem)', fontWeight: 800, color: '#0b2b3c', marginTop: '0.5rem', lineHeight: 1.25 }}>
+                    We Make Moving <span className="highlight" style={{ color: '#ff4d26' }}>Seamless &amp; Worry-Free</span>
+                  </h2>
+                </TextAnime>
+                <p style={{ color: '#64748b', fontSize: '1.02rem', marginTop: '0.75rem', lineHeight: 1.65 }}>
+                  Experience top-tier relocation with HSM Packers and Movers Electronic City. We combine professional packing materials, trained staff, and punctual transit to ensure 100% peace of mind.
+                </p>
               </div>
-              <h3>Safe &amp; Secure</h3>
-              <p>We ensure your belongings are packed, transported, and delivered safely using modern equipment.</p>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                
+                <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', background: '#ffffff', padding: '1.25rem 1.5rem', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 15px rgba(0,0,0,0.03)', transition: 'all 0.3s ease' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Timely Pickup &amp; Delivery</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.6, margin: 0 }}>
+                      We strictly respect your schedule, ensuring punctual packing, prompt loading, and on-time arrival.
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', background: '#ffffff', padding: '1.25rem 1.5rem', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 15px rgba(0,0,0,0.03)', transition: 'all 0.3s ease' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'rgba(11, 43, 60, 0.08)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-shield-halved"></i>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Safe &amp; Multi-Layer Packing</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.6, margin: 0 }}>
+                      Your belongings are packed using heavy corrugated boxes, bubble wrap, and wooden crates for 100% safety.
+                    </p>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'flex-start', background: '#ffffff', padding: '1.25rem 1.5rem', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 15px rgba(0,0,0,0.03)', transition: 'all 0.3s ease' }}>
+                  <div style={{ width: '52px', height: '52px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
+                    <i className="fa-solid fa-indian-rupee-sign"></i>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1.15rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Transparent &amp; Affordable Rates</h3>
+                    <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.6, margin: 0 }}>
+                      Enjoy honest, competitive pricing with detailed upfront quotes and zero hidden fees or surprises.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <div className="feature-card fade-in-up delay-2" data-cursor-text="BEST RATE">
-              <div className="icon-box">
-                <i className="fa-solid fa-indian-rupee-sign"></i>
-              </div>
-              <h3>Affordable Pricing</h3>
-              <p>Transparent, competitive rates providing excellent services without compromising quality.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -325,99 +374,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Redesigned 'Why Choose Us' Section */}
-      <section className="section" id="why-choose-us" style={{ background: '#ffffff', padding: '90px 0', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+      {/* 5. About Section - Split Card Layout */}
+      <section className="about section" id="about">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
-            
-            {/* Left Side: why.gif Image Showcase */}
-            <div className="fade-in-left" style={{ position: 'relative' }}>
-              <div style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', border: '1px solid #e2e8f0', boxShadow: '0 20px 40px rgba(11, 43, 60, 0.08)', background: '#f8fafc', padding: '1.25rem', textAlign: 'center' }}>
-                <img
-                  src="/assets/images/why.gif"
-                  alt="Why Choose HSM Packers and Movers Electronic City"
-                  style={{ width: '100%', height: 'auto', maxHeight: '480px', objectFit: 'contain', borderRadius: '16px' }}
-                />
-                
-                {/* Floating Experience Badge */}
-                <div style={{ position: 'absolute', bottom: '2rem', left: '2rem', background: 'var(--primary-color)', color: '#ffffff', padding: '1rem 1.35rem', borderRadius: '16px', boxShadow: '0 10px 25px rgba(11, 43, 60, 0.25)', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-                  <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'var(--accent-color)', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.35rem' }}>
-                    <i className="fa-solid fa-award"></i>
-                  </div>
-                  <div>
-                    <h4 style={{ fontSize: '1.2rem', fontWeight: 800, margin: 0, color: '#ffffff', lineHeight: 1.1 }}>10+ Years</h4>
-                    <p style={{ fontSize: '0.82rem', margin: 0, color: 'rgba(255, 255, 255, 0.8)' }}>Trusted Relocation</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side: Content Matching Website Design */}
-            <div className="fade-in-right">
-              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>WHY CHOOSE US</span>
+          <div className="about-grid">
+            <div className="about-content fade-in-right">
+              <span className="sub-title">About Company</span>
               <TextAnime>
-                <h2 style={{ fontSize: 'clamp(2.1rem, 3.8vw, 2.7rem)', fontWeight: 800, color: '#0b2b3c', lineHeight: 1.25, marginBottom: '1.25rem' }}>
-                  Why HSM Packers and Movers Electronic City is Your Best Choice
-                </h2>
+                <h2>Trusted Relocation Partner Since 2012</h2>
               </TextAnime>
-              <p style={{ color: '#64748b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-                We deliver stress-free home, office, and vehicle relocation services across Bengaluru and all over India with 100% goods safety, trained crew, and zero hidden costs.
+              <p>
+                HSM Packers and Movers Electronic City is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
               </p>
 
-              {/* 4 Feature Cards Grid */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem', marginBottom: '2.5rem' }}>
-                {/* Feature 1 */}
-                <div style={{ background: '#f8fafc', padding: '1.35rem 1.2rem', borderRadius: '16px', border: '1px solid #e2e8f0', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', marginBottom: '0.85rem' }}>
-                    <i className="fa-solid fa-user-shield"></i>
-                  </div>
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Trained Moving Crew</h3>
-                  <p style={{ color: '#64748b', fontSize: '0.86rem', lineHeight: 1.55, margin: 0 }}>
-                    Expert packers trained to handle heavy furniture, electronics & glassware carefully.
-                  </p>
-                </div>
+              <ul className="about-list">
+                <li><i className="fa-solid fa-circle-check"></i> 110+ Dedicated Team Members</li>
+                <li><i className="fa-solid fa-circle-check"></i> 9500+ Satisfied Clients</li>
+                <li><i className="fa-solid fa-circle-check"></i> 24/7 Customer Support</li>
+                <li><i className="fa-solid fa-circle-check"></i> Real-time Tracking</li>
+              </ul>
 
-                {/* Feature 2 */}
-                <div style={{ background: '#f8fafc', padding: '1.35rem 1.2rem', borderRadius: '16px', border: '1px solid #e2e8f0', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(11, 43, 60, 0.08)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', marginBottom: '0.85rem' }}>
-                    <i className="fa-solid fa-box-open"></i>
-                  </div>
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Premium Packing Materials</h3>
-                  <p style={{ color: '#64748b', fontSize: '0.86rem', lineHeight: 1.55, margin: 0 }}>
-                    Multi-layer bubble wraps, foam guards, stretch films & sturdy corrugated boxes.
-                  </p>
-                </div>
-
-                {/* Feature 3 */}
-                <div style={{ background: '#f8fafc', padding: '1.35rem 1.2rem', borderRadius: '16px', border: '1px solid #e2e8f0', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(11, 43, 60, 0.08)', color: '#0b2b3c', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', marginBottom: '0.85rem' }}>
-                    <i className="fa-solid fa-clock-rotate-left"></i>
-                  </div>
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>On-Time Guaranteed</h3>
-                  <p style={{ color: '#64748b', fontSize: '0.86rem', lineHeight: 1.55, margin: 0 }}>
-                    Dedicated GPS-tracked trucks ensure punctual pickup and door delivery.
-                  </p>
-                </div>
-
-                {/* Feature 4 */}
-                <div style={{ background: '#f8fafc', padding: '1.35rem 1.2rem', borderRadius: '16px', border: '1px solid #e2e8f0', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}>
-                  <div style={{ width: '46px', height: '46px', borderRadius: '12px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.25rem', marginBottom: '0.85rem' }}>
-                    <i className="fa-solid fa-hand-holding-dollar"></i>
-                  </div>
-                  <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.35rem' }}>Transparent Pricing</h3>
-                  <p style={{ color: '#64748b', fontSize: '0.86rem', lineHeight: 1.55, margin: 0 }}>
-                    100% upfront pricing quotation with zero hidden fees or unexpected charges.
-                  </p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
-                <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Book Your Move</Link>
-                <a href="tel:09980303730" className="btn btn-navy" data-cursor-text="CALL">Call Us: 099803 03730</a>
-              </div>
+              <Link href="/contact-us" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>Contact Us</Link>
             </div>
-
+            <div className="about-image fade-in-left">
+              <ImageReveal>
+                <figure className="image-anime" data-cursor-text="ABOUT">
+                  <div className="img-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
+                      alt="About HSM Packers and Movers Electronic City"
+                    />
+                    <div className="exp-badge">
+                      <span className="years">10+</span>
+                      <span className="text">Years of Experience</span>
+                    </div>
+                  </div>
+                </figure>
+              </ImageReveal>
+            </div>
           </div>
         </div>
       </section>
