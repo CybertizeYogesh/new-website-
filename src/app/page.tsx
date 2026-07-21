@@ -23,6 +23,24 @@ export default function HomePage() {
       <header className="hero hero-video-header" id="home" style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '150px 0 100px', textAlign: 'center' }}>
         {/* Logistics Video Background (HTML5 & HD Embed) */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              transform: 'translate(-50%, -50%)',
+            }}
+          >
+            <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
+          </video>
           <iframe
             src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A?autoplay=1&mute=1&loop=1&playlist=5qap5aO4i9A&controls=0&showinfo=0&rel=0&playsinline=1"
             title="Packers and Movers Logistics Video"
