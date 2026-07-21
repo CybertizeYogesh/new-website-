@@ -8,66 +8,48 @@ import Footer from '@/components/Footer';
 const galleryItems = [
   {
     id: 1,
-    category: 'packing',
-    title: 'Multi-Layer House Packing',
-    subtitle: 'Bubble wrapping fragile electronics & furniture',
     image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+    alt: 'House Shifting Packing',
   },
   {
     id: 2,
-    category: 'shifting',
-    title: 'Container Truck Loading',
-    subtitle: 'Safe loading with ramps & protective straps',
     image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop',
+    alt: 'Container Truck Loading',
   },
   {
     id: 3,
-    category: 'transportation',
-    title: 'Enclosed Car Carrier',
-    subtitle: 'Zero-scratch vehicle transportation nationwide',
     image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop',
+    alt: 'Enclosed Car Carrier',
   },
   {
     id: 4,
-    category: 'warehouse',
-    title: 'Secure Warehouse Storage',
-    subtitle: '24/7 CCTV surveillance & climate-controlled units',
     image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop',
+    alt: 'Secure Warehouse Storage',
   },
   {
     id: 5,
-    category: 'shifting',
-    title: 'Corporate Office Relocation',
-    subtitle: 'Systematic IT desk & server rack movement',
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop',
+    alt: 'Corporate Office Relocation',
   },
   {
     id: 6,
-    category: 'packing',
-    title: 'Wooden Crating for Delicate Items',
-    subtitle: 'Custom wooden box packing for TV & artwork',
     image: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop',
+    alt: 'Wooden Crating Packing',
   },
   {
     id: 7,
-    category: 'transportation',
-    title: 'Bike Express Carrier',
-    subtitle: 'Safe two-wheeler packing & doorstep delivery',
     image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop',
+    alt: 'Bike Express Carrier',
   },
   {
     id: 8,
-    category: 'shifting',
-    title: 'Intercity House Shifting',
-    subtitle: 'Full household relocation with dedicated truck',
     image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop',
+    alt: 'Intercity House Shifting Truck',
   },
   {
     id: 9,
-    category: 'warehouse',
-    title: 'Palletized Storage System',
-    subtitle: 'Clean & organized storage for long-term hold',
     image: 'https://images.unsplash.com/photo-1586528116493-a029325540fa?q=80&w=800&auto=format&fit=crop',
+    alt: 'Palletized Storage System',
   },
 ];
 
@@ -136,11 +118,11 @@ export default function GalleryPage() {
           </div>
         </section>
 
-        {/* Gallery Section */}
-        <section style={{ padding: '80px 0 110px' }}>
+        {/* Pure Image Grid Gallery Section */}
+        <section style={{ padding: '70px 0 100px' }}>
           <div className="container">
 
-            {/* Gallery Grid */}
+            {/* Pure Image Cards Grid */}
             <div
               style={{
                 display: 'grid',
@@ -153,62 +135,33 @@ export default function GalleryPage() {
                   key={item.id}
                   onClick={() => setSelectedImage(item)}
                   style={{
-                    background: '#ffffff',
+                    position: 'relative',
+                    height: '280px',
                     borderRadius: '20px',
                     overflow: 'hidden',
-                    border: '1px solid #e2e8f0',
-                    boxShadow: '0 8px 25px rgba(11, 43, 60, 0.05)',
+                    boxShadow: '0 8px 25px rgba(11, 43, 60, 0.08)',
                     cursor: 'pointer',
                     transition: 'transform 0.35s ease, box-shadow 0.35s ease',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-6px)';
-                    e.currentTarget.style.boxShadow = '0 18px 40px rgba(11, 43, 60, 0.12)';
+                    e.currentTarget.style.transform = 'translateY(-6px) scale(1.02)';
+                    e.currentTarget.style.boxShadow = '0 18px 40px rgba(11, 43, 60, 0.18)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = '0 8px 25px rgba(11, 43, 60, 0.05)';
+                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    e.currentTarget.style.boxShadow = '0 8px 25px rgba(11, 43, 60, 0.08)';
                   }}
                 >
-                  <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        transition: 'transform 0.5s ease',
-                      }}
-                    />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        top: '1rem',
-                        right: '1rem',
-                        background: 'rgba(11, 43, 60, 0.85)',
-                        color: '#ffffff',
-                        width: '38px',
-                        height: '38px',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        backdropFilter: 'blur(4px)',
-                      }}
-                    >
-                      <i className="fa-solid fa-expand" style={{ fontSize: '0.9rem' }}></i>
-                    </div>
-                  </div>
-
-                  <div style={{ padding: '1.5rem' }}>
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.4rem' }}>
-                      {item.title}
-                    </h3>
-                    <p style={{ color: '#64748b', fontSize: '0.9rem', margin: 0, lineHeight: 1.5 }}>
-                      {item.subtitle}
-                    </p>
-                  </div>
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      display: 'block',
+                    }}
+                  />
                 </div>
               ))}
             </div>
@@ -223,7 +176,7 @@ export default function GalleryPage() {
                   left: 0,
                   right: 0,
                   bottom: 0,
-                  background: 'rgba(11, 43, 60, 0.92)',
+                  background: 'rgba(11, 43, 60, 0.94)',
                   backdropFilter: 'blur(8px)',
                   zIndex: 9999,
                   display: 'flex',
@@ -236,25 +189,24 @@ export default function GalleryPage() {
                   onClick={(e) => e.stopPropagation()}
                   style={{
                     position: 'relative',
-                    maxWidth: '850px',
+                    maxWidth: '900px',
                     width: '100%',
-                    background: '#ffffff',
                     borderRadius: '24px',
                     overflow: 'hidden',
-                    boxShadow: '0 25px 60px rgba(0,0,0,0.4)',
+                    boxShadow: '0 25px 60px rgba(0,0,0,0.5)',
                   }}
                 >
                   <button
                     onClick={() => setSelectedImage(null)}
                     style={{
                       position: 'absolute',
-                      top: '1rem',
-                      right: '1rem',
+                      top: '1.25rem',
+                      right: '1.25rem',
                       background: '#ff4d26',
                       color: '#ffffff',
                       border: 'none',
-                      width: '40px',
-                      height: '40px',
+                      width: '42px',
+                      height: '42px',
                       borderRadius: '50%',
                       fontSize: '1.2rem',
                       cursor: 'pointer',
@@ -262,7 +214,7 @@ export default function GalleryPage() {
                       alignItems: 'center',
                       justifyContent: 'center',
                       zIndex: 10,
-                      boxShadow: '0 4px 15px rgba(255, 77, 38, 0.4)',
+                      boxShadow: '0 4px 15px rgba(255, 77, 38, 0.5)',
                     }}
                   >
                     <i className="fa-solid fa-xmark"></i>
@@ -270,52 +222,12 @@ export default function GalleryPage() {
 
                   <img
                     src={selectedImage.image}
-                    alt={selectedImage.title}
-                    style={{ width: '100%', maxHeight: '500px', objectFit: 'cover', display: 'block' }}
+                    alt={selectedImage.alt}
+                    style={{ width: '100%', maxHeight: '80vh', objectFit: 'contain', display: 'block', borderRadius: '24px' }}
                   />
-
-                  <div style={{ padding: '1.75rem 2rem' }}>
-                    <span style={{ color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', fontSize: '0.82rem', letterSpacing: '1px' }}>
-                      {selectedImage.category}
-                    </span>
-                    <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: '#0b2b3c', marginTop: '0.25rem', marginBottom: '0.5rem' }}>
-                      {selectedImage.title}
-                    </h2>
-                    <p style={{ color: '#64748b', fontSize: '0.98rem', margin: 0 }}>
-                      {selectedImage.subtitle}
-                    </p>
-                  </div>
                 </div>
               </div>
             )}
-
-            {/* Bottom Call-To-Action Banner */}
-            <div
-              style={{
-                marginTop: '5rem',
-                background: 'linear-gradient(135deg, #0b2b3c 0%, #1e3a8a 100%)',
-                borderRadius: '24px',
-                padding: '3.5rem 2.5rem',
-                color: '#ffffff',
-                textAlign: 'center',
-                boxShadow: '0 15px 35px rgba(11, 43, 60, 0.2)',
-              }}
-            >
-              <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, marginBottom: '1rem', color: '#ffffff' }}>
-                Planning a Move? Get a Free Instant Quotation!
-              </h2>
-              <p style={{ color: '#cbd5e1', fontSize: '1.05rem', maxWidth: '600px', margin: '0 auto 2rem', lineHeight: 1.6 }}>
-                Experience stress-free shifting with Speed Ex Relocation Packers and Movers. Professional staff, safe packing, and dedicated transport.
-              </p>
-              <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                <Link href="/contact-us" className="btn btn-primary" style={{ padding: '0.85rem 2rem', fontSize: '1rem' }}>
-                  Get Free Quote
-                </Link>
-                <a href="tel:09624644006" className="btn btn-outline" style={{ padding: '0.85rem 2rem', fontSize: '1rem', color: '#ffffff', borderColor: '#ffffff' }}>
-                  <i className="fa-solid fa-phone" style={{ marginRight: '8px' }}></i> Call 9624644006
-                </a>
-              </div>
-            </div>
 
           </div>
         </section>
