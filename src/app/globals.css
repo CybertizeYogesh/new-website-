@@ -2341,3 +2341,99 @@ img {
     .logo-img { max-height: 40px; }
     .floating-btn { width: 44px; height: 44px; font-size: 19px; }
 }
+
+/* ==========================================================================
+   GATI SAFE PACKER STYLE COUNTER BOX (100% MATCH SCREENSHOT)
+   ========================================================================== */
+.gati-counter-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.gati-counter-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(11, 43, 60, 0.08);
+    border-color: #cbd5e1;
+}
+
+/* Corner Flag Accent */
+.gati-corner-flag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 18px 18px 0;
+    border-color: transparent #ff4d26 transparent transparent;
+}
+
+/* Left Icon Square Box */
+.gati-icon-square {
+    width: 72px;
+    height: 72px;
+    background: #f1f5f9;
+    color: #0b2b3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.1rem;
+    flex-shrink: 0;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.gati-counter-box:hover .gati-icon-square {
+    background: rgba(255, 77, 38, 0.1);
+    color: #ff4d26;
+}
+
+/* Right Content Column */
+.gati-counter-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gati-num-row {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.gati-num-val {
+    font-size: clamp(2.4rem, 3vw, 3.1rem);
+    font-weight: 800;
+    color: #0b2b3c;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.gati-num-plus {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ff4d26;
+    margin-left: 2px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+}
+
+.gati-counter-title {
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: #0b2b3c;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-top: 0.55rem;
+    line-height: 1.35;
+}
+

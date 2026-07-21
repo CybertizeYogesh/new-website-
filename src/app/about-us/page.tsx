@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ImageReveal from '@/components/ImageReveal';
-import StatCounter from '@/components/StatCounter';
+import StatCounter, { GatiCounterCard } from '@/components/StatCounter';
 import TextAnime from '@/components/TextAnime';
 
 export const metadata: Metadata = {
@@ -91,34 +91,31 @@ export default function AboutUsPage() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.75rem' }}>
-            <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)', transition: 'all 0.3s ease' }}>
-              <div style={{ width: '64px', height: '64px', borderRadius: '18px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', margin: '0 auto 1.25rem' }}>
-                <i className="fa-solid fa-award"></i>
-              </div>
-              <StatCounter target={10} suffix="+" label="Years Experience" />
-            </div>
-
-            <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)', transition: 'all 0.3s ease' }}>
-              <div style={{ width: '64px', height: '64px', borderRadius: '18px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', margin: '0 auto 1.25rem' }}>
-                <i className="fa-solid fa-face-smile"></i>
-              </div>
-              <StatCounter target={9.5} suffix="k+" label="Happy Clients" />
-            </div>
-
-            <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)', transition: 'all 0.3s ease' }}>
-              <div style={{ width: '64px', height: '64px', borderRadius: '18px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', margin: '0 auto 1.25rem' }}>
-                <i className="fa-solid fa-user-shield"></i>
-              </div>
-              <StatCounter target={110} suffix="+" label="Team Members" />
-            </div>
-
-            <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', padding: '2.5rem 1.5rem', borderRadius: '20px', textAlign: 'center', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)', transition: 'all 0.3s ease' }}>
-              <div style={{ width: '64px', height: '64px', borderRadius: '18px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.75rem', margin: '0 auto 1.25rem' }}>
-                <i className="fa-solid fa-map-location-dot"></i>
-              </div>
-              <StatCounter target={50} suffix="+" label="Cities Covered" />
-            </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.75rem' }}>
+            <GatiCounterCard
+              target={110}
+              suffix="+"
+              label="DISTRIBUTION CENTER"
+              iconClass="fa-solid fa-boxes-packing"
+            />
+            <GatiCounterCard
+              target={50}
+              suffix="+"
+              label="CITIES &amp; REGIONS"
+              iconClass="fa-solid fa-earth-americas"
+            />
+            <GatiCounterCard
+              target={10}
+              suffix="+"
+              label="YEARS OF EXPERIENCE"
+              iconClass="fa-solid fa-award"
+            />
+            <GatiCounterCard
+              target={9.5}
+              suffix="k+"
+              label="HAPPY CLIENTS"
+              iconClass="fa-solid fa-users-gear"
+            />
           </div>
         </div>
       </section>
