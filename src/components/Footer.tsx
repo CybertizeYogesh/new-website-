@@ -117,7 +117,7 @@ export default function Footer() {
           <p style={{ margin: 0 }}>
             &copy; Copyright {currentYear} speed ex relocation Packers &amp; Movers All Rights Reserved
           </p>
-          <p style={{ margin: 0 }}>
+          <p style={{ margin: 0, paddingRight: '7rem' }}>
             Developed by{' '}
             <a 
               href="https://cybertizegrowth.com/" 
