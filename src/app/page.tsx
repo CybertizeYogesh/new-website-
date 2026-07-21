@@ -530,6 +530,50 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 9. SEO Keyword Rich Feature Section */}
+      <section className="section" style={{ backgroundColor: '#ffffff', padding: '80px 0', borderTop: '1px solid #e2e8f0' }}>
+        <div className="container">
+          <div className="section-header text-center" style={{ marginBottom: '3rem' }}>
+            <span className="sub-title">Top Rated Relocation Services</span>
+            <TextAnime>
+              <h2>Best Packers and Movers in Ahmedabad &amp; India</h2>
+            </TextAnime>
+            <p style={{ maxWidth: '800px', margin: '0 auto', color: '#64748b' }}>
+              Speed Ex Relocation is a licensed <strong>transport logistics company</strong> and <strong>shifting company</strong> providing complete <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> across Ahmedabad and pan-India.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <i className="fa-solid fa-house" style={{ color: '#ff4d26' }}></i> Household Shifting Services Near Me
+              </h3>
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
+                Looking for <strong>household shifting services near me</strong> or the <strong>best packers and movers</strong> in your area? Our experienced <strong>relocation movers near me</strong> provide end-to-end packing, loading, transport, and unloading for 1BHK, 2BHK, 3BHK, and villa moves.
+              </p>
+            </div>
+
+            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <i className="fa-solid fa-building" style={{ color: '#ff4d26' }}></i> Corporate Office Moving Services
+              </h3>
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
+                As an accredited <strong>shifting company</strong> and <strong>transport logistics company</strong>, we deliver structured <strong>office moving services</strong> for IT companies, corporate headquarters, and retail businesses with zero operational downtime.
+              </p>
+            </div>
+
+            <div style={{ background: '#f8fafc', padding: '2rem', borderRadius: '16px', border: '1px solid #e2e8f0' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <i className="fa-solid fa-car" style={{ color: '#ff4d26' }}></i> Vehicle Moving Services &amp; Logistics
+              </h3>
+              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.75, margin: 0 }}>
+                Trust the top <strong>packers and movers ahmedabad</strong> for specialized car carriers and enclosed bike carriers. Our <strong>vehicle moving services</strong> ensure scratch-free intercity vehicle transport across all major hubs in India.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

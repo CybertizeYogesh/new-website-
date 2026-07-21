@@ -18,13 +18,12 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
         </div>
         <div className="container hero-content">
           <div className="hero-text fade-in-up">
-            <span className="badge">#1 Trusted Packers &amp; Movers</span>
+            <span className="badge">#1 Best Packers and Movers Ahmedabad</span>
             <h1>
               Packers and Movers in <span className="text-gradient">{locationName}</span>
             </h1>
             <p>
-              Expert house relocation, office shifting, and vehicle transport services across India and
-              internationally. We handle your belongings with the utmost care and precision.
+              Looking for the best packers and movers in {locationName}? As a premier transport logistics company and shifting company, Speed Ex Relocation provides top household shifting services near me, office moving services, and vehicle moving services with 100% safety.
             </p>
 
             <div className="hero-stats">
