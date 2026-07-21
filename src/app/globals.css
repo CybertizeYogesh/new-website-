@@ -115,20 +115,31 @@ body {
     font-family: var(--font-heading);
 }
 
-/* ==========================================
-   SPEEDEX RELOCATION BUTTON HOVER SYSTEM
-   Rule 1: Buttons with Red (#ff4d26) or Navy (#0b2b3c) background -> TURN PURE WHITE (#ffffff) on hover with Navy Blue (#0b2b3c) text!
-   Rule 2: Buttons with White (#ffffff) background -> TURN DARK NAVY BLUE (#0b2b3c) on hover with Pure White (#ffffff) text!
-   ========================================== */
+/* ==========================================================================
+   SPEEDEX DUAL-STATE BUTTON HOVER SYSTEM (EVERYWHERE ON THE WEBSITE)
+   --------------------------------------------------------------------------
+   RULE 1 (Colored Buttons: Red #ff4d26 / Dark Navy #0b2b3c / Accent):
+   - Default: Colored Background + Crisp White (#ffffff) Text.
+   - On Hover: Background TURNS PURE WHITE (#ffffff), Text & Icons TURN DARK NAVY BLUE (#0b2b3c)!
 
+   RULE 2 (White Background Buttons: #ffffff / .btn-white / .btn-light):
+   - Default: Pure White (#ffffff) Background + Dark Navy Blue (#0b2b3c) Text.
+   - On Hover: Background TURNS DARK NAVY BLUE (#0b2b3c), Text & Icons TURN PURE WHITE (#ffffff)!
+   ========================================================================== */
+
+/* --- 1. BASE BUTTON STYLING --- */
 .btn,
 .btn-default,
 .btn-primary,
 .btn-secondary,
-.btn-outline,
 .btn-navy,
+.btn-accent,
+.btn-outline,
 .btn-white,
-.btn-light {
+.btn-light,
+button[type="submit"],
+.form-card button,
+.newsletter-form button {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -149,18 +160,35 @@ body {
     text-decoration: none !important;
 }
 
-/* 1. Primary Red Buttons */
+/* --- 2. RULE 1: COLORED BUTTONS (RED / NAVY / ACCENT / SUBMIT) --- */
 .btn,
 .btn-default,
-.btn-primary {
-    background: var(--accent-color);
+.btn-primary,
+.btn-secondary,
+.btn-navy,
+.btn-accent,
+button[type="submit"],
+.form-card button {
+    background-color: var(--accent-color);
     color: #ffffff !important;
     border-color: var(--accent-color);
 }
 
+.btn-secondary,
+.btn-navy {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Curtain Wipe Effect for Colored Buttons (Wipes WHITE) */
 .btn::after,
 .btn-default::after,
-.btn-primary::after {
+.btn-primary::after,
+.btn-secondary::after,
+.btn-navy::after,
+.btn-accent::after,
+button[type="submit"]::after,
+.form-card button::after {
     content: '';
     display: block;
     position: absolute;
@@ -170,16 +198,22 @@ body {
     right: 0;
     width: 0;
     height: 106%;
-    background: #ffffff;
+    background-color: #ffffff !important; /* Wipes with Crisp White */
     transform: skew(30deg);
     transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: -1;
 }
 
+/* HOVER: Colored Buttons TURN PURE WHITE (#ffffff) with Dark Navy (#0b2b3c) Text */
 .btn:hover,
 .btn-default:hover,
-.btn-primary:hover {
-    background: #ffffff !important;
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-navy:hover,
+.btn-accent:hover,
+button[type="submit"]:hover,
+.form-card button:hover {
+    background-color: #ffffff !important;
     color: var(--primary-color) !important;
     border-color: #ffffff !important;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
@@ -188,7 +222,12 @@ body {
 
 .btn:hover::after,
 .btn-default:hover::after,
-.btn-primary:hover::after {
+.btn-primary:hover::after,
+.btn-secondary:hover::after,
+.btn-navy:hover::after,
+.btn-accent:hover::after,
+button[type="submit"]:hover::after,
+.form-card button:hover::after {
     width: 130%;
     transform: skew(0deg);
     left: 0;
@@ -196,66 +235,26 @@ body {
 
 .btn:hover *,
 .btn-default:hover *,
-.btn-primary:hover * {
-    color: var(--primary-color) !important;
-}
-
-/* 2. Secondary / Dark Navy Buttons */
-.btn-secondary,
-.btn-navy {
-    background: var(--primary-color);
-    color: #ffffff !important;
-    border-color: var(--primary-color);
-}
-
-.btn-secondary::after,
-.btn-navy::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -15%;
-    right: 0;
-    width: 0;
-    height: 106%;
-    background: #ffffff;
-    transform: skew(30deg);
-    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: -1;
-}
-
-.btn-secondary:hover,
-.btn-navy:hover {
-    background: #ffffff !important;
-    color: var(--primary-color) !important;
-    border-color: #ffffff !important;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
-}
-
-.btn-secondary:hover::after,
-.btn-navy:hover::after {
-    width: 130%;
-    transform: skew(0deg);
-    left: 0;
-}
-
+.btn-primary:hover *,
 .btn-secondary:hover *,
-.btn-navy:hover * {
+.btn-navy:hover *,
+.btn-accent:hover *,
+button[type="submit"]:hover *,
+.form-card button:hover * {
     color: var(--primary-color) !important;
 }
 
-/* 3. WHITE BACKGROUND BUTTONS (Normal state = White #ffffff -> Hover state = Dark Navy Blue #0b2b3c) */
+/* --- 3. RULE 2: WHITE BACKGROUND BUTTONS (.btn-white, .btn-light) --- */
 .btn-white,
 .btn-light,
 button.btn-white,
 a.btn-white {
-    background: #ffffff !important;
+    background-color: #ffffff !important;
     color: var(--primary-color) !important;
-    border: 2px solid #ffffff;
+    border-color: #ffffff !important;
 }
 
+/* Curtain Wipe Effect for White Buttons (Wipes DARK NAVY BLUE #0b2b3c) */
 .btn-white::after,
 .btn-light::after {
     content: '';
@@ -267,17 +266,18 @@ a.btn-white {
     right: 0;
     width: 0;
     height: 106%;
-    background: var(--primary-color) !important; /* Wipes with Dark Speedex Navy #0b2b3c */
+    background-color: var(--primary-color) !important; /* Wipes with Dark Navy Blue #0b2b3c */
     transform: skew(30deg);
     transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: -1;
 }
 
+/* HOVER: White Buttons TURN DARK NAVY BLUE (#0b2b3c) with Pure White (#ffffff) Text */
 .btn-white:hover,
 .btn-light:hover,
 button.btn-white:hover,
 a.btn-white:hover {
-    background: var(--primary-color) !important; /* TURNS BLUE (#0b2b3c) ON HOVER */
+    background-color: var(--primary-color) !important;
     color: #ffffff !important;
     border-color: var(--primary-color) !important;
     box-shadow: 0 12px 30px rgba(11, 43, 60, 0.35);
@@ -296,9 +296,9 @@ a.btn-white:hover {
     color: #ffffff !important;
 }
 
-/* 4. Outline Buttons */
+/* --- 4. RULE 3: OUTLINE BUTTONS (.btn-outline) --- */
 .btn-outline {
-    background: transparent;
+    background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.85);
     color: #ffffff !important;
 }
@@ -313,16 +313,17 @@ a.btn-white:hover {
     right: 0;
     width: 0;
     height: 106%;
-    background: var(--primary-color);
+    background-color: #ffffff !important;
     transform: skew(30deg);
     transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: -1;
 }
 
 .btn-outline:hover {
-    background: var(--primary-color) !important;
-    color: #ffffff !important;
-    border-color: var(--primary-color) !important;
+    background-color: #ffffff !important;
+    color: var(--primary-color) !important;
+    border-color: #ffffff !important;
+    transform: translateY(-2px);
 }
 
 .btn-outline:hover::after {
@@ -332,18 +333,20 @@ a.btn-white:hover {
 }
 
 .btn-outline:hover * {
-    color: #ffffff !important;
+    color: var(--primary-color) !important;
 }
 
-/* Smooth Arrow Nudge Animation */
+/* --- 5. ARROW ICON ANIMATION (ON HOVER) --- */
 .btn i,
 .btn-default i,
 .btn-primary i,
 .btn-secondary i,
-.btn-outline i,
 .btn-navy i,
+.btn-accent i,
+.btn-outline i,
 .btn-white i,
-.btn-light i {
+.btn-light i,
+button[type="submit"] i {
     color: inherit;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
 }
@@ -352,14 +355,16 @@ a.btn-white:hover {
 .btn-default:hover i,
 .btn-primary:hover i,
 .btn-secondary:hover i,
-.btn-navy:hover i {
+.btn-navy:hover i,
+.btn-accent:hover i,
+.btn-outline:hover i,
+button[type="submit"]:hover i {
     transform: translateX(6px);
     color: var(--primary-color) !important;
 }
 
 .btn-white:hover i,
-.btn-light:hover i,
-.btn-outline:hover i {
+.btn-light:hover i {
     transform: translateX(6px);
     color: #ffffff !important;
 }
