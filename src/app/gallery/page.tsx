@@ -4,51 +4,26 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const galleryItems = [
-  {
-    id: 1,
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
-    alt: 'House Shifting Packing',
-  },
-  {
-    id: 2,
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop',
-    alt: 'Container Truck Loading',
-  },
-  {
-    id: 3,
-    image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop',
-    alt: 'Enclosed Car Carrier',
-  },
-  {
-    id: 4,
-    image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop',
-    alt: 'Secure Warehouse Storage',
-  },
-  {
-    id: 5,
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop',
-    alt: 'Corporate Office Relocation',
-  },
-  {
-    id: 6,
-    image: 'https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop',
-    alt: 'Wooden Crating Packing',
-  },
-  {
-    id: 7,
-    image: 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop',
-    alt: 'Bike Express Carrier',
-  },
-  {
-    id: 8,
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800&auto=format&fit=crop',
-    alt: 'Intercity House Shifting Truck',
-  },
-  {
-    id: 9,
-    image: 'https://images.unsplash.com/photo-1586528116493-a029325540fa?q=80&w=800&auto=format&fit=crop',
-    alt: 'Palletized Storage System',
-  },
+  { id: 1, image: '/assets/gallery/g1.webp', alt: 'Speed Ex Relocation Packing Service 1' },
+  { id: 2, image: '/assets/gallery/g3.webp', alt: 'Speed Ex Relocation Packing Service 3' },
+  { id: 3, image: '/assets/gallery/g4.webp', alt: 'Speed Ex Relocation Packing Service 4' },
+  { id: 4, image: '/assets/gallery/g5.webp', alt: 'Speed Ex Relocation Packing Service 5' },
+  { id: 5, image: '/assets/gallery/g6.webp', alt: 'Speed Ex Relocation Packing Service 6' },
+  { id: 6, image: '/assets/gallery/g7.webp', alt: 'Speed Ex Relocation Packing Service 7' },
+  { id: 7, image: '/assets/gallery/g8.webp', alt: 'Speed Ex Relocation Packing Service 8' },
+  { id: 8, image: '/assets/gallery/14.jpeg', alt: 'Speed Ex Relocation House Shifting 14' },
+  { id: 9, image: '/assets/gallery/19.jpeg', alt: 'Speed Ex Relocation House Shifting 19' },
+  { id: 10, image: '/assets/gallery/25.jpg', alt: 'Speed Ex Relocation House Shifting 25' },
+  { id: 11, image: '/assets/gallery/26.jpg', alt: 'Speed Ex Relocation House Shifting 26' },
+  { id: 12, image: '/assets/gallery/33.jpg', alt: 'Speed Ex Relocation House Shifting 33' },
+  { id: 13, image: '/assets/gallery/345422581_202580665914685_1689944356770768685_n.jpg.jpeg', alt: 'Speed Ex Relocation Shifting Team' },
+  { id: 14, image: '/assets/gallery/features-v2-img1.webp', alt: 'Speed Ex Relocation Moving Feature 1' },
+  { id: 15, image: '/assets/gallery/features-v2-img2.webp', alt: 'Speed Ex Relocation Moving Feature 2' },
+  { id: 16, image: '/assets/gallery/features-v2-img3.webp', alt: 'Speed Ex Relocation Moving Feature 3' },
+  { id: 17, image: '/assets/gallery/features-v2-img4.webp', alt: 'Speed Ex Relocation Moving Feature 4' },
+  { id: 18, image: '/assets/gallery/g2.webp', alt: 'Speed Ex Relocation Packing Service 2' },
+  { id: 19, image: '/assets/gallery/26.jpeg', alt: 'Speed Ex Relocation House Shifting 26 Detail' },
+  { id: 20, image: '/assets/gallery/Increase-Sales.jpg', alt: 'Speed Ex Relocation Logistics Transport' },
 ];
 
 export default function GalleryPage() {
@@ -75,7 +50,7 @@ export default function GalleryPage() {
             right: 0,
             bottom: 0,
             opacity: 0.12,
-            backgroundImage: 'url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop")',
+            backgroundImage: 'url("/assets/gallery/g1.webp")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -135,6 +110,8 @@ export default function GalleryPage() {
                   borderRadius: '20px',
                   overflow: 'hidden',
                   boxShadow: '0 8px 25px rgba(11, 43, 60, 0.08)',
+                  border: '1px solid #e2e8f0',
+                  background: '#ffffff',
                   cursor: 'pointer',
                   transition: 'transform 0.35s ease, box-shadow 0.35s ease',
                 }}
