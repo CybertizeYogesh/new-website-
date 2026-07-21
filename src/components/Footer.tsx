@@ -38,62 +38,65 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links Column */}
-          <div className="footer-col">
-            <h4 className="footer-heading">Quick Links</h4>
-            <ul className="footer-links-list">
-              <li><Link href="/"><i className="fa-solid fa-chevron-right link-icon"></i> Home</Link></li>
-              <li><Link href="/about-us"><i className="fa-solid fa-chevron-right link-icon"></i> About Us</Link></li>
-              <li><Link href="/network-us"><i className="fa-solid fa-chevron-right link-icon"></i> Our Network</Link></li>
-              <li><Link href="/contact-us"><i className="fa-solid fa-chevron-right link-icon"></i> Contact Us</Link></li>
-              <li><Link href="/privacy-policy"><i className="fa-solid fa-chevron-right link-icon"></i> Privacy Policy</Link></li>
-              <li><Link href="/terms-and-conditions"><i className="fa-solid fa-chevron-right link-icon"></i> Terms &amp; Conditions</Link></li>
-            </ul>
-          </div>
+          {/* Right Section Columns Grouped */}
+          <div className="footer-right-group">
+            {/* Quick Links Column */}
+            <div className="footer-col">
+              <h4 className="footer-heading">Quick Links</h4>
+              <ul className="footer-links-list">
+                <li><Link href="/"><i className="fa-solid fa-chevron-right link-icon"></i> Home</Link></li>
+                <li><Link href="/about-us"><i className="fa-solid fa-chevron-right link-icon"></i> About Us</Link></li>
+                <li><Link href="/network-us"><i className="fa-solid fa-chevron-right link-icon"></i> Our Network</Link></li>
+                <li><Link href="/contact-us"><i className="fa-solid fa-chevron-right link-icon"></i> Contact Us</Link></li>
+                <li><Link href="/privacy-policy"><i className="fa-solid fa-chevron-right link-icon"></i> Privacy Policy</Link></li>
+                <li><Link href="/terms-and-conditions"><i className="fa-solid fa-chevron-right link-icon"></i> Terms &amp; Conditions</Link></li>
+              </ul>
+            </div>
 
-          {/* Our Services Column */}
-          <div className="footer-col">
-            <h4 className="footer-heading">Our Services</h4>
-            <ul className="footer-links-list">
-              <li><Link href="/house-relocation"><i className="fa-solid fa-box-open link-icon"></i> House Relocation</Link></li>
-              <li><Link href="/office-relocation"><i className="fa-solid fa-building link-icon"></i> Office Shifting</Link></li>
-              <li><Link href="/bike-transportation"><i className="fa-solid fa-motorcycle link-icon"></i> Bike Transportation</Link></li>
-              <li><Link href="/car-transportation"><i className="fa-solid fa-car-side link-icon"></i> Car Transportation</Link></li>
-              <li><Link href="/domestic-moving"><i className="fa-solid fa-truck-ramp-box link-icon"></i> Domestic Moving</Link></li>
-              <li><Link href="/international-moving"><i className="fa-solid fa-plane-departure link-icon"></i> International Moving</Link></li>
-              <li><Link href="/packing-unpacking"><i className="fa-solid fa-boxes-packing link-icon"></i> Packing &amp; Unpacking</Link></li>
-              <li><Link href="/warehouse-service"><i className="fa-solid fa-warehouse link-icon"></i> Warehouse Service</Link></li>
-            </ul>
-          </div>
+            {/* Our Services Column */}
+            <div className="footer-col">
+              <h4 className="footer-heading">Our Services</h4>
+              <ul className="footer-links-list">
+                <li><Link href="/house-relocation"><i className="fa-solid fa-box-open link-icon"></i> House Relocation</Link></li>
+                <li><Link href="/office-relocation"><i className="fa-solid fa-building link-icon"></i> Office Shifting</Link></li>
+                <li><Link href="/bike-transportation"><i className="fa-solid fa-motorcycle link-icon"></i> Bike Transportation</Link></li>
+                <li><Link href="/car-transportation"><i className="fa-solid fa-car-side link-icon"></i> Car Transportation</Link></li>
+                <li><Link href="/domestic-moving"><i className="fa-solid fa-truck-ramp-box link-icon"></i> Domestic Moving</Link></li>
+                <li><Link href="/international-moving"><i className="fa-solid fa-plane-departure link-icon"></i> International Moving</Link></li>
+                <li><Link href="/packing-unpacking"><i className="fa-solid fa-boxes-packing link-icon"></i> Packing &amp; Unpacking</Link></li>
+                <li><Link href="/warehouse-service"><i className="fa-solid fa-warehouse link-icon"></i> Warehouse Service</Link></li>
+              </ul>
+            </div>
 
-          {/* Ahmedabad Areas Column */}
-          <div className="footer-col">
-            <h4 className="footer-heading">Ahmedabad Areas</h4>
-            <ul className="footer-links-list">
-              <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Aslali Circle</Link></li>
-              <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> SG Highway</Link></li>
-              <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Satellite</Link></li>
-              <li><Link href="/packers-and-movers-in-bommasandra"><i className="fa-solid fa-location-dot link-icon"></i> Prahlad Nagar</Link></li>
-              <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Narol</Link></li>
-              <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Changodar</Link></li>
-            </ul>
-          </div>
+            {/* Ahmedabad Areas Column */}
+            <div className="footer-col">
+              <h4 className="footer-heading">Ahmedabad Areas</h4>
+              <ul className="footer-links-list">
+                <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Aslali Circle</Link></li>
+                <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> SG Highway</Link></li>
+                <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Satellite</Link></li>
+                <li><Link href="/packers-and-movers-in-bommasandra"><i className="fa-solid fa-location-dot link-icon"></i> Prahlad Nagar</Link></li>
+                <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Narol</Link></li>
+                <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Changodar</Link></li>
+              </ul>
+            </div>
 
-          {/* Newsletter Column - Right of Ahmedabad Areas */}
-          <div className="footer-col">
-            <h4 className="footer-heading">Newsletter</h4>
-            <p style={{ fontSize: '0.88rem', color: '#94a3b8', marginBottom: '1.25rem', lineHeight: 1.6 }}>
-              Subscribe for instant updates &amp; moving discounts.
-            </p>
-            <form onSubmit={(e) => e.preventDefault()} className="newsletter-form">
-              <input type="email" placeholder="Enter your email" required />
-              <button type="submit" aria-label="Subscribe"><i className="fa-solid fa-paper-plane"></i></button>
-            </form>
-            <div className="footer-social-glow" style={{ marginTop: '1.5rem' }}>
-              <a href="#" aria-label="Facebook" className="social-btn"><i className="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter" className="social-btn"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#" aria-label="Instagram" className="social-btn"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn" className="social-btn"><i className="fa-brands fa-linkedin-in"></i></a>
+            {/* Newsletter Column - Right of Ahmedabad Areas */}
+            <div className="footer-col">
+              <h4 className="footer-heading">Newsletter</h4>
+              <p style={{ fontSize: '0.88rem', color: '#94a3b8', marginBottom: '1.25rem', lineHeight: 1.6 }}>
+                Subscribe for instant updates &amp; moving discounts.
+              </p>
+              <form onSubmit={(e) => e.preventDefault()} className="newsletter-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit" aria-label="Subscribe"><i className="fa-solid fa-paper-plane"></i></button>
+              </form>
+              <div className="footer-social-glow" style={{ marginTop: '1.5rem' }}>
+                <a href="#" aria-label="Facebook" className="social-btn"><i className="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" className="social-btn"><i className="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram" className="social-btn"><i className="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn" className="social-btn"><i className="fa-brands fa-linkedin-in"></i></a>
+              </div>
             </div>
           </div>
         </div>

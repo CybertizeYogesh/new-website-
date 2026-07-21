@@ -2077,17 +2077,16 @@ img {
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 1.65fr 0.7fr 0.85fr 0.8fr 1.05fr;
-    gap: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(2rem, 4vw, 4rem);
     margin-bottom: 3.5rem;
 }
 
-.footer-grid > .footer-col:nth-child(2) {
-    margin-left: auto;
-}
-
 .footer-brand-card {
+    flex: 0 0 34%;
+    max-width: 390px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -2095,6 +2094,13 @@ img {
     border-radius: var(--radius-lg);
     border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: var(--shadow-lg);
+}
+
+.footer-right-group {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 0.85fr 1.1fr 1fr 1.1fr;
+    gap: clamp(1rem, 2vw, 1.75rem);
 }
 
 .footer-logo-img {
