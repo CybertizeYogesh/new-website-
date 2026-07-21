@@ -2096,6 +2096,15 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
+@media (min-width: 992px) {
+    .footer-brand-card {
+        margin-left: -3rem;
+    }
+    .footer-right-group {
+        margin-right: -2rem;
+    }
+}
+
 .footer-right-group {
     flex: 1;
     display: grid;
