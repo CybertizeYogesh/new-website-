@@ -116,9 +116,9 @@ body {
 }
 
 /* ==========================================
-   SPEEDEX RELOCATION EXACT BUTTON HOVER SYSTEM
-   When hovering over buttons, background turns PURE WHITE (#ffffff)
-   and text/icons turn DARK NAVY BLUE (#0b2b3c)!
+   COMPLETE BUTTON SYSTEM WITH ALL HOVER RULES
+   1. Red/Dark Buttons -> Turn PURE WHITE (#ffffff) on hover with Navy Blue (#0b2b3c) text
+   2. White Buttons -> Turn DARK NAVY BLUE (#0b2b3c) on hover with Pure White (#ffffff) text
    ========================================== */
 
 .btn,
@@ -126,7 +126,9 @@ body {
 .btn-primary,
 .btn-secondary,
 .btn-outline,
-.btn-navy {
+.btn-navy,
+.btn-white,
+.btn-light {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -147,7 +149,7 @@ body {
     text-decoration: none !important;
 }
 
-/* Primary Red Buttons */
+/* Base 1: Primary Red Buttons */
 .btn,
 .btn-default,
 .btn-primary {
@@ -156,7 +158,49 @@ body {
     border-color: var(--accent-color);
 }
 
-/* Secondary / Blue Navy Buttons */
+.btn::after,
+.btn-default::after,
+.btn-primary::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: #ffffff;
+    transform: skew(30deg);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: -1;
+}
+
+.btn:hover,
+.btn-default:hover,
+.btn-primary:hover {
+    background: #ffffff !important;
+    color: var(--primary-color) !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn:hover::after,
+.btn-default:hover::after,
+.btn-primary:hover::after {
+    width: 130%;
+    transform: skew(0deg);
+    left: 0;
+}
+
+.btn:hover *,
+.btn-default:hover *,
+.btn-primary:hover * {
+    color: var(--primary-color) !important;
+}
+
+/* Base 2: Secondary / Blue Navy Buttons */
 .btn-secondary,
 .btn-navy {
     background: var(--primary-color);
@@ -164,19 +208,7 @@ body {
     border-color: var(--primary-color);
 }
 
-/* Outline Buttons */
-.btn-outline {
-    background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.85);
-    color: #ffffff !important;
-}
-
-/* Curtain Wipe Fill Layer */
-.btn::after,
-.btn-default::after,
-.btn-primary::after,
 .btn-secondary::after,
-.btn-outline::after,
 .btn-navy::after {
     content: '';
     display: block;
@@ -187,18 +219,13 @@ body {
     right: 0;
     width: 0;
     height: 106%;
-    background: #ffffff; /* Curtain wipe fills with crisp White */
+    background: #ffffff;
     transform: skew(30deg);
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: -1;
 }
 
-/* HOVER STATES: Turn Button WHITE (#ffffff) with Dark Navy Blue (#0b2b3c) Text */
-.btn:hover,
-.btn-default:hover,
-.btn-primary:hover,
 .btn-secondary:hover,
-.btn-outline:hover,
 .btn-navy:hover {
     background: #ffffff !important;
     color: var(--primary-color) !important;
@@ -207,25 +234,101 @@ body {
     transform: translateY(-2px);
 }
 
-.btn:hover::after,
-.btn-default:hover::after,
-.btn-primary:hover::after,
 .btn-secondary:hover::after,
-.btn-outline:hover::after,
 .btn-navy:hover::after {
     width: 130%;
     transform: skew(0deg);
     left: 0;
 }
 
-/* All Inner Text & Icons inside Hovered Buttons MUST TURN DARK NAVY BLUE (#0b2b3c) */
-.btn:hover *,
-.btn-default:hover *,
-.btn-primary:hover *,
 .btn-secondary:hover *,
-.btn-outline:hover *,
 .btn-navy:hover * {
     color: var(--primary-color) !important;
+}
+
+/* Base 3: WHITE BACKGROUND BUTTONS -> Turns Dark Navy Blue (#0b2b3c) on Hover */
+.btn-white,
+.btn-light {
+    background: #ffffff !important;
+    color: var(--primary-color) !important;
+    border-color: #ffffff;
+}
+
+.btn-white::after,
+.btn-light::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--primary-color) !important; /* Wipes with Dark Navy Blue #0b2b3c */
+    transform: skew(30deg);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: -1;
+}
+
+.btn-white:hover,
+.btn-light:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 12px 30px rgba(11, 43, 60, 0.35);
+    transform: translateY(-2px);
+}
+
+.btn-white:hover::after,
+.btn-light:hover::after {
+    width: 130%;
+    transform: skew(0deg);
+    left: 0;
+}
+
+.btn-white:hover *,
+.btn-light:hover * {
+    color: #ffffff !important;
+}
+
+/* Base 4: Outline Buttons */
+.btn-outline {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    color: #ffffff !important;
+}
+
+.btn-outline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15%;
+    right: 0;
+    width: 0;
+    height: 106%;
+    background: var(--primary-color);
+    transform: skew(30deg);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: -1;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline:hover::after {
+    width: 130%;
+    transform: skew(0deg);
+    left: 0;
+}
+
+.btn-outline:hover * {
+    color: #ffffff !important;
 }
 
 /* Smooth Arrow Nudge Animation */
@@ -234,7 +337,9 @@ body {
 .btn-primary i,
 .btn-secondary i,
 .btn-outline i,
-.btn-navy i {
+.btn-navy i,
+.btn-white i,
+.btn-light i {
     color: inherit;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease;
 }
@@ -243,10 +348,16 @@ body {
 .btn-default:hover i,
 .btn-primary:hover i,
 .btn-secondary:hover i,
-.btn-outline:hover i,
 .btn-navy:hover i {
     transform: translateX(6px);
     color: var(--primary-color) !important;
+}
+
+.btn-white:hover i,
+.btn-light:hover i,
+.btn-outline:hover i {
+    transform: translateX(6px);
+    color: #ffffff !important;
 }
 
 .btn-block {
