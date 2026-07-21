@@ -410,16 +410,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Call to Action Banner */}
-      <section className="section" style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary-light))', color: 'white', textAlign: 'center' }}>
-        <div className="container">
-          <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '2.5rem' }}>Ready to Move?</h2>
-          <p style={{ color: '#cbd5e1', maxWidth: '600px', margin: '0 auto 2.5rem', fontSize: '1.1rem' }}>
-            Get a free, no-obligation quote today and experience the best relocation service in India.
-          </p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Get a Quote</Link>
-            <a href="tel:09980303730" className="btn btn-outline" data-cursor-text="CALL">Call Us Now</a>
+      {/* 8. Why Choose HSM Packers & Movers Guarantee Showcase */}
+      <section className="section" style={{ background: '#0b2b3c', color: 'white', position: 'relative', overflow: 'hidden', padding: '90px 0' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(255, 77, 38, 0.12) 1.2px, transparent 1.2px)', backgroundSize: '30px 30px', opacity: 0.5 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <div className="section-header text-center" style={{ marginBottom: '3.5rem' }}>
+            <span className="sub-title" style={{ background: 'rgba(255, 77, 38, 0.18)', color: '#ff4d26', border: '1px solid rgba(255, 77, 38, 0.4)' }}>
+              THE HSM ASSURANCE
+            </span>
+            <TextAnime>
+              <h2 style={{ color: '#ffffff', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 800 }}>
+                Why Thousands Trust HSM Packers and Movers Electronic City
+              </h2>
+            </TextAnime>
+            <p style={{ color: 'rgba(255, 255, 255, 0.8)', maxWidth: '680px', margin: '0.75rem auto 0', fontSize: '1.05rem' }}>
+              We combine professional packing standards, 100% insured transit, transparent pricing, and 24/7 dedicated customer care for every relocation.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem' }}>
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center' }}>
+              <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem', boxShadow: '0 8px 20px rgba(255, 77, 38, 0.35)' }}>
+                <i className="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>100% Goods Safety</h3>
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
+                Multi-layer bubble wrap, foam guards, and heavy corrugated boxes ensure zero damage during transit.
+              </p>
+            </div>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center' }}>
+              <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem', boxShadow: '0 8px 20px rgba(255, 77, 38, 0.35)' }}>
+                <i className="fa-solid fa-file-invoice-dollar"></i>
+              </div>
+              <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Zero Hidden Costs</h3>
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
+                Transparent pricing with detailed quotation upfront. What we quote is exactly what you pay.
+              </p>
+            </div>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center' }}>
+              <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem', boxShadow: '0 8px 20px rgba(255, 77, 38, 0.35)' }}>
+                <i className="fa-solid fa-truck-fast"></i>
+              </div>
+              <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>On-Time Delivery</h3>
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
+                Dedicated GPS-tracked trucks ensure prompt loading and punctual delivery across all cities.
+              </p>
+            </div>
+
+            <div style={{ background: 'rgba(255, 255, 255, 0.05)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255, 255, 255, 0.12)', borderRadius: '16px', padding: '2rem 1.5rem', textAlign: 'center' }}>
+              <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#ff4d26', color: '#ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1.25rem', boxShadow: '0 8px 20px rgba(255, 77, 38, 0.35)' }}>
+                <i className="fa-solid fa-headset"></i>
+              </div>
+              <h3 style={{ color: '#ffffff', fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>24/7 Support</h3>
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
+                A dedicated move manager guides you step-by-step from initial packing to final unpacking.
+              </p>
+            </div>
           </div>
         </div>
       </section>
