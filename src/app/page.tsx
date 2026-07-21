@@ -80,15 +80,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. Services Section - Dark Grid Pattern */}
-      <section className="services section bg-dark-grid" id="services">
+      {/* 3. Services Section - Clean White Background */}
+      <section className="services section" id="services" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(254, 17, 32, 0.2)', color: '#ff6b8b' }}>Our Services</span>
+            <span className="sub-title">Our Services</span>
             <TextAnime>
-              <h2 style={{ color: '#ffffff' }}>Comprehensive Relocation Solutions</h2>
+              <h2>Comprehensive Relocation Solutions</h2>
             </TextAnime>
-            <p style={{ color: '#cbd5e1' }}>From packing to unloading, storage, and vehicle transport, we offer complete solutions for every need.</p>
+            <p>From packing to unloading, storage, and vehicle transport, we offer complete solutions for every need.</p>
           </div>
 
           <div className="services-grid">
