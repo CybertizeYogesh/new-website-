@@ -2078,9 +2078,13 @@ img {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.85fr 0.75fr 0.9fr 0.85fr 1.05fr;
-    gap: 1.1rem;
+    grid-template-columns: 1.65fr 0.7fr 0.85fr 0.8fr 1.05fr;
+    gap: 0.9rem;
     margin-bottom: 3.5rem;
+}
+
+.footer-grid > .footer-col:nth-child(2) {
+    margin-left: auto;
 }
 
 .footer-brand-card {
