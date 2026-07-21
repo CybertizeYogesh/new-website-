@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import QuoteForm from '@/components/QuoteForm';
 import StatCounter from '@/components/StatCounter';
-import RateTable from '@/components/RateTable';
 import TextAnime from '@/components/TextAnime';
 import ImageReveal from '@/components/ImageReveal';
 
@@ -85,7 +84,7 @@ export default function HomePage() {
       <section className="services section bg-dark-grid" id="services">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Our Services</span>
+            <span className="sub-title" style={{ background: 'rgba(254, 17, 32, 0.2)', color: '#ff6b8b' }}>Our Services</span>
             <TextAnime>
               <h2 style={{ color: '#ffffff' }}>Comprehensive Relocation Solutions</h2>
             </TextAnime>
@@ -192,10 +191,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Pricing Matrix Dashboard */}
-      <RateTable />
-
-      {/* 5. How We Work Process Timeline */}
+      {/* 4. How We Work Process Timeline */}
       <section className="process section bg-gradient-shading" id="process">
         <div className="container">
           <div className="section-header text-center">
@@ -239,7 +235,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. About Section - Split Card Layout */}
+      {/* 5. About Section - Split Card Layout */}
       <section className="about section" id="about">
         <div className="container">
           <div className="about-grid">
@@ -281,11 +277,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. Client Testimonials - Dark Theme */}
+      {/* 6. Client Testimonials - Dark Theme */}
       <section className="section bg-dark-grid">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title" style={{ background: 'rgba(255, 59, 92, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
+            <span className="sub-title" style={{ background: 'rgba(254, 17, 32, 0.2)', color: '#ff6b8b' }}>Testimonials</span>
             <TextAnime>
               <h2 style={{ color: '#ffffff' }}>What Our Clients Say</h2>
             </TextAnime>
@@ -336,7 +332,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Suburbs Network Section */}
+      {/* 7. Suburbs Network Section */}
       <section className="section bg-gradient-shading">
         <div className="container">
           <div className="section-header text-center">
@@ -376,7 +372,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Call to Action Banner */}
+      {/* 8. Call to Action Banner */}
       <section className="section" style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary-light))', color: 'white', textAlign: 'center' }}>
         <div className="container">
           <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '2.5rem' }}>Ready to Move?</h2>
