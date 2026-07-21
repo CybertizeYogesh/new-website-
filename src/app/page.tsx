@@ -21,13 +21,13 @@ export default function HomePage() {
 
       {/* 1. Dedicated Logistics & Packers Video Section with Overlaid Content */}
       <section className="relocation-video-section" id="home">
-        {/* Background Logistics & Moving Video */}
+        {/* Background Logistics & Packers Moving Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          poster="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+          poster="/assets/images/movers-packing-loading.png"
           style={{
             position: 'absolute',
             top: 0,
@@ -38,6 +38,7 @@ export default function HomePage() {
             zIndex: 1,
           }}
         >
+          <source src="/assets/videos/movers-packing-loading.mp4" type="video/mp4" />
           <source src="/assets/videos/hero-bg.mp4" type="video/mp4" />
         </video>
 
