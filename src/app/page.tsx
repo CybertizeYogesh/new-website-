@@ -191,7 +191,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Section (100% Identical Replica - Static) */}
+      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Section */}
       <section className="process-speedex-section section" id="process">
         <div className="container">
           <div className="section-header text-center">
@@ -204,32 +204,35 @@ export default function HomePage() {
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Curved Dotted Connection Line */}
-            <svg className="speedex-curved-line" viewBox="0 0 1000 240" fill="none" preserveAspectRatio="none">
+            {/* SVG Curved Dotted Connection Line - Exact Arc Matching User Screenshot */}
+            <svg className="speedex-curved-line" viewBox="0 0 1200 220" fill="none" preserveAspectRatio="none">
+              {/* Arc 1: Circle 1 top-right to Circle 2 left-bottom */}
               <path
-                d="M 195 130 C 255 70, 285 45, 305 60"
+                d="M 230 90 C 275 48, 315 62, 355 98"
                 stroke="#ff4d26"
-                strokeWidth="2"
-                strokeDasharray="4 6"
+                strokeWidth="2.2"
+                strokeDasharray="5 5"
                 markerEnd="url(#arrowhead)"
               />
+              {/* Arc 2: Circle 2 right-bottom to Circle 3 left-top */}
               <path
-                d="M 445 60 C 475 75, 505 130, 555 130"
+                d="M 530 98 C 575 132, 615 118, 655 86"
                 stroke="#ff4d26"
-                strokeWidth="2"
-                strokeDasharray="4 6"
+                strokeWidth="2.2"
+                strokeDasharray="5 5"
                 markerEnd="url(#arrowhead)"
               />
+              {/* Arc 3: Circle 3 top-right to Circle 4 left-bottom */}
               <path
-                d="M 695 130 C 725 70, 775 45, 805 60"
+                d="M 830 90 C 875 48, 915 62, 955 98"
                 stroke="#ff4d26"
-                strokeWidth="2"
-                strokeDasharray="4 6"
+                strokeWidth="2.2"
+                strokeDasharray="5 5"
                 markerEnd="url(#arrowhead)"
               />
               <defs>
-                <marker id="arrowhead" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 2 L 8 5 L 0 8 z" fill="#ff4d26" />
+                <marker id="arrowhead" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#ff4d26" />
                 </marker>
               </defs>
             </svg>
