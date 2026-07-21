@@ -577,6 +577,138 @@ img {
     overflow: hidden;
 }
 
+/* Speedex Relocation Inspired Work Process Timeline */
+.process-timeline-container {
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.process-timeline-line {
+    position: absolute;
+    top: 55px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 50%, var(--accent-color) 100%);
+    z-index: 1;
+    border-radius: 3px;
+    opacity: 0.35;
+}
+
+.process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.process-step-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 1.5rem 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-badge-number {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    background: var(--accent-color);
+    color: var(--white);
+    font-weight: 800;
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 15px rgba(254, 17, 32, 0.35);
+    border: 4px solid var(--white);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.step-icon-box {
+    width: 76px;
+    height: 76px;
+    background: rgba(3, 29, 69, 0.05);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0.75rem 0 1.5rem;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 2px dashed rgba(3, 29, 69, 0.15);
+}
+
+.process-step-card h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    transition: color 0.4s ease;
+}
+
+.process-step-card p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.process-step-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-xl);
+}
+
+.process-step-card:hover .step-badge-number {
+    background: var(--primary-color);
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 8px 20px rgba(3, 29, 69, 0.4);
+}
+
+.process-step-card:hover .step-icon-box {
+    background: var(--accent-color);
+    color: var(--white);
+    border-color: transparent;
+    transform: rotateY(180deg) scale(1.1);
+    box-shadow: 0 10px 25px rgba(254, 17, 32, 0.4);
+}
+
+.process-step-card:hover h3 {
+    color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+    .process-steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 2rem;
+    }
+    .process-timeline-line {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .process-steps-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
 /* Floating Header */
 .navbar {
     position: fixed;
@@ -953,64 +1085,6 @@ img {
     transform: rotateY(180deg) scale(1.05);
 }
 
-/* Process Timeline Steps */
-.process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-    gap: clamp(1.5rem, 3vw, 2rem);
-    position: relative;
-    margin-top: 2rem;
-}
-
-.step-card {
-    text-align: center;
-    position: relative;
-    padding: 2.75rem 1.5rem;
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    transition: var(--transition-slow);
-    border: 1px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
-}
-
-.step-card:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: var(--white);
-    border: 3px solid var(--accent-color);
-    color: var(--accent-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    margin: 0 auto 1.5rem;
-    position: relative;
-    z-index: 2;
-    font-family: var(--font-heading);
-    font-size: 1.3rem;
-    box-shadow: 0 0 0 8px var(--white);
-    transition: var(--transition-smooth);
-}
-
-.step-card:hover .step-number {
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-    color: var(--white);
-    border-color: transparent;
-    box-shadow: 0 0 0 8px var(--light-bg);
-}
-
-.step-content p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-}
-
 /* About Grid */
 .about-grid {
     display: grid;
@@ -1233,7 +1307,7 @@ img {
 
 .fade-in-right {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(-40px);
     transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 

@@ -191,44 +191,55 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. How We Work Process Timeline */}
+      {/* 4. Speedex Relocation Inspired 'OUR WORK PROCESS' Timeline */}
       <section className="process section bg-gradient-shading" id="process">
         <div className="container">
           <div className="section-header text-center">
-            <span className="sub-title">How We Work</span>
+            <span className="sub-title">OUR WORK PROCESS</span>
             <TextAnime>
-              <h2>Simple 4-Step Process</h2>
+              <h2>How We Work For Your Relocation</h2>
             </TextAnime>
-            <p>We've optimized our workflow to ensure the most efficient and stress-free moving experience for you.</p>
+            <p>Our systematic step-by-step process ensures a seamless, hassle-free relocation experience from start to finish.</p>
           </div>
 
-          <div className="process-steps">
-            <div className="step-card fade-in-up" data-cursor-text="STEP 1">
-              <div className="step-number">01</div>
-              <div className="step-content">
-                <h4>Book Order</h4>
-                <p>Contact us via phone or website to schedule your move.</p>
+          <div className="process-timeline-container">
+            <div className="process-timeline-line"></div>
+
+            <div className="process-steps-grid">
+              <div className="process-step-card fade-in-up" data-cursor-text="STEP 1">
+                <div className="step-badge-number">01</div>
+                <div className="step-icon-box">
+                  <i className="fa-solid fa-clipboard-list"></i>
+                </div>
+                <h3>Book &amp; Survey</h3>
+                <p>Submit your request online or call us. Our team conducts a quick pre-move survey to estimate your requirements.</p>
               </div>
-            </div>
-            <div className="step-card fade-in-up delay-1" data-cursor-text="STEP 2">
-              <div className="step-number">02</div>
-              <div className="step-content">
-                <h4>We Pack</h4>
-                <p>Our expert team arrives and packs your belongings securely using premium materials.</p>
+
+              <div className="process-step-card fade-in-up delay-1" data-cursor-text="STEP 2">
+                <div className="step-badge-number">02</div>
+                <div className="step-icon-box">
+                  <i className="fa-solid fa-box"></i>
+                </div>
+                <h3>Packing &amp; Labeling</h3>
+                <p>Our expert crew packs all items using multi-layer protective materials and assigns clear inventory tags.</p>
               </div>
-            </div>
-            <div className="step-card fade-in-up delay-2" data-cursor-text="STEP 3">
-              <div className="step-number">03</div>
-              <div className="step-content">
-                <h4>We Move</h4>
-                <p>Safe transportation to your new destination using our closed container trucks.</p>
+
+              <div className="process-step-card fade-in-up delay-2" data-cursor-text="STEP 3">
+                <div className="step-badge-number">03</div>
+                <div className="step-icon-box">
+                  <i className="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Safe Transit</h3>
+                <p>Your goods are loaded into specialized closed-container vehicles for secure, GPS-tracked transportation.</p>
               </div>
-            </div>
-            <div className="step-card fade-in-up delay-3" data-cursor-text="STEP 4">
-              <div className="step-number">04</div>
-              <div className="step-content">
-                <h4>Delivery</h4>
-                <p>On-time delivery, unloading, and unpacking assistance at your new place.</p>
+
+              <div className="process-step-card fade-in-up delay-3" data-cursor-text="STEP 4">
+                <div className="step-badge-number">04</div>
+                <div className="step-icon-box">
+                  <i className="fa-solid fa-house-chimney-check"></i>
+                </div>
+                <h3>Unpacking &amp; Setup</h3>
+                <p>We safely unload, unpack, and arrange your belongings in your new location for a smooth transition.</p>
               </div>
             </div>
           </div>
