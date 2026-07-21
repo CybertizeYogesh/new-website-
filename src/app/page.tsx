@@ -19,9 +19,9 @@ export default function HomePage() {
         </defs>
       </svg>
 
-      {/* 1. Fullscreen Video Background Hero Section (Without Quote Form) */}
-      <header className="hero hero-video-header" id="home" style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '150px 0 100px', textAlign: 'center' }}>
-        {/* Logistics Video Background (HTML5 & HD Embed) */}
+      {/* 1. Logistics & Packers Video Section with Overlaid Content */}
+      <section className="relocation-video-section" id="home" style={{ position: 'relative', minHeight: '88vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '160px 0 100px', textAlign: 'center' }}>
+        {/* Background Logistics & Moving Video */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
           <video
             autoPlay
@@ -43,7 +43,7 @@ export default function HomePage() {
           </video>
           <iframe
             src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A?autoplay=1&mute=1&loop=1&playlist=5qap5aO4i9A&controls=0&showinfo=0&rel=0&playsinline=1"
-            title="Packers and Movers Logistics Video"
+            title="Logistics and Packers Movers Video"
             style={{
               position: 'absolute',
               top: '50%',
@@ -52,58 +52,126 @@ export default function HomePage() {
               height: '100vh',
               minWidth: '177.77vh',
               minHeight: '56.25vw',
-              transform: 'translate(-50%, -50%) scale(1.2)',
+              transform: 'translate(-50%, -50%) scale(1.25)',
               border: 0,
-              opacity: 0.85,
+              opacity: 0.88,
             }}
             allow="autoplay; encrypted-media"
           />
         </div>
 
-        {/* Dark Overlay for Ultra High Text Legibility */}
+        {/* Dark Vignette Overlay for Crisp Readability */}
         <div
           style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.7) 0%, rgba(11, 43, 60, 0.94) 100%)',
+            background: 'radial-gradient(circle at center, rgba(11, 43, 60, 0.72) 0%, rgba(11, 43, 60, 0.95) 100%)',
             zIndex: 2,
           }}
         ></div>
 
-        {/* Hero Content Centered */}
-        <div className="container" style={{ position: 'relative', zIndex: 3, maxWidth: '900px', margin: '0 auto' }}>
-          <div className="hero-text" style={{ textAlign: 'center', margin: '0 auto' }}>
-            <span className="badge" style={{ background: 'rgba(255, 77, 38, 0.25)', color: '#ffffff', border: '1px solid rgba(255, 77, 38, 0.6)', padding: '0.6rem 1.5rem', fontSize: '0.95rem', borderRadius: '50px', display: 'inline-block', marginBottom: '1.5rem' }}>
-              #1 Trusted Packers &amp; Movers Electronic City
+        {/* Overlaid Content Box */}
+        <div className="container" style={{ position: 'relative', zIndex: 3, maxWidth: '950px', margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', margin: '0 auto' }}>
+            
+            {/* Tagline Badge */}
+            <span style={{
+              background: 'rgba(255, 77, 38, 0.25)',
+              color: '#ffffff',
+              border: '1.5px solid rgba(255, 77, 38, 0.7)',
+              padding: '0.65rem 1.6rem',
+              fontSize: '0.95rem',
+              fontWeight: 800,
+              borderRadius: '50px',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              marginBottom: '1.75rem',
+              backdropFilter: 'blur(10px)',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase'
+            }}>
+              <i className="fa-solid fa-truck-ramp-box" style={{ color: '#ff4d26' }}></i>
+              HSM Packers and Movers Electronic City
             </span>
+
+            {/* Overlaid Main Headline */}
             <TextAnime>
-              <h1 style={{ color: '#ffffff', fontSize: 'clamp(2.5rem, 5.2vw, 4rem)', fontWeight: 800, lineHeight: 1.15, marginBottom: '1.5rem', textShadow: '0 4px 25px rgba(0,0,0,0.6)' }}>
-                Professional Packers &amp; Movers <br />
-                <span className="text-gradient-accent" style={{ color: '#ff4d26' }}>Safe, Timely</span> &amp;{' '}
-                <span className="text-gradient-white">Insured Shifting</span>
+              <h1 style={{
+                color: '#ffffff',
+                fontSize: 'clamp(2.6rem, 5.5vw, 4.2rem)',
+                fontWeight: 800,
+                lineHeight: 1.15,
+                marginBottom: '1.5rem',
+                textShadow: '0 6px 30px rgba(0, 0, 0, 0.7)',
+                letterSpacing: '-0.02em'
+              }}>
+                Seamless Household &amp; Commercial <br />
+                <span style={{ color: '#ff4d26' }}>Relocation Services</span> Across India
               </h1>
             </TextAnime>
-            <p style={{ color: 'rgba(255, 255, 255, 0.92)', fontSize: '1.18rem', lineHeight: 1.75, maxWidth: '780px', margin: '0 auto 2.5rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-              Expert house relocation, corporate office shifting, car &amp; bike transport, and secure storage solutions across Bengaluru and major Indian cities.
+
+            {/* Overlaid Subtitle */}
+            <p style={{
+              color: 'rgba(255, 255, 255, 0.92)',
+              fontSize: '1.2rem',
+              lineHeight: 1.8,
+              maxWidth: '820px',
+              margin: '0 auto 2.5rem',
+              textShadow: '0 2px 12px rgba(0, 0, 0, 0.7)'
+            }}>
+              Backed by 10+ years of logistics excellence. We provide 100% insured house shifting, corporate office relocation, car &amp; bike transportation, and climate-controlled warehouse storage.
             </p>
 
-            <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', marginBottom: '3rem' }}>
-              <a href="tel:09980303730" className="btn btn-primary" style={{ padding: '1rem 2.25rem', fontSize: '1.05rem', fontWeight: 800 }}>
-                <i className="fa-solid fa-phone-volume" style={{ marginRight: '8px' }}></i> Call 099803 03730
+            {/* 4 Feature Badges Pill Strip */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '1rem 1.5rem',
+              flexWrap: 'wrap',
+              marginBottom: '3rem'
+            }}>
+              <div style={{ background: 'rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255, 255, 255, 0.2)', padding: '0.6rem 1.25rem', borderRadius: '50px', color: '#ffffff', fontSize: '0.92rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <i className="fa-solid fa-circle-check" style={{ color: '#ff4d26' }}></i> 100% Insured Shifting
+              </div>
+              <div style={{ background: 'rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255, 255, 255, 0.2)', padding: '0.6rem 1.25rem', borderRadius: '50px', color: '#ffffff', fontSize: '0.92rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <i className="fa-solid fa-circle-check" style={{ color: '#ff4d26' }}></i> Multi-Layer Packing
+              </div>
+              <div style={{ background: 'rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255, 255, 255, 0.2)', padding: '0.6rem 1.25rem', borderRadius: '50px', color: '#ffffff', fontSize: '0.92rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <i className="fa-solid fa-circle-check" style={{ color: '#ff4d26' }}></i> GPS Tracked Vehicles
+              </div>
+              <div style={{ background: 'rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255, 255, 255, 0.2)', padding: '0.6rem 1.25rem', borderRadius: '50px', color: '#ffffff', fontSize: '0.92rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <i className="fa-solid fa-circle-check" style={{ color: '#ff4d26' }}></i> 24/7 Personal Move Manager
+              </div>
+            </div>
+
+            {/* Overlaid CTA Buttons */}
+            <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
+              <a href="tel:09980303730" className="btn btn-primary" style={{ padding: '1.1rem 2.5rem', fontSize: '1.1rem', fontWeight: 800, borderRadius: '50px', boxShadow: '0 10px 30px rgba(255, 77, 38, 0.4)' }}>
+                <i className="fa-solid fa-phone-volume" style={{ marginRight: '10px' }}></i> Call 099803 03730
               </a>
-              <Link href="/contact-us" className="btn btn-outline" style={{ padding: '1rem 2.25rem', fontSize: '1.05rem', fontWeight: 800, color: '#ffffff', borderColor: '#ffffff' }}>
-                <i className="fa-solid fa-paper-plane" style={{ marginRight: '8px' }}></i> Contact Us
+              <Link href="/contact-us" className="btn btn-outline" style={{ padding: '1.1rem 2.5rem', fontSize: '1.1rem', fontWeight: 800, color: '#ffffff', borderColor: '#ffffff', borderRadius: '50px', backdropFilter: 'blur(10px)' }}>
+                <i className="fa-solid fa-paper-plane" style={{ marginRight: '10px' }}></i> Contact Us
               </Link>
             </div>
 
-            <div className="hero-stats" style={{ display: 'flex', gap: '3rem', justifyContent: 'center', flexWrap: 'wrap', paddingTop: '1.5rem', borderTop: '1px solid rgba(255, 255, 255, 0.15)' }}>
+            {/* Overlaid Stat Counter Strip */}
+            <div style={{
+              display: 'flex',
+              gap: '3rem',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              paddingTop: '2rem',
+              borderTop: '1px solid rgba(255, 255, 255, 0.18)'
+            }}>
               <StatCounter target={9.5} suffix="k+" label="Happy Clients" />
               <StatCounter target={10} suffix="+" label="Years Exp." />
               <StatCounter target={50} suffix="+" label="Cities" />
             </div>
+
           </div>
         </div>
-      </header>
+      </section>
 
       {/* 2. Why Choose Us Section - Modern 2-Column Split Showcase with why.gif */}
       <section className="features section" style={{ backgroundColor: '#f8fafc', padding: '90px 0', borderBottom: '1px solid #e2e8f0' }}>
