@@ -33,7 +33,7 @@ export default function HomePage() {
               <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(11, 43, 60, 0.12)', border: '4px solid #ffffff', background: '#ffffff' }}>
                 <Image 
                   src="/assets/images/why.gif" 
-                  alt="Why Choose HSM Packers and Movers" 
+                  alt="Why Choose Speed Ex relocation packers and movers" 
                   width={550} 
                   height={420} 
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
@@ -75,7 +75,7 @@ export default function HomePage() {
                 </h2>
               </TextAnime>
               <p style={{ color: '#64748b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-                HSM Packers and Movers Electronic City delivers premier home shifting, office relocation, and vehicle transportation with maximum safety and punctuality.
+                Speed Ex relocation packers and movers delivers premier home shifting, office relocation, and vehicle transportation with maximum safety and punctuality.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem' }}>

@@ -3,16 +3,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Packing & Unpacking | HSM Packers and Movers Electronic City',
-  description: 'Premium quality packing and unpacking services for home and office relocation in Bengaluru.',
-  keywords: 'packing services bengaluru, unpacking service electronic city, bubble wrap packing, fragile items packing',
+  title: 'Packing & Unpacking | Speed Ex relocation packers and movers',
+  description: 'Professional packing & unpacking services using multi-layer bubble wrap, foam sheets, and sturdy carton boxes.',
+  keywords: 'packing unpacking services, speed ex relocation packers and movers, household packing solutions',
 };
 
 export default function PackingUnpackingPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/packing-and-moving.png')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/packing-and-moving.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -31,10 +31,10 @@ export default function PackingUnpackingPage() {
         <div className="container">
           <div className="about-grid">
             <div className="about-content fade-in-right">
-              <span className="sub-title">Zero-Damage Guarantee</span>
+              <span className="sub-title">Multi-Layer Protection</span>
               <h2>Professional Packing &amp; Unpacking Services</h2>
               <p>
-                Proper packing is the backbone of safe relocation. At HSM Packers and Movers Electronic City, we use industry-grade packing materials tailored to every item type.
+                Proper packing is the backbone of safe relocation. At Speed Ex relocation packers and movers, we use industry-grade packing materials tailored to every item type.
               </p>
               <p>
                 Our crew carefully wraps crockery, glassware, TVs, electronics, clothing, and furniture, and upon reaching your destination, assists with systematic unpacking and arrangement.

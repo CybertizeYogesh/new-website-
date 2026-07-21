@@ -33,7 +33,7 @@ export default function Preloader() {
         <div className="preloader-logo">
           <Image 
             src="/assets/images/logo.png" 
-            alt="HSM Packers and Movers" 
+            alt="Speed Ex relocation packers and movers" 
             width={180} 
             height={55}
             priority

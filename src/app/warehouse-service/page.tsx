@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Warehouse Service | HSM Packers and Movers Electronic City',
-  description: 'Secure, climate-controlled warehousing and short/long term storage solutions in Bengaluru.',
-  keywords: 'warehouse service bengaluru, storage facility electronic city, household storage bengaluru, commercial warehousing',
+  title: 'Warehouse Service | Speed Ex relocation packers and movers',
+  description: 'Spacious, clean, and 24/7 monitored warehouse & storage facilities for short and long-term goods storage.',
+  keywords: 'warehouse service, storage facilities, speed ex relocation packers and movers, goods storage ahmedabad',
 };
 
 export default function WarehouseServicePage() {
@@ -31,10 +31,10 @@ export default function WarehouseServicePage() {
         <div className="container">
           <div className="about-grid">
             <div className="about-content fade-in-right">
-              <span className="sub-title">Secure Storage Solutions</span>
-              <h2>Short-Term &amp; Long-Term Warehousing</h2>
+              <span className="sub-title">Secure Storage Facilities</span>
+              <h2>Flexible Household &amp; Commercial Warehousing</h2>
               <p>
-                Need a safe place to store your household goods or commercial inventory during a transition? HSM Packers and Movers Electronic City offers spacious, clean, and 24/7 monitored warehouse facilities in Bengaluru.
+                Need a safe place to store your household goods or commercial inventory during a transition? Speed Ex relocation packers and movers offers spacious, clean, and 24/7 monitored warehouse facilities.
               </p>
               <p>
                 Our warehouses are equipped with pest control, fire protection systems, and round-the-clock CCTV surveillance to keep your belongings completely safe.

@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'International Moving | HSM Packers and Movers Electronic City',
-  description: 'Global international relocation, sea freight, air cargo, and customs clearance assistance for abroad moving.',
-  keywords: 'international moving bengaluru, global relocation electronic city, air cargo shifting, sea freight household goods',
+  title: 'International Moving | Speed Ex relocation packers and movers',
+  description: 'Reliable international moving & global relocation services with complete customs & air/sea cargo management.',
+  keywords: 'international moving, global relocation, speed ex relocation packers and movers, overseas shifting',
 };
 
 export default function InternationalMovingPage() {
@@ -34,7 +34,7 @@ export default function InternationalMovingPage() {
               <span className="sub-title">Global Relocation</span>
               <h2>Seamless Overseas &amp; International Shifting</h2>
               <p>
-                Relocating abroad involves complex customs documentations, air cargo regulations, and international freight standards. HSM Packers and Movers Electronic City offers end-to-end international moving services.
+                Relocating abroad involves complex customs documentations, air cargo regulations, and international freight standards. Speed Ex relocation packers and movers offers end-to-end international moving services.
               </p>
               <p>
                 Our team assists with export packing, air/sea freight booking, customs documentation, and door-delivery partnerships in destination countries worldwide.

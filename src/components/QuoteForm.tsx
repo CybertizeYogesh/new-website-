@@ -15,7 +15,7 @@ export default function QuoteForm({
     <div className="form-card" id="quote">
       <h3>{title}</h3>
       <p>{subtitle}</p>
-      <form action="https://hsmpackersandmovers.in/thank-you.php" method="POST" className="quote-form">
+      <form action="https://speedexrelocation.com/thank-you.php" method="POST" className="quote-form">
         <div className="form-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.25rem' }}>
           <div className="input-group">
             <input type="text" name="name" placeholder="Your Name" required />
