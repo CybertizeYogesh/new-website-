@@ -6,6 +6,7 @@ import StatCounter from '@/components/StatCounter';
 import TextAnime from '@/components/TextAnime';
 import ImageReveal from '@/components/ImageReveal';
 import GatiTestimonials from '@/components/GatiTestimonials';
+import MoversPackingVideoPlayer from '@/components/MoversPackingVideoPlayer';
 
 export default function HomePage() {
   return (
@@ -144,6 +145,9 @@ export default function HomePage() {
                 <i className="fa-solid fa-circle-check" style={{ color: '#ff4d26' }}></i> 24/7 Personal Move Manager
               </div>
             </div>
+
+            {/* Interactive Movers & Packers Packing & Truck Loading Video Player */}
+            <MoversPackingVideoPlayer />
 
             {/* Overlaid CTA Buttons */}
             <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap', marginBottom: '3.5rem' }}>
