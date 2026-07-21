@@ -6,7 +6,7 @@ const testimonialsData = [
   {
     id: 1,
     name: 'Rahul Sharma',
-    role: 'MANAGER',
+    role: 'HOUSE SHIFTING',
     initials: 'RS',
     text: 'Gati packers and movers Bangalore provided smooth home shifting service. Their packers and movers team packed, loaded and delivered our goods safely on time with professional support and careful handling.',
     rating: 5,
@@ -14,7 +14,7 @@ const testimonialsData = [
   {
     id: 2,
     name: 'Lankhshit',
-    role: 'MANAGER',
+    role: 'OFFICE RELOCATION',
     initials: 'LK',
     text: 'Gati packers and movers Bangalore delivered excellent home shifting support. Their packers and movers team handled packing, loading and transport safely while ensuring timely delivery and smooth relocation.',
     rating: 5,
@@ -22,9 +22,49 @@ const testimonialsData = [
   {
     id: 3,
     name: 'Anjali Pareek',
-    role: 'MANAGER',
+    role: 'VEHICLE TRANSPORT',
     initials: 'AP',
     text: 'Gati packers and movers Bangalore provide safe home shifting service for families across city areas. Gati packers and movers team carefully packs household goods and ensures secure transport for every relocation project.',
+    rating: 5,
+  },
+  {
+    id: 4,
+    name: 'Sandeep Verma',
+    role: 'DOMESTIC MOVING',
+    initials: 'SV',
+    text: 'Shifted my 3BHK household items from Electronic City, Bengaluru to Gurgaon. The team used heavy multi-layer bubble wrap and corrugated boxes for all electronics. Not a single scratch on my 65-inch OLED TV!',
+    rating: 5,
+  },
+  {
+    id: 5,
+    name: 'Kavita Reddy',
+    role: 'PACKING & UNPACKING',
+    initials: 'KR',
+    text: 'Extremely polite and hardworking staff! They unpacked and arranged all heavy furniture in our new apartment in Bellandur within just a few hours. Highly recommended for hassle-free house shifting.',
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: 'Vikramaditya Nair',
+    role: 'CAR TRANSPORTATION',
+    initials: 'VN',
+    text: 'Booked enclosed car carrier transportation for my Honda City from Bangalore to Kochi. Received live tracking updates throughout transit. Car arrived spotless and right on schedule!',
+    rating: 5,
+  },
+  {
+    id: 7,
+    name: 'Pooja Deshmukh',
+    role: 'WAREHOUSE STORAGE',
+    initials: 'PD',
+    text: 'Stored our complete household items in their Electronic City warehouse facility for 4 months during house renovation. Everything remained dust-free, moisture-proof, and in pristine condition when delivered back.',
+    rating: 5,
+  },
+  {
+    id: 8,
+    name: 'Rajesh R. Menon',
+    role: 'INTERNATIONAL MOVING',
+    initials: 'RM',
+    text: 'Phenomenal international shifting coordination from Bengaluru to Dubai. The team handled custom clearance documentation, sea freight wooden crating, and door-to-door delivery seamlessly.',
     rating: 5,
   },
 ];
@@ -129,15 +169,11 @@ export default function GatiTestimonials() {
 
             <div className="gati-img-author-badge">
               <ul>
-                <li>
-                  <div className="img-avatar">RS</div>
-                </li>
-                <li>
-                  <div className="img-avatar">LK</div>
-                </li>
-                <li>
-                  <div className="img-avatar">AP</div>
-                </li>
+                {testimonialsData.slice(0, 4).map((item) => (
+                  <li key={item.id}>
+                    <div className="img-avatar">{item.initials}</div>
+                  </li>
+                ))}
               </ul>
               <div className="badge-text-box">
                 <h3>Customer Satisfied</h3>
