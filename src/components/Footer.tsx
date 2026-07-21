@@ -94,22 +94,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Footer Bottom */}
-        <div className="footer-bottom-bar">
-          <p>
-            &copy; {currentYear} <strong>Speed Ex Relocation Packers and Movers</strong>. All Rights Reserved. <br />
-            Developed &amp; Designed By{' '}
-            <a 
-              href="https://altgs.in" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="credit-link"
-            >
-              Acilaris Technologies Pvt. Ltd.
-            </a>
-          </p>
-        </div>
       </div>
     </footer>
   );
