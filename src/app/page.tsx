@@ -19,8 +19,8 @@ export default function HomePage() {
         </defs>
       </svg>
 
-      {/* 1. Logistics & Packers Video Section with Overlaid Content */}
-      <section className="relocation-video-section" id="home" style={{ position: 'relative', minHeight: '88vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', padding: '160px 0 100px', textAlign: 'center' }}>
+      {/* 1. Dedicated Logistics & Packers Video Section with Overlaid Content */}
+      <section className="relocation-video-section" id="home">
         {/* Background Logistics & Moving Video */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 1, overflow: 'hidden', pointerEvents: 'none' }}>
           <video
@@ -71,7 +71,7 @@ export default function HomePage() {
         ></div>
 
         {/* Overlaid Content Box */}
-        <div className="container" style={{ position: 'relative', zIndex: 3, maxWidth: '950px', margin: '0 auto' }}>
+        <div className="container hero-content">
           <div style={{ textAlign: 'center', margin: '0 auto' }}>
             
             {/* Tagline Badge */}

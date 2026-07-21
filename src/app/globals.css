@@ -1143,6 +1143,28 @@ img {
     z-index: 2;
 }
 
+.relocation-video-section {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 160px 0 100px;
+    text-align: center;
+    background-color: var(--primary-dark);
+}
+
+.relocation-video-section .hero-content {
+    position: relative;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .hero-content {
     position: relative;
     z-index: 10;
