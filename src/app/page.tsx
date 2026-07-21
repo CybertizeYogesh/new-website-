@@ -531,40 +531,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Working Process Section (Exact omrelocationmoversandpackers.in layout with Speed Ex brand colors) */}
+      {/* 9. Working Process Section (Exact omrelocationmoversandpackers.in borderless layout with Speed Ex brand colors) */}
       <section className="work-process-section" style={{ backgroundColor: '#f8fafc', padding: '95px 0', position: 'relative', overflow: 'hidden', borderTop: '1px solid #e2e8f0' }}>
         <div className="container">
           {/* Header */}
-          <div className="section-header text-center" style={{ marginBottom: '4rem' }}>
-            <span className="sub-title" style={{ color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.88rem' }}>
+          <div className="section-header text-center" style={{ marginBottom: '4.5rem' }}>
+            <span className="sub-title" style={{ color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.88rem', display: 'inline-block', marginBottom: '0.5rem' }}>
               Working Process
             </span>
             <TextAnime>
-              <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', fontWeight: 800, color: '#0b2b3c', marginTop: '0.5rem' }}>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 2.85rem)', fontWeight: 800, color: '#0b2b3c', margin: 0 }}>
                 Standard Work Process
               </h2>
             </TextAnime>
           </div>
 
-          {/* 3 Step Cards Grid */}
-          <div className="work-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', position: 'relative', zIndex: 2 }}>
+          {/* 3 Step Cards Grid (Borderless omrelocation style) */}
+          <div className="work-process-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', position: 'relative', zIndex: 2 }}>
             
             {/* Step 1: Move Planning */}
-            <div
-              className="work-process-card"
-              style={{
-                backgroundColor: '#ffffff',
-                padding: '3rem 2rem 2.5rem',
-                borderRadius: '24px',
-                textAlign: 'center',
-                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
-                border: '1px solid #e2e8f0',
-                position: 'relative',
-                zIndex: 2,
-              }}
-            >
+            <div className="work-process-box text-center" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
               {/* Icon Box with Badge */}
-              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 1.5rem' }}>
                 <div
                   className="work-process-icon"
                   style={{
@@ -577,18 +565,18 @@ export default function HomePage() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: '2.2rem',
-                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    boxShadow: '0 12px 28px rgba(11, 43, 60, 0.22)',
                     transition: 'all 0.3s ease',
                   }}
                 >
-                  <i className="fa-solid fa-headset"></i>
+                  <i className="fa-solid fa-brain"></i>
                 </div>
                 {/* Step Number Badge */}
                 <span
                   style={{
                     position: 'absolute',
-                    top: '-4px',
-                    right: '-4px',
+                    top: '-2px',
+                    right: '-2px',
                     width: '34px',
                     height: '34px',
                     borderRadius: '50%',
@@ -599,38 +587,26 @@ export default function HomePage() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '3px solid #ffffff',
-                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                    border: '3px solid #f8fafc',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.4)',
                   }}
                 >
                   1
                 </span>
               </div>
 
-              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+              <h4 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#0b2b3c', marginTop: '1.25rem', marginBottom: '0.85rem' }}>
                 Move Planning
-              </h3>
-              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+              </h4>
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.75, margin: '0 auto', maxWidth: '320px' }}>
                 Our experts plan every move carefully so packing, loading and scheduling stay organized and nothing delays your shifting.
               </p>
             </div>
 
             {/* Step 2: Safe Transport */}
-            <div
-              className="work-process-card"
-              style={{
-                backgroundColor: '#ffffff',
-                padding: '3rem 2rem 2.5rem',
-                borderRadius: '24px',
-                textAlign: 'center',
-                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
-                border: '1px solid #e2e8f0',
-                position: 'relative',
-                zIndex: 2,
-              }}
-            >
+            <div className="work-process-box text-center" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
               {/* Icon Box with Badge */}
-              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 1.5rem' }}>
                 <div
                   className="work-process-icon"
                   style={{
@@ -643,18 +619,18 @@ export default function HomePage() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: '2.2rem',
-                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    boxShadow: '0 12px 28px rgba(11, 43, 60, 0.22)',
                     transition: 'all 0.3s ease',
                   }}
                 >
-                  <i className="fa-solid fa-truck-fast"></i>
+                  <i className="fa-solid fa-truck-ramp-box"></i>
                 </div>
                 {/* Step Number Badge */}
                 <span
                   style={{
                     position: 'absolute',
-                    top: '-4px',
-                    right: '-4px',
+                    top: '-2px',
+                    right: '-2px',
                     width: '34px',
                     height: '34px',
                     borderRadius: '50%',
@@ -665,38 +641,26 @@ export default function HomePage() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '3px solid #ffffff',
-                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                    border: '3px solid #f8fafc',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.4)',
                   }}
                 >
                   2
                 </span>
               </div>
 
-              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+              <h4 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#0b2b3c', marginTop: '1.25rem', marginBottom: '0.85rem' }}>
                 Safe Transport
-              </h3>
-              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+              </h4>
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.75, margin: '0 auto', maxWidth: '320px' }}>
                 Our trained drivers transport your goods securely using proper handling methods so every item reaches the destination safely.
               </p>
             </div>
 
             {/* Step 3: Delivery Done */}
-            <div
-              className="work-process-card"
-              style={{
-                backgroundColor: '#ffffff',
-                padding: '3rem 2rem 2.5rem',
-                borderRadius: '24px',
-                textAlign: 'center',
-                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
-                border: '1px solid #e2e8f0',
-                position: 'relative',
-                zIndex: 2,
-              }}
-            >
+            <div className="work-process-box text-center" style={{ textAlign: 'center', position: 'relative', zIndex: 2 }}>
               {/* Icon Box with Badge */}
-              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 1.5rem' }}>
                 <div
                   className="work-process-icon"
                   style={{
@@ -709,18 +673,18 @@ export default function HomePage() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: '2.2rem',
-                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                    boxShadow: '0 12px 28px rgba(11, 43, 60, 0.22)',
                     transition: 'all 0.3s ease',
                   }}
                 >
-                  <i className="fa-solid fa-box-archive"></i>
+                  <i className="fa-solid fa-box-check"></i>
                 </div>
                 {/* Step Number Badge */}
                 <span
                   style={{
                     position: 'absolute',
-                    top: '-4px',
-                    right: '-4px',
+                    top: '-2px',
+                    right: '-2px',
                     width: '34px',
                     height: '34px',
                     borderRadius: '50%',
@@ -731,18 +695,18 @@ export default function HomePage() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '3px solid #ffffff',
-                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                    border: '3px solid #f8fafc',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.4)',
                   }}
                 >
                   3
                 </span>
               </div>
 
-              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+              <h4 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#0b2b3c', marginTop: '1.25rem', marginBottom: '0.85rem' }}>
                 Delivery Done
-              </h3>
-              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+              </h4>
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.75, margin: '0 auto', maxWidth: '320px' }}>
                 After careful packing and transport, our team ensures timely delivery so clients receive their goods complete and damage free.
               </p>
             </div>
