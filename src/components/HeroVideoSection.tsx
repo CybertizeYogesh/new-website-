@@ -62,39 +62,40 @@ export default function HeroVideoSection() {
         </video>
       </div>
 
-      {/* Subtle Neutral Dark Overlay (Pushing videos slightly into background) */}
+      {/* Light Transparent Overlay (Leaves video bright & vibrant) */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(circle at center, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0.84) 100%)',
+          background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.45) 100%)',
           zIndex: 2,
         }}
       ></div>
 
-      {/* Hero Foreground Content - Clean Modern Design */}
-      <div className="container" style={{ position: 'relative', zIndex: 10, maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-        {/* Sleek Pill Badge */}
-        <div style={{ marginBottom: '1.75rem' }}>
+      {/* Hero Foreground Content - Vibrant Video & Crisp Text */}
+      <div className="container" style={{ position: 'relative', zIndex: 10, maxWidth: '920px', margin: '0 auto', textAlign: 'center' }}>
+        {/* Frosted Glass Pill Badge */}
+        <div style={{ marginBottom: '1.5rem' }}>
           <span
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: 'rgba(15, 23, 42, 0.65)',
-              border: '1px solid rgba(255, 255, 255, 0.22)',
-              backdropFilter: 'blur(12px)',
+              background: 'rgba(255, 255, 255, 0.18)',
+              border: '1px solid rgba(255, 255, 255, 0.35)',
+              backdropFilter: 'blur(10px)',
               color: '#ffffff',
-              padding: '0.6rem 1.4rem',
+              padding: '0.55rem 1.4rem',
               borderRadius: '50px',
               fontWeight: 700,
               fontSize: '0.85rem',
-              letterSpacing: '1px',
+              letterSpacing: '1.2px',
               textTransform: 'uppercase',
-              boxShadow: '0 8px 25px rgba(0, 0, 0, 0.3)',
+              boxShadow: '0 6px 20px rgba(0, 0, 0, 0.25)',
+              textShadow: '0 1px 4px rgba(0, 0, 0, 0.6)',
             }}
           >
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff4d26', display: 'inline-block', boxShadow: '0 0 10px #ff4d26' }}></span>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#ff4d26', display: 'inline-block', boxShadow: '0 0 8px #ff4d26' }}></span>
             Speed Ex Relocation Packers and Movers
           </span>
         </div>
@@ -103,50 +104,49 @@ export default function HeroVideoSection() {
         <h1
           style={{
             color: '#ffffff',
-            fontSize: 'clamp(2.5rem, 5.5vw, 4.2rem)',
+            fontSize: 'clamp(2.4rem, 5.2vw, 4.1rem)',
             fontWeight: 800,
-            lineHeight: 1.15,
-            marginBottom: '1.25rem',
+            lineHeight: 1.16,
+            marginBottom: '1.5rem',
             letterSpacing: '-0.5px',
-            textShadow: '0 4px 25px rgba(0,0,0,0.85)',
+            textShadow: '0 3px 18px rgba(0, 0, 0, 0.75)',
           }}
         >
           Best Packers and Movers in{' '}
           <span
             style={{
               color: '#ff4d26',
-              background: 'linear-gradient(135deg, #ff4d26 0%, #ff8566 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
+              textShadow: '0 2px 10px rgba(255, 77, 38, 0.5)',
             }}
           >
             Ahmedabad
           </span>
         </h1>
 
-        {/* Clean Sub-Heading / Description Card */}
+        {/* Crisp Subtitle Card over Light Overlay */}
         <div
           style={{
-            background: 'rgba(15, 23, 42, 0.55)',
-            border: '1px solid rgba(255, 255, 255, 0.12)',
-            backdropFilter: 'blur(12px)',
-            padding: '1.5rem 2rem',
-            borderRadius: '20px',
-            maxWidth: '750px',
+            background: 'rgba(0, 0, 0, 0.28)',
+            border: '1px solid rgba(255, 255, 255, 0.22)',
+            backdropFilter: 'blur(8px)',
+            padding: '1.35rem 2rem',
+            borderRadius: '16px',
+            maxWidth: '760px',
             margin: '0 auto',
-            boxShadow: '0 15px 35px rgba(0,0,0,0.3)',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.2)',
           }}
         >
           <p
             style={{
-              color: '#e2e8f0',
+              color: '#ffffff',
               fontSize: 'clamp(1rem, 2vw, 1.18rem)',
               margin: 0,
               lineHeight: 1.7,
               fontWeight: 500,
+              textShadow: '0 1px 5px rgba(0, 0, 0, 0.6)',
             }}
           >
-            Delivering top-rated <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> near me with maximum safety, transparent pricing, and complete peace of mind.
+            Delivering top-rated <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> near me with maximum safety &amp; complete peace of mind.
           </p>
         </div>
       </div>
