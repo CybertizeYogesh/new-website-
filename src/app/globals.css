@@ -577,7 +577,7 @@ img {
     overflow: hidden;
 }
 
-/* Speedex Relocation Exact Work Process Section (No Hover Animations & Lighter Red #ff3b47) */
+/* Speedex Relocation Exact Work Process Section (Completely Static - Zero Hover Animations) */
 .process-speedex-section {
     background-color: #031d45;
     background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
@@ -715,21 +715,46 @@ img {
     max-width: 250px;
 }
 
-/* NO HOVER ANIMATION FOR SPEEDEX WORK PROCESS SECTION */
+/* ABSOLUTELY ZERO HOVER ANIMATION FOR SPEEDEX WORK PROCESS SECTION */
+.process-speedex-section,
+.process-speedex-section *,
+.process-speedex-section *:hover,
+.speedex-step-item,
 .speedex-step-item:hover,
+.speedex-circle-node,
 .speedex-circle-node:hover,
-.speedex-step-item:hover h3 {
-    transform: none;
-    box-shadow: 0 12px 30px rgba(255, 59, 71, 0.3);
+.speedex-icon-inner,
+.speedex-icon-inner:hover,
+.speedex-step-item h3,
+.speedex-step-item h3:hover,
+.speedex-step-item p,
+.speedex-step-item p:hover,
+.speedex-number-badge,
+.speedex-number-badge:hover,
+.speedex-badge,
+.speedex-badge:hover,
+.speedex-title,
+.speedex-title:hover {
+    transition: none !important;
+    animation: none !important;
+}
+
+.process-speedex-section h3:hover,
+.process-speedex-section h2:hover,
+.process-speedex-section h4:hover,
+.process-speedex-section .speedex-title:hover {
+    transform: none !important;
     color: #ffffff !important;
 }
 
+.speedex-step-item.step-up,
 .speedex-step-item.step-up:hover {
-    transform: translateY(-20px);
+    transform: translateY(-20px) !important;
 }
 
+.speedex-step-item.step-down,
 .speedex-step-item.step-down:hover {
-    transform: translateY(45px);
+    transform: translateY(45px) !important;
 }
 
 @media (max-width: 992px) {
@@ -744,7 +769,7 @@ img {
     .speedex-step-item.step-down,
     .speedex-step-item.step-up:hover,
     .speedex-step-item.step-down:hover {
-        transform: translateY(0);
+        transform: translateY(0) !important;
     }
 }
 

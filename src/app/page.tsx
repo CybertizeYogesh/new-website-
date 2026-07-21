@@ -191,22 +191,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Design (No Hover Animation & Lighter Red) */}
+      {/* 4. Speedex Relocation Exact 'OUR WORK PROCESS' Section (Completely Static - Zero Hover Animations) */}
       <section className="process-speedex-section section" id="process">
         <div className="container">
           <div className="section-header text-center">
             <div className="speedex-badge">
               <i className="fa-solid fa-truck-fast"></i> OUR WORK PROCESS
             </div>
-            <TextAnime>
-              <h2 className="speedex-title">
-                Smooth, efficient relocations at<br />every step
-              </h2>
-            </TextAnime>
+            <h2 className="speedex-title">
+              Smooth, efficient relocations at<br />every step
+            </h2>
           </div>
 
           <div className="speedex-process-wrapper">
-            {/* SVG Connecting Dotted Curved Lines with Lighter Red #ff3b47 */}
+            {/* SVG Connecting Dotted Curved Lines */}
             <svg className="speedex-curved-line" viewBox="0 0 1000 110" fill="none" preserveAspectRatio="none">
               <path d="M 140 85 Q 265 20, 390 40" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
               <path d="M 390 40 Q 515 110, 640 85" stroke="#ff3b47" strokeWidth="2" strokeDasharray="5 5" markerEnd="url(#arrowhead)" />
@@ -220,7 +218,7 @@ export default function HomePage() {
 
             <div className="speedex-grid">
               {/* Step 1 */}
-              <div className="speedex-step-item step-down fade-in-up">
+              <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-headset"></i>
@@ -232,7 +230,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 2 */}
-              <div className="speedex-step-item step-up fade-in-up delay-1">
+              <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-box-open"></i>
@@ -244,7 +242,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 3 */}
-              <div className="speedex-step-item step-down fade-in-up delay-2">
+              <div className="speedex-step-item step-down">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-truck-ramp-box"></i>
@@ -256,7 +254,7 @@ export default function HomePage() {
               </div>
 
               {/* Step 4 */}
-              <div className="speedex-step-item step-up fade-in-up delay-3">
+              <div className="speedex-step-item step-up">
                 <div className="speedex-circle-node">
                   <div className="speedex-icon-inner">
                     <i className="fa-solid fa-house-chimney-check"></i>
