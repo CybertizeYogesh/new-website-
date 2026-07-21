@@ -72,26 +72,6 @@ export default function HeroVideoSection() {
         }}
       ></div>
 
-      {/* Video Switcher Indicators at Bottom Corner */}
-      <div style={{ position: 'absolute', bottom: '24px', right: '24px', zIndex: 10, display: 'flex', gap: '10px' }}>
-        {videoSources.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentVideoIndex(idx)}
-            style={{
-              width: idx === currentVideoIndex ? '36px' : '14px',
-              height: '14px',
-              borderRadius: '7px',
-              background: idx === currentVideoIndex ? '#ff4d26' : 'rgba(255, 255, 255, 0.5)',
-              border: 'none',
-              cursor: 'pointer',
-              transition: 'all 0.3s ease',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
-            }}
-            aria-label={`Switch to Video ${idx + 1}`}
-          />
-        ))}
-      </div>
     </section>
   );
 }
