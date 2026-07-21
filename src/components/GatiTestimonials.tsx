@@ -69,8 +69,32 @@ const testimonialsData = [
   },
 ];
 
+const faqsData = [
+  {
+    question: 'What services does HSM Packers and Movers Electronic City provide?',
+    answer: 'We offer end-to-end relocation solutions including local house shifting, corporate office relocation, car & bike transport, heavy-duty packing & unpacking, domestic intercity moving, warehouse storage, and international moving across Bengaluru and major Indian cities.',
+  },
+  {
+    question: 'How are the moving charges calculated for house shifting?',
+    answer: 'Shifting charges depend on the volume of items, total distance, quality of packing materials required (bubble wrap, corrugated boxes, wooden crating), truck size, floor level, and elevator availability. We provide transparent upfront quotes with zero hidden fees.',
+  },
+  {
+    question: 'Do you provide transit insurance for household items?',
+    answer: 'Yes, we offer full-value transit insurance options covering accidental damage or unforeseen incidents during transportation, ensuring complete protection for all your valuable belongings.',
+  },
+  {
+    question: 'How early should I book HSM Packers and Movers before shifting?',
+    answer: 'We recommend booking 2 to 4 days in advance for local shifting within Electronic City or Bengaluru, and 5 to 7 days prior for intercity or long-distance moves to secure your preferred date and dedicated truck.',
+  },
+  {
+    question: 'Are fragile electronics and glassware packed with extra protection?',
+    answer: 'Absolutely! We utilize heavy-duty multi-layer bubble wrap, foam corner guards, stretch film, and sturdy corrugated boxes or custom wooden crates for all delicate electronics, glass items, and high-value furniture.',
+  },
+];
+
 export default function GatiTestimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -79,6 +103,10 @@ export default function GatiTestimonials() {
     return () => clearInterval(timer);
   }, []);
 
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
+
   const current = testimonialsData[currentIndex];
 
   return (
@@ -86,8 +114,8 @@ export default function GatiTestimonials() {
       <div className="testimonial-one__pattern"></div>
 
       <div className="container">
-        <div className="row style-grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
-          {/* Start Testimonial One Content */}
+        <div className="row style-grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'start' }}>
+          {/* Left Column: Testimonials Carousel */}
           <div className="col-xl-6">
             <div className="testimonial-one__content">
               <div className="big-title">
@@ -154,35 +182,51 @@ export default function GatiTestimonials() {
               </div>
             </div>
           </div>
-          {/* End Testimonial One Content */}
+          {/* End Left Column */}
 
-          {/* Start Testimonial One Img */}
+          {/* Right Column: Frequently Asked Questions (FAQ) */}
           <div className="col-xl-6">
-            <div className="testimonial-one__img">
-              <div className="testimonial-one__img1">
-                <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
-                  alt="HSM Packers and Movers Customer Relocation Service"
-                />
-              </div>
-
-              <div className="testimonial-one__img-author">
-                <ul>
-                  {testimonialsData.slice(0, 4).map((item) => (
-                    <li key={item.id}>
-                      <div className="img-box">{item.initials}</div>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="text-box">
-                  <h2>Customer Satisfied</h2>
-                  <p>4.9 (15k Reviews)</p>
+            <div className="sec-title" style={{ paddingBottom: '25px' }}>
+              <div className="sec-title__tagline">
+                <div className="line"></div>
+                <div className="text">
+                  <h4>Got Questions?</h4>
+                </div>
+                <div className="icon">
+                  <i className="fa-solid fa-circle-question"></i>
                 </div>
               </div>
+              <h2 className="sec-title__title">
+                Frequently Asked <span>Questions</span>
+              </h2>
+            </div>
+
+            <div className="gati-faq-wrapper">
+              {faqsData.map((faq, idx) => {
+                const isOpen = openFaqIndex === idx;
+                return (
+                  <div key={idx} className={`gati-faq-item ${isOpen ? 'active' : ''}`}>
+                    <button
+                      className="gati-faq-header"
+                      onClick={() => toggleFaq(idx)}
+                      aria-expanded={isOpen}
+                    >
+                      <span>{faq.question}</span>
+                      <div className="gati-faq-icon">
+                        <i className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+                      </div>
+                    </button>
+                    {isOpen && (
+                      <div className="gati-faq-body">
+                        <p>{faq.answer}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
-          {/* End Testimonial One Img */}
+          {/* End Right Column */}
         </div>
       </div>
     </section>

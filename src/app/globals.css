@@ -1867,6 +1867,79 @@ img {
     margin-left: 35px;
 }
 
+/* FAQ Accordion Styling inside Testimonial Section */
+.gati-faq-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.gati-faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.gati-faq-item.active {
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 25px rgba(255, 77, 38, 0.12);
+}
+
+.gati-faq-header {
+    width: 100%;
+    padding: 1.1rem 1.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: var(--transition-smooth);
+    gap: 1rem;
+}
+
+.gati-faq-header:hover {
+    color: var(--accent-color);
+}
+
+.gati-faq-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 77, 38, 0.08);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+    transition: var(--transition-smooth);
+}
+
+.gati-faq-item.active .gati-faq-icon {
+    background: var(--accent-color);
+    color: #ffffff;
+}
+
+.gati-faq-body {
+    padding: 0 1.35rem 1.15rem 1.35rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.7;
+    border-top: 1px dashed rgba(226, 232, 240, 0.8);
+    margin-top: 0.25rem;
+    padding-top: 0.85rem;
+}
+
 .testimonial-one__img1 {
     position: relative;
     display: block;
