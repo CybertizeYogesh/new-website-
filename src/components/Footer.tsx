@@ -36,12 +36,6 @@ export default function Footer() {
               <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-phone" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="tel:09624644006" style={{ color: '#ffffff' }}>9624644006</a> / <a href="tel:09211206101" style={{ color: '#ffffff' }}>9211206101</a></p>
               <p><i className="fa-solid fa-envelope" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="mailto:speedexrelocation3@gmail.com" style={{ color: '#ffffff' }}>speedexrelocation3@gmail.com</a></p>
             </div>
-            <div className="footer-social-glow" style={{ marginTop: '1.2rem' }}>
-              <a href="#" aria-label="Facebook" className="social-btn"><i className="fa-brands fa-facebook-f"></i></a>
-              <a href="#" aria-label="Twitter" className="social-btn"><i className="fa-brands fa-twitter"></i></a>
-              <a href="#" aria-label="Instagram" className="social-btn"><i className="fa-brands fa-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn" className="social-btn"><i className="fa-brands fa-linkedin-in"></i></a>
-            </div>
           </div>
 
           {/* Quick Links Column */}
@@ -95,6 +89,12 @@ export default function Footer() {
               <input type="email" placeholder="Enter your email" required />
               <button type="submit" aria-label="Subscribe"><i className="fa-solid fa-paper-plane"></i></button>
             </form>
+            <div className="footer-social-glow" style={{ marginTop: '1.5rem' }}>
+              <a href="#" aria-label="Facebook" className="social-btn"><i className="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter" className="social-btn"><i className="fa-brands fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram" className="social-btn"><i className="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn" className="social-btn"><i className="fa-brands fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
