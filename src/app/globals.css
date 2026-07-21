@@ -1614,23 +1614,26 @@ img {
 .testimonial-one__content .big-title {
     position: absolute;
     left: 0;
-    bottom: -140px;
-    right: 0;
-    text-align: center;
+    bottom: -110px;
+    right: auto;
+    text-align: left;
     z-index: 1;
     pointer-events: none;
     user-select: none;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .testimonial-one__content .big-title h2 {
     color: transparent;
     -webkit-text-stroke: 1px #E4E4E4;
-    font-size: clamp(60px, 9.5vw, 98px);
+    font-size: clamp(36px, 4.8vw, 58px);
     line-height: 0.9em;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
     font-family: var(--font-heading);
+    letter-spacing: 2px;
 }
 
 .testimonial-one__content .sec-title {
