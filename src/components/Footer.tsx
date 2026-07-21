@@ -72,10 +72,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Ahmedabad Areas Column & Newsletter */}
+          {/* Ahmedabad Areas Column */}
           <div className="footer-col">
             <h4 className="footer-heading">Ahmedabad Areas</h4>
-            <ul className="footer-links-list" style={{ marginBottom: '2rem' }}>
+            <ul className="footer-links-list">
               <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Aslali Circle</Link></li>
               <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> SG Highway</Link></li>
               <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Satellite</Link></li>
@@ -83,15 +83,18 @@ export default function Footer() {
               <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Narol</Link></li>
               <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Changodar</Link></li>
             </ul>
+          </div>
 
-            <div className="footer-newsletter">
-              <h5 style={{ color: '#ffffff', fontSize: '0.95rem', marginBottom: '0.5rem', fontWeight: 700 }}>Newsletter</h5>
-              <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '0.75rem' }}>Subscribe for instant updates &amp; moving discounts.</p>
-              <form onSubmit={(e) => e.preventDefault()} className="newsletter-form">
-                <input type="email" placeholder="Enter your email" required />
-                <button type="submit" aria-label="Subscribe"><i className="fa-solid fa-paper-plane"></i></button>
-              </form>
-            </div>
+          {/* Newsletter Column - Right of Ahmedabad Areas */}
+          <div className="footer-col">
+            <h4 className="footer-heading">Newsletter</h4>
+            <p style={{ fontSize: '0.88rem', color: '#94a3b8', marginBottom: '1.25rem', lineHeight: 1.6 }}>
+              Subscribe for instant updates &amp; moving discounts.
+            </p>
+            <form onSubmit={(e) => e.preventDefault()} className="newsletter-form">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit" aria-label="Subscribe"><i className="fa-solid fa-paper-plane"></i></button>
+            </form>
           </div>
         </div>
       </div>
