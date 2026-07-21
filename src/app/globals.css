@@ -115,9 +115,12 @@ body {
     font-family: var(--font-heading);
 }
 
-/* VERY SLOW & ELEGANT CINEMATIC BUTTON ANIMATION */
+/* BUTTON STYLES WITH GUARANTEED WHITE TEXT ON HOVER FOR DARK NAVY BLUE BACKGROUNDS */
 .btn,
-.btn-default {
+.btn-default,
+.btn-primary,
+.btn-secondary,
+.btn-outline {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -128,7 +131,7 @@ body {
     font-weight: 700;
     line-height: 1em;
     text-transform: capitalize;
-    color: var(--white);
+    color: var(--white) !important;
     background: var(--accent-color);
     border-radius: 12px;
     border: none;
@@ -140,25 +143,46 @@ body {
 }
 
 .btn:hover,
-.btn-default:hover {
-    color: var(--white);
+.btn-default:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-outline:hover {
+    color: #ffffff !important;
     box-shadow: 0 12px 30px -5px rgba(255, 77, 38, 0.5);
     transform: translateY(-2px);
 }
 
+.btn:hover *,
+.btn-default:hover *,
+.btn-primary:hover *,
+.btn-secondary:hover *,
+.btn-outline:hover * {
+    color: #ffffff !important;
+}
+
 /* Very Slow Arrow Nudge Animation */
 .btn i,
-.btn-default::before {
+.btn-default::before,
+.btn-primary i,
+.btn-secondary i,
+.btn-outline i {
+    color: #ffffff !important;
     transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.btn:hover i {
+.btn:hover i,
+.btn-default:hover i,
+.btn-primary:hover i,
+.btn-secondary:hover i,
+.btn-outline:hover i {
     transform: translateX(6px);
+    color: #ffffff !important;
 }
 
 /* Very Slow Skewed Background Curtain Wipe */
 .btn::after,
-.btn-default::after {
+.btn-default::after,
+.btn-primary::after {
     content: '';
     display: block;
     position: absolute;
@@ -175,34 +199,41 @@ body {
 }
 
 .btn:hover::after,
-.btn-default:hover:after {
+.btn-default:hover::after,
+.btn-primary:hover::after {
     width: 130%;
     transform: skew(0deg);
     left: 0;
 }
 
-/* Highlighted / Secondary Button Variant */
+/* Highlighted / Secondary Button Variant (Navy Blue Background -> White Text on Hover) */
 .btn-secondary {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .btn-secondary::after {
     background: var(--accent-color);
 }
 
+.btn-secondary:hover {
+    color: #ffffff !important;
+}
+
+/* Outline Button Variant (Navy Blue Curtain Wipe -> White Text on Hover) */
 .btn-outline {
     background: transparent;
     border: 2px solid rgba(255, 255, 255, 0.8);
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .btn-outline::after {
-    background: var(--white);
+    background: var(--primary-color);
 }
 
 .btn-outline:hover {
-    color: var(--primary-color);
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.95);
 }
 
 .btn-block {
@@ -310,7 +341,11 @@ body {
 }
 
 .service-card:hover .read-more {
-    color: var(--white);
+    color: var(--white) !important;
+}
+
+.service-card:hover .read-more i {
+    color: var(--white) !important;
 }
 
 .service-card:hover .service-icon {
