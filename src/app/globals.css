@@ -132,9 +132,7 @@ body {
 .btn-outline,
 .btn-white,
 .btn-light,
-button[type="submit"],
-.form-card button,
-.newsletter-form button {
+.form-card button:not(.newsletter-form button) {
     position: relative;
     display: inline-flex;
     align-items: center;
@@ -2178,17 +2176,19 @@ img {
 
 .newsletter-form {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 0.35rem;
+    padding: 4px 6px 4px 16px;
     border-radius: 50px;
+    width: 100%;
 }
 
 .newsletter-form input {
     background: transparent;
     border: none;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 0;
     color: var(--white);
     font-size: 0.85rem;
     width: 100%;
@@ -2203,13 +2203,17 @@ img {
     background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
     color: var(--white);
     border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     transition: var(--transition-smooth);
     flex-shrink: 0;
 }
