@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 import LocationLandingPage from '@/components/LocationLandingPage';
 
 export const metadata: Metadata = {
-  title: 'Packers and Movers in Bellandur | Speed Ex Relocation',
-  description: 'Best Packers and Movers in Bellandur. Speed Ex Relocation Packers and Movers provides safe house shifting, office relocation & vehicle transport. Call: 9624644006 / 9211206101.',
-  keywords: 'packers and movers in bellandur, bellandur packers movers, house shifting bellandur, movers bellandur bengaluru',
+  title: 'Packers and Movers in Satellite Ahmedabad | Speed Ex Relocation',
+  description: 'Best Packers and Movers in Satellite, Ahmedabad. Speed Ex Relocation Packers and Movers provides safe house shifting, office relocation & vehicle transport. Call: 9624644006 / 9211206101.',
+  keywords: 'packers and movers in satellite ahmedabad, satellite packers movers, house shifting satellite ahmedabad, movers satellite ahmedabad',
 };
 
 export default function BellandurPage() {
-  return <LocationLandingPage locationName="Bellandur" />;
+  return <LocationLandingPage locationName="Satellite, Ahmedabad" />;
 }

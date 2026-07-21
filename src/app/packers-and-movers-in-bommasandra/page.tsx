@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 import LocationLandingPage from '@/components/LocationLandingPage';
 
 export const metadata: Metadata = {
-  title: 'Packers and Movers in Bommasandra | HSM Packers and Movers Bengaluru',
-  description: 'Best Packers and Movers in Bommasandra, Bengaluru. Reliable house shifting & office relocation services.',
-  keywords: 'packers and movers in bommasandra, bommasandra packers movers, house shifting bommasandra',
+  title: 'Packers and Movers in Narol Ahmedabad | Speed Ex Relocation',
+  description: 'Best Packers and Movers in Narol, Ahmedabad. Speed Ex Relocation Packers and Movers provides safe house shifting, office relocation & vehicle transport. Call: 9624644006 / 9211206101.',
+  keywords: 'packers and movers in narol ahmedabad, narol packers movers, house shifting narol ahmedabad, movers narol ahmedabad',
 };
 
 export default function BommasandraPage() {
-  return <LocationLandingPage locationName="Bommasandra" />;
+  return <LocationLandingPage locationName="Narol, Ahmedabad" />;
 }
