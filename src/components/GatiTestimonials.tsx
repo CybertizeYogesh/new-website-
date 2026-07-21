@@ -107,8 +107,6 @@ export default function GatiTestimonials() {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
 
-  const current = testimonialsData[currentIndex];
-
   return (
     <section className="testimonial-one" id="testimonials">
       <div className="testimonial-one__pattern"></div>
@@ -137,36 +135,52 @@ export default function GatiTestimonials() {
                 </h2>
               </div>
 
-              <div className="testimonial-one__carousel">
-                {/* Start Testimonial One Single */}
-                <div className="testimonial-one__single">
-                  <div className="icon">
-                    <i className="fa-solid fa-quote-right"></i>
-                  </div>
-                  <div className="testimonial-one__single-inner">
-                    <div className="author-box">
-                      <div className="img-box">
-                        <img src={current.image} alt={current.name} />
+              {/* Overflow Hidden Carousel Viewport */}
+              <div className="testimonial-one__carousel" style={{ overflow: 'hidden', width: '100%', position: 'relative' }}>
+                {/* Horizontal Slide Track */}
+                <div
+                  className="testimonial-one__carousel-track"
+                  style={{
+                    display: 'flex',
+                    width: '100%',
+                    transition: 'transform 0.75s cubic-bezier(0.25, 1, 0.5, 1)',
+                    transform: `translateX(-${currentIndex * 100}%)`,
+                  }}
+                >
+                  {testimonialsData.map((item) => (
+                    <div
+                      key={item.id}
+                      className="testimonial-one__single"
+                      style={{ minWidth: '100%', width: '100%', flexShrink: 0, paddingTop: '10px' }}
+                    >
+                      <div className="icon">
+                        <i className="fa-solid fa-quote-right"></i>
                       </div>
-                      <div className="author-info">
-                        <h2>{current.name}</h2>
-                        <div className="bottom-text">
-                          <p>{current.role}</p>
-                          <div className="rating-box">
-                            {[...Array(current.rating)].map((_, i) => (
-                              <i key={i} className="fa-solid fa-star"></i>
-                            ))}
+                      <div className="testimonial-one__single-inner">
+                        <div className="author-box">
+                          <div className="img-box">
+                            <img src={item.image} alt={item.name} />
                           </div>
+                          <div className="author-info">
+                            <h2>{item.name}</h2>
+                            <div className="bottom-text">
+                              <p>{item.role}</p>
+                              <div className="rating-box">
+                                {[...Array(item.rating)].map((_, i) => (
+                                  <i key={i} className="fa-solid fa-star"></i>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="text-box">
+                          <p>"{item.text}"</p>
                         </div>
                       </div>
                     </div>
-
-                    <div className="text-box">
-                      <p>"{current.text}"</p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
-                {/* End Testimonial One Single */}
               </div>
 
               {/* Slider Controls (Dots Only) */}
