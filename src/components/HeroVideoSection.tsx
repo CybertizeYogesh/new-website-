@@ -200,7 +200,7 @@ export default function HeroVideoSection() {
           <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="Facebook"><i className="fa-brands fa-facebook-f"></i></a>
           <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="Twitter"><i className="fa-brands fa-twitter"></i></a>
           <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="LinkedIn"><i className="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="YouTube"><i className="fa-brands fa-youtube"></i></a>
+          <a href="#" style={{ color: '#ffffff', fontSize: '1.05rem', transition: 'color 0.2s ease' }} aria-label="Instagram"><i className="fa-brands fa-instagram"></i></a>
         </div>
         <div style={{ width: '1px', height: '30px', background: 'rgba(255, 255, 255, 0.25)' }}></div>
         <span style={{ writingMode: 'vertical-rl', color: '#ff4d26', fontWeight: 800, fontSize: '0.75rem', letterSpacing: '2px' }}>FOLLOW US</span>
