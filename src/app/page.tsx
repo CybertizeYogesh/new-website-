@@ -531,154 +531,213 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 9. Working Process Showcase Section */}
-      <section className="section" style={{ backgroundColor: '#ffffff', padding: '90px 0', borderTop: '1px solid #e2e8f0' }}>
+      {/* 9. Working Process Section (Exact omrelocationmoversandpackers.in layout with Speed Ex brand colors) */}
+      <section className="work-process-section" style={{ backgroundColor: '#f8fafc', padding: '95px 0', position: 'relative', overflow: 'hidden', borderTop: '1px solid #e2e8f0' }}>
         <div className="container">
-          <div className="section-header text-center" style={{ marginBottom: '3.5rem' }}>
-            <span className="sub-title">OUR WORKING PROCESS</span>
+          {/* Header */}
+          <div className="section-header text-center" style={{ marginBottom: '4rem' }}>
+            <span className="sub-title" style={{ color: '#ff4d26', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '1.5px', fontSize: '0.88rem' }}>
+              Working Process
+            </span>
             <TextAnime>
-              <h2>How We Ensure a Stress-Free Relocation</h2>
+              <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.75rem)', fontWeight: 800, color: '#0b2b3c', marginTop: '0.5rem' }}>
+                Standard Work Process
+              </h2>
             </TextAnime>
-            <p style={{ maxWidth: '750px', margin: '0 auto', color: '#64748b', fontSize: '1.02rem', lineHeight: 1.7 }}>
-              Speed Ex Relocation Packers and Movers follows a proven step-by-step moving process for <strong>household shifting services</strong>, <strong>office moving services</strong>, and <strong>vehicle moving services</strong> near me.
-            </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
+          {/* 3 Step Cards Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', position: 'relative' }}>
             
-            {/* Step 1 */}
+            {/* Step 1: Move Planning */}
             <div
+              className="work-process-card"
               style={{
-                background: '#f8fafc',
-                padding: '2.25rem 1.75rem',
-                borderRadius: '20px',
+                backgroundColor: '#ffffff',
+                padding: '3rem 2rem 2.5rem',
+                borderRadius: '24px',
+                textAlign: 'center',
+                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'all 0.3s ease',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
               }}
             >
-              <span
-                style={{
-                  position: 'absolute',
-                  top: '1.5rem',
-                  right: '1.5rem',
-                  fontSize: '2rem',
-                  fontWeight: 900,
-                  color: 'rgba(255, 77, 38, 0.15)',
-                }}
-              >
-                01
-              </span>
-              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
-                <i className="fa-solid fa-clipboard-check"></i>
+              {/* Icon Box with Badge */}
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+                <div
+                  style={{
+                    width: '96px',
+                    height: '96px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #0b2b3c 0%, #1e3a8a 100%)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2.2rem',
+                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                  }}
+                >
+                  <i className="fa-solid fa-headset"></i>
+                </div>
+                {/* Step Number Badge */}
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: '-4px',
+                    right: '-4px',
+                    width: '34px',
+                    height: '34px',
+                    borderRadius: '50%',
+                    background: '#ff4d26',
+                    color: '#ffffff',
+                    fontWeight: 800,
+                    fontSize: '0.95rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '3px solid #ffffff',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                  }}
+                >
+                  1
+                </span>
               </div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
-                1. Inspection &amp; Free Quote
+
+              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+                Move Planning
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
-                Our <strong>best packers and movers in ahmedabad</strong> evaluate your goods, suggest custom packing, and provide an all-inclusive transparent quote.
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+                Our experts plan every move carefully so packing, loading and scheduling stay organized and nothing delays your shifting.
               </p>
             </div>
 
-            {/* Step 2 */}
+            {/* Step 2: Safe Transport */}
             <div
+              className="work-process-card"
               style={{
-                background: '#f8fafc',
-                padding: '2.25rem 1.75rem',
-                borderRadius: '20px',
+                backgroundColor: '#ffffff',
+                padding: '3rem 2rem 2.5rem',
+                borderRadius: '24px',
+                textAlign: 'center',
+                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'all 0.3s ease',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
               }}
             >
-              <span
-                style={{
-                  position: 'absolute',
-                  top: '1.5rem',
-                  right: '1.5rem',
-                  fontSize: '2rem',
-                  fontWeight: 900,
-                  color: 'rgba(255, 77, 38, 0.15)',
-                }}
-              >
-                02
-              </span>
-              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
-                <i className="fa-solid fa-box-open"></i>
+              {/* Icon Box with Badge */}
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+                <div
+                  style={{
+                    width: '96px',
+                    height: '96px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #0b2b3c 0%, #1e3a8a 100%)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2.2rem',
+                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                  }}
+                >
+                  <i className="fa-solid fa-truck-fast"></i>
+                </div>
+                {/* Step Number Badge */}
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: '-4px',
+                    right: '-4px',
+                    width: '34px',
+                    height: '34px',
+                    borderRadius: '50%',
+                    background: '#ff4d26',
+                    color: '#ffffff',
+                    fontWeight: 800,
+                    fontSize: '0.95rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '3px solid #ffffff',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                  }}
+                >
+                  2
+                </span>
               </div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
-                2. Multi-Layer Packing
+
+              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+                Safe Transport
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
-                Heavy-duty corrugated sheets, bubble wrap, and waterproof stretch film ensure maximum protection for delicate items and furniture.
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+                Our trained drivers transport your goods securely using proper handling methods so every item reaches the destination safely.
               </p>
             </div>
 
-            {/* Step 3 */}
+            {/* Step 3: Delivery Done */}
             <div
+              className="work-process-card"
               style={{
-                background: '#f8fafc',
-                padding: '2.25rem 1.75rem',
-                borderRadius: '20px',
+                backgroundColor: '#ffffff',
+                padding: '3rem 2rem 2.5rem',
+                borderRadius: '24px',
+                textAlign: 'center',
+                boxShadow: '0 10px 30px rgba(11, 43, 60, 0.06)',
                 border: '1px solid #e2e8f0',
                 position: 'relative',
-                transition: 'all 0.3s ease',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
               }}
             >
-              <span
-                style={{
-                  position: 'absolute',
-                  top: '1.5rem',
-                  right: '1.5rem',
-                  fontSize: '2rem',
-                  fontWeight: 900,
-                  color: 'rgba(255, 77, 38, 0.15)',
-                }}
-              >
-                03
-              </span>
-              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
-                <i className="fa-solid fa-truck-ramp-box"></i>
+              {/* Icon Box with Badge */}
+              <div style={{ position: 'relative', width: '96px', height: '96px', margin: '0 auto 2rem' }}>
+                <div
+                  style={{
+                    width: '96px',
+                    height: '96px',
+                    borderRadius: '50%',
+                    background: 'linear-gradient(135deg, #0b2b3c 0%, #1e3a8a 100%)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '2.2rem',
+                    boxShadow: '0 12px 25px rgba(11, 43, 60, 0.2)',
+                  }}
+                >
+                  <i className="fa-solid fa-box-archive"></i>
+                </div>
+                {/* Step Number Badge */}
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: '-4px',
+                    right: '-4px',
+                    width: '34px',
+                    height: '34px',
+                    borderRadius: '50%',
+                    background: '#ff4d26',
+                    color: '#ffffff',
+                    fontWeight: 800,
+                    fontSize: '0.95rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '3px solid #ffffff',
+                    boxShadow: '0 4px 10px rgba(255, 77, 38, 0.35)',
+                  }}
+                >
+                  3
+                </span>
               </div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
-                3. Safe Express Transport
-              </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
-                Our licensed <strong>transport logistics company</strong> uses enclosed GPS-tracked container trucks driven by experienced route specialists.
-              </p>
-            </div>
 
-            {/* Step 4 */}
-            <div
-              style={{
-                background: '#f8fafc',
-                padding: '2.25rem 1.75rem',
-                borderRadius: '20px',
-                border: '1px solid #e2e8f0',
-                position: 'relative',
-                transition: 'all 0.3s ease',
-              }}
-            >
-              <span
-                style={{
-                  position: 'absolute',
-                  top: '1.5rem',
-                  right: '1.5rem',
-                  fontSize: '2rem',
-                  fontWeight: 900,
-                  color: 'rgba(255, 77, 38, 0.15)',
-                }}
-              >
-                04
-              </span>
-              <div style={{ width: '60px', height: '60px', borderRadius: '16px', background: 'rgba(255, 77, 38, 0.1)', color: '#ff4d26', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', marginBottom: '1.5rem' }}>
-                <i className="fa-solid fa-house-chimney-user"></i>
-              </div>
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '0.75rem' }}>
-                4. Unpacking &amp; Placement
+              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0b2b3c', marginBottom: '1rem' }}>
+                Delivery Done
               </h3>
-              <p style={{ color: '#64748b', fontSize: '0.92rem', lineHeight: 1.7, margin: 0 }}>
-                Our <strong>relocation movers near me</strong> unpack, reassemble, and carefully position every item in your new destination home or office.
+              <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>
+                After careful packing and transport, our team ensures timely delivery so clients receive their goods complete and damage free.
               </p>
             </div>
 
