@@ -101,17 +101,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom Copyright Bar */}
+        {/* Footer Bottom Copyright & Developer Bar */}
         <div className="footer-bottom-bar" style={{
           borderTop: '1px solid rgba(255, 255, 255, 0.1)',
           paddingTop: '1.5rem',
-          marginTop: '2rem',
-          textAlign: 'center',
+          marginTop: '2.5rem',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '1rem',
           color: '#94a3b8',
           fontSize: '0.88rem'
         }}>
           <p style={{ margin: 0 }}>
             &copy; Copyright {currentYear} speed ex relocation Packers &amp; Movers All Rights Reserved
+          </p>
+          <p style={{ margin: 0 }}>
+            Developed by{' '}
+            <a 
+              href="https://cybertizegrowth.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              style={{ color: '#ff4d26', fontWeight: 600 }}
+            >
+              Cybertizegrowth
+            </a>
           </p>
         </div>
       </div>
