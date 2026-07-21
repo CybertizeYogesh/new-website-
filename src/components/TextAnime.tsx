@@ -1,12 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
+import React from 'react';
 
 interface TextAnimeProps {
   children: React.ReactNode;
@@ -14,45 +8,9 @@ interface TextAnimeProps {
   delay?: number;
 }
 
-export default function TextAnime({ children, className = '', delay = 0 }: TextAnimeProps) {
-  const textRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!textRef.current) return;
-
-    const el = textRef.current;
-    
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        el,
-        {
-          opacity: 0,
-          y: 45,
-          rotateX: 45,
-          transformPerspective: 1000,
-          transformOrigin: '0% 50% -50'
-        },
-        {
-          opacity: 1,
-          y: 0,
-          rotateX: 0,
-          duration: 1.1,
-          delay: delay,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 88%',
-            toggleActions: 'play none none none'
-          }
-        }
-      );
-    }, textRef);
-
-    return () => ctx.revert();
-  }, [delay]);
-
+export default function TextAnime({ children, className = '' }: TextAnimeProps) {
   return (
-    <div ref={textRef} className={`text-anime-wrap ${className}`} style={{ perspective: '1000px' }}>
+    <div className={`text-anime-wrap ${className}`} style={{ opacity: 1, visibility: 'visible' }}>
       {children}
     </div>
   );
