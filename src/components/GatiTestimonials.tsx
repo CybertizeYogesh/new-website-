@@ -147,11 +147,8 @@ export default function GatiTestimonials() {
                 {/* End Testimonial One Single */}
               </div>
 
-              {/* Slider Controls */}
+              {/* Slider Controls (Dots Only) */}
               <div className="gati-slider-controls">
-                <button className="gati-slider-arrow" onClick={handlePrev} aria-label="Previous Testimonial">
-                  <i className="fa-solid fa-arrow-left"></i>
-                </button>
                 <div className="gati-slider-dots">
                   {testimonialsData.map((_, idx) => (
                     <button
@@ -162,9 +159,6 @@ export default function GatiTestimonials() {
                     />
                   ))}
                 </div>
-                <button className="gati-slider-arrow" onClick={handleNext} aria-label="Next Testimonial">
-                  <i className="fa-solid fa-arrow-right"></i>
-                </button>
               </div>
             </div>
           </div>
