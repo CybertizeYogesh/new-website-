@@ -57,7 +57,7 @@ export default function Navbar() {
         <div className="container nav-container">
           <Link href="/" className="logo" onClick={closeMenu}>
             <Image 
-              src="/assets/images/logo.png" 
+              src="/assets/images/logo.webp" 
               alt="Speed Ex Relocation Packers and Movers" 
               width={170} 
               height={50} 

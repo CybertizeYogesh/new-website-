@@ -80,7 +80,7 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
           <div className="services-grid">
             <div className="service-card fade-in-up">
               <div className="service-img">
-                <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
+                <Image src="/assets/images/home-relocation.webp" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-house-chimney"></i></div>
@@ -92,7 +92,7 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
 
             <div className="service-card fade-in-up delay-1">
               <div className="service-img">
-                <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
+                <Image src="/assets/images/office-relocation.webp" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-building"></i></div>
@@ -104,7 +104,7 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
 
             <div className="service-card fade-in-up delay-2">
               <div className="service-img">
-                <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
+                <Image src="/assets/images/vehicle-transportation.webp" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-car-side"></i></div>

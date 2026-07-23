@@ -32,7 +32,7 @@ export default function Preloader() {
       <div className="preloader-content">
         <div className="preloader-logo">
           <Image 
-            src="/assets/images/logo.png" 
+            src="/assets/images/logo.webp" 
             alt="Speed Ex relocation packers and movers" 
             width={180} 
             height={55}

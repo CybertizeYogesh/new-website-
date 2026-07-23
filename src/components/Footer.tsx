@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="footer-brand-card">
             <Link href="/" className="footer-logo">
               <Image 
-                src="/assets/images/logo.png" 
+                src="/assets/images/logo.webp" 
                 alt="Speed Ex Relocation Packers and Movers" 
                 width={190} 
                 height={60} 

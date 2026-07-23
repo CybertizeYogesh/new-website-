@@ -13,7 +13,7 @@ export default function HouseRelocationPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/household-shifting.jpg')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/household-shifting.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -55,7 +55,7 @@ export default function HouseRelocationPage() {
               <ImageReveal>
                 <figure className="image-anime" data-cursor-text="HOUSE MOVE">
                   <div className="service-detail-img">
-                    <img src="/assets/images/household-shifting.jpg" alt="House Relocation" />
+                    <img src="/assets/images/household-shifting.webp" alt="House Relocation" />
                   </div>
                 </figure>
               </ImageReveal>

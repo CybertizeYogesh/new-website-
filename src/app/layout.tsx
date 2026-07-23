@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Speed Ex Relocation Packers and Movers' }],
   metadataBase: new URL('https://speedexrelocation.com'),
   icons: {
-    icon: '/assets/images/favicon.png',
-    shortcut: '/assets/images/favicon.png',
-    apple: '/assets/images/favicon.png',
+    icon: '/assets/images/favicon.webp',
+    shortcut: '/assets/images/favicon.webp',
+    apple: '/assets/images/favicon.webp',
   },
   openGraph: {
     title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation',
@@ -49,8 +49,8 @@ const jsonLd = {
   '@type': 'MovingCompany',
   'name': 'Speed Ex Relocation Packers and Movers',
   'url': 'https://speedexrelocation.com',
-  'logo': 'https://speedexrelocation.com/assets/images/logo.png',
-  'image': 'https://speedexrelocation.com/assets/images/logo.png',
+  'logo': 'https://speedexrelocation.com/assets/images/logo.webp',
+  'image': 'https://speedexrelocation.com/assets/images/logo.webp',
   'description': 'Speed Ex Relocation is the best packers and movers in Ahmedabad offering top household shifting services near me, office moving services, vehicle moving services & transport logistics solutions.',
   'telephone': '+919624644006',
   'email': 'speedexrelocation3@gmail.com',

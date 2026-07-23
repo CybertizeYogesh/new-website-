@@ -54,7 +54,7 @@ export default function MoversPackingVideoPlayer() {
           loop
           muted
           playsInline
-          poster="/assets/images/movers-packing-loading.png"
+          poster="/assets/images/movers-packing-loading.webp"
           style={{
             width: '100%',
             height: '100%',
@@ -67,7 +67,7 @@ export default function MoversPackingVideoPlayer() {
 
         {/* Overlaid Image Visual */}
         <Image
-          src="/assets/images/movers-packing-loading.png"
+          src="/assets/images/movers-packing-loading.webp"
           alt="Packers and Movers Employees Packing Items and Loading Truck"
           fill
           style={{

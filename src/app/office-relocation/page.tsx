@@ -12,7 +12,7 @@ export default function OfficeRelocationPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/office-relocation.png')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/office-relocation.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -51,7 +51,7 @@ export default function OfficeRelocationPage() {
             </div>
             <div className="about-image fade-in-left">
               <div className="service-detail-img" style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
-                <img src="/assets/images/office-relocation.png" alt="Office Relocation" />
+                <img src="/assets/images/office-relocation.webp" alt="Office Relocation" />
               </div>
             </div>
           </div>
