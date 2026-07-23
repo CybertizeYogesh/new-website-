@@ -15,7 +15,7 @@ export default function AboutUsPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/about-hero.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
@@ -38,7 +38,7 @@ export default function AboutUsPage() {
                 <figure className="image-anime" data-cursor-text="OUR TEAM">
                   <div className="img-wrapper">
                     <img
-                      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop"
+                      src="/assets/images/about-showcase.webp"
                       alt="Our Team"
                     />
                   </div>

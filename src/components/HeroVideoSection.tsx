@@ -151,17 +151,17 @@ export default function HeroVideoSection() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <div style={{ display: 'flex' }}>
                   <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop"
+                    src="/assets/images/avatar-1.webp"
                     alt="Client 1"
                     style={{ width: '42px', height: '42px', borderRadius: '50%', border: '2px solid #ffffff', objectFit: 'cover' }}
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
+                    src="/assets/images/avatar-2.webp"
                     alt="Client 2"
                     style={{ width: '42px', height: '42px', borderRadius: '50%', border: '2px solid #ffffff', objectFit: 'cover', marginLeft: '-14px' }}
                   />
                   <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
+                    src="/assets/images/avatar-3.webp"
                     alt="Client 3"
                     style={{ width: '42px', height: '42px', borderRadius: '50%', border: '2px solid #ffffff', objectFit: 'cover', marginLeft: '-14px' }}
                   />

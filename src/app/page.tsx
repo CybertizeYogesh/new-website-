@@ -388,7 +388,7 @@ export default function HomePage() {
                 <figure className="image-anime" data-cursor-text="ABOUT">
                   <div className="img-wrapper">
                     <img
-                      src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=800&auto=format&fit=crop"
+                      src="/assets/images/packing-wood-crating.webp"
                       alt="About Speed Ex Relocation Packers and Movers"
                     />
                     <div className="exp-badge">

@@ -14,7 +14,7 @@ export default function ContactUsPage() {
     <>
       <header className="page-header" style={{
         backgroundColor: 'var(--primary-color)',
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/contact-hero.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '12rem 0 6rem',

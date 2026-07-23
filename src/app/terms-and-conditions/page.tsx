@@ -12,7 +12,7 @@ export default function TermsAndConditionsPage() {
   return (
     <>
       <header className="page-header" style={{
-        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1450133064473-71024230f91b?q=80&w=2070&auto=format&fit=crop')`,
+        backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('/assets/images/legal-hero.webp')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         padding: '10rem 0 5rem',
