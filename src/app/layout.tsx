@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     shortcut: '/assets/images/favicon.webp',
     apple: '/assets/images/favicon.webp',
   },
+  alternates: {
+    canonical: 'https://speedexrelocation.com',
+  },
+  verification: {
+    google: 'google-site-verification-placeholder',
+    yandex: 'yandex-verification-placeholder',
+  },
   openGraph: {
     title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation',
     description: 'Premier household shifting services, office moving services, vehicle moving services & transport logistics company in Ahmedabad.',

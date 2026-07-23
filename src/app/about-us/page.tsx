@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'About Us | Speed Ex Relocation Packers and Movers',
   description: 'Learn about Speed Ex Relocation Packers and Movers, our mission, vision, and the expert team behind Indias trusted relocation services.',
   keywords: 'about speed ex relocation, trusted packers movers ahmedabad, experienced movers aslali, reliable relocation company ahmedabad',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/about-us',
+  },
 };
 
 export default function AboutUsPage() {

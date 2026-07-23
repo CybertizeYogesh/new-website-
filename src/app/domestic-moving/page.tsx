@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Packers and Movers Ahmedabad | Transport Logistics Company & Shifting Company',
   description: 'Speed Ex Relocation is the best packers and movers in Ahmedabad for domestic household shifting services near me & nationwide office moving services. Call: 9624644006.',
   keywords: 'packers and movers ahmedabad, best packers and movers, transport logistics company, shifting company, household shifting services near me, relocation movers near me',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/domestic-moving',
+  },
 };
 
 export default function DomesticMovingPage() {

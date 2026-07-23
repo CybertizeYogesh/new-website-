@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Household Shifting Services Near Me | Best Packers and Movers Ahmedabad',
   description: 'Looking for top household shifting services near me in Ahmedabad? Speed Ex Relocation is the best packers and movers offering safe, stress-free home relocation movers near me. Call: 9624644006.',
   keywords: 'household shifting services, household shifting services near me, best packers and movers, packers and movers ahmedabad, relocation movers near me, shifting company',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/house-relocation',
+  },
 };
 
 export default function HouseRelocationPage() {

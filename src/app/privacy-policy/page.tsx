@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | Speed Ex Relocation Packers and Movers',
   description: 'Privacy Policy of Speed Ex Relocation Packers and Movers explaining how we collect, use, and protect your data.',
   keywords: 'speed ex relocation privacy policy, packers movers data policy ahmedabad',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

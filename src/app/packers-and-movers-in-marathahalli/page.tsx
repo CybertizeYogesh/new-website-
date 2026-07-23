@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Packers and Movers in Prahlad Nagar Ahmedabad | Speed Ex Relocation',
   description: 'Best Packers and Movers in Prahlad Nagar, Ahmedabad. Speed Ex Relocation Packers and Movers provides safe house shifting, office relocation & vehicle transport. Call: 9624644006 / 9211206101.',
   keywords: 'packers and movers in prahlad nagar ahmedabad, prahlad nagar packers movers, house shifting prahlad nagar ahmedabad, movers prahlad nagar ahmedabad',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/packers-and-movers-in-marathahalli',
+  },
 };
 
 export default function MarathahalliPage() {

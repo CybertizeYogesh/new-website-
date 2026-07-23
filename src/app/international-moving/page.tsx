@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'International Moving | Speed Ex relocation packers and movers',
   description: 'Reliable international moving & global relocation services with complete customs & air/sea cargo management.',
   keywords: 'international moving, global relocation, speed ex relocation packers and movers, overseas shifting',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/international-moving',
+  },
 };
 
 export default function InternationalMovingPage() {

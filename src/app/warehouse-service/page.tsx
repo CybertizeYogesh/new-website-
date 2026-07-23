@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Warehouse Service | Speed Ex relocation packers and movers',
   description: 'Spacious, clean, and 24/7 monitored warehouse & storage facilities for short and long-term goods storage.',
   keywords: 'warehouse service, storage facilities, speed ex relocation packers and movers, goods storage ahmedabad',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/warehouse-service',
+  },
 };
 
 export default function WarehouseServicePage() {

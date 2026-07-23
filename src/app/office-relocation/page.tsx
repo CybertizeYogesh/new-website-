@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Office Moving Services | Shifting Company & Transport Logistics Company',
   description: 'Top office moving services in Ahmedabad by Speed Ex Relocation. Reliable shifting company & transport logistics company for IT equipment & commercial office moving. Call: 9624644006.',
   keywords: 'office moving services, shifting company, transport logistics company, best packers and movers, packers and movers ahmedabad, relocation movers near me',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/office-relocation',
+  },
 };
 
 export default function OfficeRelocationPage() {

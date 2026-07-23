@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Terms and Conditions | Speed Ex Relocation Packers and Movers',
   description: 'Terms and Conditions of Speed Ex Relocation Packers and Movers regarding services, payments, liability, and cancellations.',
   keywords: 'speed ex relocation terms conditions, movers terms ahmedabad, relocation service terms india',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/terms-and-conditions',
+  },
 };
 
 export default function TermsAndConditionsPage() {

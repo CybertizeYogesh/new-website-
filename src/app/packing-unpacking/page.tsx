@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Packing & Unpacking | Speed Ex relocation packers and movers',
   description: 'Professional packing & unpacking services using multi-layer bubble wrap, foam sheets, and sturdy carton boxes.',
   keywords: 'packing unpacking services, speed ex relocation packers and movers, household packing solutions',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/packing-unpacking',
+  },
 };
 
 export default function PackingUnpackingPage() {

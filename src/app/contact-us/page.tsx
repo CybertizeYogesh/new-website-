@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Contact Us | Speed Ex Relocation Packers and Movers',
   description: 'Get in touch with Speed Ex Relocation Packers and Movers in Aslali, Ahmedabad for quotes, queries, or support. Call 9624644006 / 9211206101.',
   keywords: 'contact speed ex relocation, packers movers phone number ahmedabad, packers movers aslali contact, shifting service enquiry ahmedabad',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/contact-us',
+  },
 };
 
 export default function ContactUsPage() {

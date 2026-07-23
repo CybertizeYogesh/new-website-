@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Vehicle Moving Services | Transport Logistics Company Ahmedabad',
   description: 'Top vehicle moving services and enclosed car container transport in Ahmedabad by Speed Ex Relocation - best packers and movers & transport logistics company. Call: 9624644006.',
   keywords: 'vehicle moving services, transport logistics company, best packers and movers, packers and movers ahmedabad, shifting company, relocation movers near me',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/car-transportation',
+  },
 };
 
 export default function CarTransportationPage() {

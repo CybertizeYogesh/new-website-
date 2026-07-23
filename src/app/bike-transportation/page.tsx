@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Bike Transportation | Speed Ex Relocation Packers and Movers',
   description: 'Scratch-free two-wheeler & bike transport services across India with closed container carriers.',
   keywords: 'bike transport bengaluru, bike shifting electronic city, two wheeler transport india, motor bike relocation',
+  alternates: {
+    canonical: 'https://speedexrelocation.com/bike-transportation',
+  },
 };
 
 export default function BikeTransportationPage() {
