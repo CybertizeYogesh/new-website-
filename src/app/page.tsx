@@ -31,14 +31,15 @@ export default function HomePage() {
             {/* Left Column: why.mp4 Image Showcase */}
             <div style={{ position: 'relative' }}>
               <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(11, 43, 60, 0.12)', border: '4px solid #ffffff', background: '#ffffff' }}>
-                <Image 
-                  src="/assets/images/why.mp4" 
-                  alt="Why Choose Speed Ex relocation packers and movers" 
-                  width={550} 
-                  height={420} 
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
-                  unoptimized
-                />
+                >
+                  <source src="/assets/images/why.mp4" type="video/mp4" />
+                </video>
               </div>
 
               {/* Floating Badge */}
