@@ -141,7 +141,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/home-relocation.png" alt="House Relocation" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
@@ -157,7 +157,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/office-relocation.png" alt="Office Shifting" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
@@ -173,7 +173,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/vehicle-transportation.jpg" alt="Vehicle Transport" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
@@ -189,7 +189,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/warehouse.jpg" alt="Warehouse Storage" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
@@ -205,7 +205,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/international.jpg" alt="International Moving" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
@@ -221,7 +221,7 @@ export default function HomePage() {
               <ImageReveal>
                 <figure className="image-anime">
                   <div className="service-img">
-                    <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ objectFit: 'cover' }} />
+                    <Image src="/assets/images/packing-and-moving.png" alt="Packing Services" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                   </div>
                 </figure>
               </ImageReveal>
