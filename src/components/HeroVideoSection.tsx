@@ -9,6 +9,8 @@ export default function HeroVideoSection() {
     '/assets/videos/video-1.mp4',
     '/assets/videos/video-2.mp4',
     '/assets/videos/video-3.mp4',
+    '/assets/videos/video-part-1.mp4',
+    '/assets/videos/video-part-2.mp4',
   ];
   const videoRef = useRef<HTMLVideoElement>(null);
 
