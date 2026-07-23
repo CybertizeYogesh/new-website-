@@ -23,16 +23,16 @@ export default function HomePage() {
       {/* 1. Hero Video Section with user's video 1.mp4 and video 2.mp4 background */}
       <HeroVideoSection />
 
-      {/* 2. Why Choose Us Section - Modern 2-Column Split Showcase with why.gif */}
+      {/* 2. Why Choose Us Section - Modern 2-Column Split Showcase with why.mp4 */}
       <section className="features section" style={{ backgroundColor: '#f8fafc', padding: '90px 0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3.5rem', alignItems: 'center' }}>
             
-            {/* Left Column: why.gif Image Showcase */}
+            {/* Left Column: why.mp4 Image Showcase */}
             <div style={{ position: 'relative' }}>
               <div style={{ borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(11, 43, 60, 0.12)', border: '4px solid #ffffff', background: '#ffffff' }}>
                 <Image 
-                  src="/assets/images/why.gif" 
+                  src="/assets/images/why.mp4" 
                   alt="Why Choose Speed Ex relocation packers and movers" 
                   width={550} 
                   height={420} 
