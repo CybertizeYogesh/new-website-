@@ -8,7 +8,7 @@ const testimonialsData = [
     name: 'Rahul Sharma',
     role: 'HOUSE SHIFTING',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Speed Ex relocation packers and movers provided smooth home shifting from Aslali to Satellite. The moving team packed, loaded, and delivered our goods safely on time with care.',
+    text: 'Gati Packers Movers provided smooth home shifting from Sector 110 to Cyber City. The moving team packed, loaded, and delivered our goods safely on time with care.',
     rating: 5,
   },
   {
@@ -16,7 +16,7 @@ const testimonialsData = [
     name: 'Lankhshit',
     role: 'OFFICE RELOCATION',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Speed Ex relocation packers and movers delivered excellent corporate office relocation. Their team handled server racks, IT desks, and office furniture safely with zero operational downtime.',
+    text: 'Gati Packers Movers delivered excellent corporate office relocation. Their team handled server racks, IT desks, and office furniture safely with zero operational downtime.',
     rating: 5,
   },
   {
@@ -24,7 +24,7 @@ const testimonialsData = [
     name: 'Anjali Pareek',
     role: 'VEHICLE TRANSPORT',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Speed Ex relocation packers and movers provided safe car and bike transportation from Ahmedabad to Delhi. Their team loaded the vehicle onto an enclosed car carrier with zero scratches.',
+    text: 'Gati Packers Movers provided safe car and bike transportation from Gurugram to Delhi. Their team loaded the vehicle onto an enclosed car carrier with zero scratches.',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const testimonialsData = [
     name: 'Sandeep Verma',
     role: 'DOMESTIC MOVING',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Shifted 3BHK household items from SG Highway to Gurgaon with Speed Ex relocation packers and movers. The crew used multi-layer bubble wrapping and heavy boxes for all electronics.',
+    text: 'Shifted 3BHK household items from Sector 110 to New Palam Vihar with Gati Packers Movers. The crew used multi-layer bubble wrapping and heavy boxes for all electronics.',
     rating: 5,
   },
   {
@@ -40,7 +40,7 @@ const testimonialsData = [
     name: 'Kavita Reddy',
     role: 'PACKING & UNPACKING',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Extremely polite team from Speed Ex relocation packers and movers! Unpacked and arranged all heavy furniture in our new flat in Prahlad Nagar within hours. Highly recommended moving service.',
+    text: 'Extremely polite team from Gati Packers Movers! Unpacked and arranged all heavy furniture in our new flat in New Palam Vihar within hours. Highly recommended moving service.',
     rating: 5,
   },
   {
@@ -48,7 +48,7 @@ const testimonialsData = [
     name: 'Vikramaditya Nair',
     role: 'CAR TRANSPORTATION',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Booked vehicle carrier transport for my Honda City from Aslali branch of Speed Ex relocation packers and movers to Kochi. Received real-time tracking updates and on-time safe delivery.',
+    text: 'Booked vehicle carrier transport for my Honda City from Gurugram branch of Gati Packers Movers to Kochi. Received real-time tracking updates and on-time safe delivery.',
     rating: 5,
   },
   {
@@ -56,7 +56,7 @@ const testimonialsData = [
     name: 'Pooja Deshmukh',
     role: 'WAREHOUSE STORAGE',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Stored our household items in the secure warehouse of Speed Ex relocation packers and movers for 4 months. Everything remained dust-free, dry, and in pristine condition.',
+    text: 'Stored our household items in the secure warehouse of Gati Packers Movers for 4 months. Everything remained dust-free, dry, and in pristine condition.',
     rating: 5,
   },
   {
@@ -64,15 +64,15 @@ const testimonialsData = [
     name: 'Rajesh R. Menon',
     role: 'INTERNATIONAL MOVING',
     image: '/assets/images/testimonial-img.webp',
-    text: 'Phenomenal international relocation coordination by Speed Ex relocation packers and movers from Ahmedabad to Dubai. Handled customs clearance, wooden crating, and door delivery seamlessly.',
+    text: 'Phenomenal international relocation coordination by Gati Packers Movers from India to Dubai. Handled customs clearance, wooden crating, and door delivery seamlessly.',
     rating: 5,
   },
 ];
 
 const faqsData = [
   {
-    question: 'What services does Speed Ex relocation packers and movers provide?',
-    answer: 'We offer end-to-end relocation solutions including local house shifting, corporate office relocation, car & bike transport, heavy-duty packing & unpacking, domestic intercity moving, warehouse storage, and international moving across Ahmedabad and major Indian cities.',
+    question: 'What services does Gati Packers Movers provide?',
+    answer: 'We offer end-to-end relocation solutions including local house shifting, corporate office relocation, car & bike transport, heavy-duty packing & unpacking, domestic intercity moving, warehouse storage, and international moving across India.',
   },
   {
     question: 'How are the moving charges calculated for house shifting?',
@@ -83,8 +83,8 @@ const faqsData = [
     answer: 'Yes, we offer full-value transit insurance options covering accidental damage or unforeseen incidents during transportation, ensuring complete protection for all your valuable belongings.',
   },
   {
-    question: 'How early should I book Speed Ex relocation packers and movers before shifting?',
-    answer: 'We recommend booking 2 to 4 days in advance for local shifting within Ahmedabad, and 5 to 7 days prior for intercity or long-distance moves to secure your preferred date and dedicated truck.',
+    question: 'How early should I book Gati Packers Movers before shifting?',
+    answer: 'We recommend booking 2 to 4 days in advance for local shifting, and 5 to 7 days prior for intercity or long-distance moves to secure your preferred date and dedicated truck.',
   },
   {
     question: 'Are fragile electronics and glassware packed with extra protection?',

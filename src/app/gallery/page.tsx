@@ -4,9 +4,9 @@ import Link from 'next/link';
 import GalleryView from '@/components/GalleryView';
 
 export const metadata: Metadata = {
-  title: 'Photo Gallery | Best Packers and Movers Ahmedabad | Speed Ex Relocation',
-  description: 'Explore real-world photos of house shifting, corporate office moving, vehicle transport, and warehouse storage solutions by Speed Ex Relocation Packers and Movers Ahmedabad.',
-  keywords: 'packers and movers gallery, shifting photos ahmedabad, household relocation photos, car transport gallery, speed ex relocation',
+  title: 'Photo Gallery | Best Packers and Movers | Gati Packers Movers',
+  description: 'Explore real-world photos of house shifting, corporate office moving, vehicle transport, and warehouse storage solutions by Gati Packers Movers.',
+  keywords: 'packers and movers gallery, shifting photos, household relocation photos, car transport gallery, gati packers movers',
   alternates: {
     canonical: 'https://speedexrelocation.com/gallery',
   },

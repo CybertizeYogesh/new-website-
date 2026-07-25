@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Vehicle Moving Services | Transport Logistics Company Ahmedabad',
-  description: 'Top vehicle moving services and enclosed car container transport in Ahmedabad by Speed Ex Relocation - best packers and movers & transport logistics company. Call: 9624644006.',
-  keywords: 'vehicle moving services, transport logistics company, best packers and movers, packers and movers ahmedabad, shifting company, relocation movers near me',
+  title: 'Top Car Transportation Companies in Gurgaon | Gati Packers Movers',
+  description: 'Looking for premier car transportation companies in Gurgaon? Gati Packers Movers offers enclosed car container carriers & vehicle moving services. Call: 8796757472.',
+  keywords: 'car transportation companies, vehicle moving services, best packers and movers in gurgaon, top packers and movers in gurgaon, car carrier services',
   alternates: {
     canonical: 'https://speedexrelocation.com/car-transportation',
   },
@@ -23,9 +23,9 @@ export default function CarTransportationPage() {
         color: 'white',
       }}>
         <div className="container">
-          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Vehicle Moving Services</h1>
+          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Car Transportation Companies &amp; Vehicle Moving</h1>
           <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.9rem' }}>
-            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Vehicle Moving Services</span>
+            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Car Transportation Companies</span>
           </div>
         </div>
       </header>
@@ -34,10 +34,10 @@ export default function CarTransportationPage() {
         <div className="container">
           <div className="about-grid">
             <div className="about-content fade-in-right">
-              <span className="sub-title">Automobile Shifting</span>
-              <h2>Professional Vehicle Moving Services by Leading Transport Logistics Company</h2>
+              <span className="sub-title">Automobile Carrier Logistics</span>
+              <h2>Premier Car Transportation Companies &amp; Vehicle Moving Services</h2>
               <p>
-                Transporting your car across cities requires trustworthy logistics. At Speed Ex Relocation Packers and Movers Ahmedabad, a leading transport logistics company and shifting company, we utilize specialized enclosed car container trucks for seamless vehicle moving services.
+                Transporting your car across cities requires trustworthy logistics. As one of the top car transportation companies and best packers and movers in Gurgaon, Gati Packers Movers utilizes specialized enclosed car container trucks for 100% scratch-free vehicle moving services.
               </p>
               <p>
                 Our drivers and handlers undergo specialized training for loading, anchoring, and driving heavy vehicle trailers safely across all national highways.

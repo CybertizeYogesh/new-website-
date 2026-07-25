@@ -21,20 +21,20 @@ export default function Footer() {
           <div className="footer-brand-card">
             <Link href="/" className="footer-logo">
               <Image 
-                src="/assets/images/logo.webp" 
-                alt="Speed Ex Relocation Packers and Movers" 
+                src="/assets/images/logo-footer.webp" 
+                alt="Gati Packers Movers" 
                 width={190} 
                 height={60} 
                 className="footer-logo-img" 
               />
             </Link>
             <p className="footer-bio">
-              Speed Ex Relocation Packers and Movers is India’s premier relocation partner, ensuring 100% safe, seamless, and stress-free house shifting, office moving, and vehicle transport.
+              Gati Packers Movers is India’s premier relocation partner, ensuring 100% safe, seamless, and stress-free house shifting, office moving, and vehicle transport.
             </p>
             <div style={{ marginTop: '1rem', color: '#cbd5e1', fontSize: '0.88rem', lineHeight: '1.6' }}>
-              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-location-dot" style={{ color: '#ff4d26', marginRight: '8px' }}></i> B 107, Bijal Business Centre, Aslali Circle, Aslali, Ahmedabad - 382427</p>
-              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-phone" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="tel:09624644006" style={{ color: '#ffffff' }}>9624644006</a> / <a href="tel:09211206101" style={{ color: '#ffffff' }}>9211206101</a></p>
-              <p><i className="fa-solid fa-envelope" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="mailto:speedexrelocation3@gmail.com" style={{ color: '#ffffff' }}>speedexrelocation3@gmail.com</a></p>
+              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-location-dot" style={{ color: '#ff4d26', marginRight: '8px' }}></i> Address. F201, Phase 2, New Palam Vihar, Block F, New Palam Vihar Phase 2, Sector 110, Gurugram, Haryana 122017</p>
+              <p style={{ marginBottom: '0.4rem' }}><i className="fa-solid fa-phone" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="tel:8796757472" style={{ color: '#ffffff' }}>8796757472</a></p>
+              <p><i className="fa-solid fa-envelope" style={{ color: '#ff4d26', marginRight: '8px' }}></i> <a href="mailto:gatipackerssmovers@gmail.com" style={{ color: '#ffffff' }}>gatipackerssmovers@gmail.com</a></p>
             </div>
           </div>
 
@@ -68,20 +68,20 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Ahmedabad Areas Column */}
+            {/* Gurgaon & Gurugram SEO Areas Column */}
             <div className="footer-col">
-              <h4 className="footer-heading">Ahmedabad Areas</h4>
+              <h4 className="footer-heading">Gurgaon &amp; Gurugram Hubs</h4>
               <ul className="footer-links-list">
-                <li><Link href="/packers-and-movers-in-electronic-city"><i className="fa-solid fa-location-dot link-icon"></i> Aslali Circle</Link></li>
-                <li><Link href="/packers-and-movers-in-begur"><i className="fa-solid fa-location-dot link-icon"></i> SG Highway</Link></li>
-                <li><Link href="/packers-and-movers-in-bellandur"><i className="fa-solid fa-location-dot link-icon"></i> Satellite</Link></li>
-                <li><Link href="/packers-and-movers-in-bommasandra"><i className="fa-solid fa-location-dot link-icon"></i> Prahlad Nagar</Link></li>
-                <li><Link href="/packers-and-movers-in-hulimangala"><i className="fa-solid fa-location-dot link-icon"></i> Narol</Link></li>
-                <li><Link href="/packers-and-movers-in-marathahalli"><i className="fa-solid fa-location-dot link-icon"></i> Changodar</Link></li>
+                <li><Link href="/packers-and-movers-in-gurgaon-sector-31"><i className="fa-solid fa-location-dot link-icon"></i> Sector 31 Gurgaon</Link></li>
+                <li><Link href="/packers-and-movers-in-gurgaon-sector-51"><i className="fa-solid fa-location-dot link-icon"></i> Sector 51 Gurgaon</Link></li>
+                <li><Link href="/packers-and-movers-in-dlf-phase-3-gurgaon"><i className="fa-solid fa-location-dot link-icon"></i> DLF Phase 3 Gurgaon</Link></li>
+                <li><Link href="/packers-and-movers-in-gurgaon"><i className="fa-solid fa-location-dot link-icon"></i> Gurgaon City</Link></li>
+                <li><Link href="/packers-and-movers-in-gurugram"><i className="fa-solid fa-location-dot link-icon"></i> Gurugram Haryana</Link></li>
+                <li><Link href="/packers-and-movers-in-new-palam-vihar"><i className="fa-solid fa-location-dot link-icon"></i> New Palam Vihar</Link></li>
               </ul>
             </div>
 
-            {/* Newsletter Column - Right of Ahmedabad Areas */}
+            {/* Newsletter Column - Right of Areas */}
             <div className="footer-col">
               <h4 className="footer-heading">Newsletter</h4>
               <p style={{ fontSize: '0.88rem', color: '#94a3b8', marginBottom: '1.25rem', lineHeight: 1.6 }}>
@@ -104,7 +104,7 @@ export default function Footer() {
         {/* Footer Bottom Copyright & Developer Bar */}
         <div className="footer-bottom-bar">
           <p className="footer-copyright-text">
-            &copy; Copyright {currentYear} speed ex relocation Packers &amp; Movers All Rights Reserved
+            &copy; Copyright {currentYear} Gati Packers Movers All Rights Reserved
           </p>
           <p className="footer-dev-credit">
             Developed by{' '}

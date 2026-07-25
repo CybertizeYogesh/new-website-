@@ -76,7 +76,7 @@ export default function HomePage() {
                 </h2>
               </TextAnime>
               <p style={{ color: '#64748b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: '2rem' }}>
-                Speed Ex relocation packers and movers delivers premier home shifting, office relocation, and vehicle transportation with maximum safety and punctuality.
+                Gati Packers Movers delivers premier home shifting, office relocation, and vehicle transportation with maximum safety and punctuality.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.25rem' }}>
@@ -141,8 +141,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/home-relocation.webp" alt="House Relocation" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/home-relocation.webp" alt="House Relocation" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -157,8 +157,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up delay-1" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/office-relocation.webp" alt="Office Shifting" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/office-relocation.webp" alt="Office Shifting" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -173,8 +173,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up delay-2" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/vehicle-transportation.webp" alt="Vehicle Transport" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/vehicle-transportation.webp" alt="Vehicle Transport" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -189,8 +189,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/warehouse.webp" alt="Warehouse Storage" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/warehouse.webp" alt="Warehouse Storage" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -205,8 +205,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up delay-1" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/international.webp" alt="International Moving" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/international.webp" alt="International Moving" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -221,8 +221,8 @@ export default function HomePage() {
             <div className="service-card fade-in-up delay-2" data-cursor-text="EXPLORE">
               <ImageReveal>
                 <figure className="image-anime">
-                  <div className="service-img">
-                    <Image src="/assets/images/packing-and-moving.webp" alt="Packing Services" width={400} height={240} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                    <Image src="/assets/images/packing-and-moving.webp" alt="Packing Services" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
                 </figure>
               </ImageReveal>
@@ -371,7 +371,7 @@ export default function HomePage() {
                 <h2>Trusted Relocation Partner Since 2012</h2>
               </TextAnime>
               <p>
-                Speed Ex Relocation Packers and Movers is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
+                Gati Packers Movers is one of India’s most trusted relocation partners. We specialize in home, office, and vehicle shifting, ensuring every move is safe, seamless, and stress-free.
               </p>
 
               <ul className="about-list">
@@ -389,7 +389,7 @@ export default function HomePage() {
                   <div className="img-wrapper">
                     <img
                       src="/assets/images/packing-wood-crating.webp"
-                      alt="About Speed Ex Relocation Packers and Movers"
+                      alt="About Gati Packers Movers"
                     />
                     <div className="exp-badge">
                       <span className="years">10+</span>
@@ -414,33 +414,33 @@ export default function HomePage() {
             <TextAnime>
               <h2>Packers and Movers – Nationwide Network</h2>
             </TextAnime>
-            <p>Speed Ex Relocation Packers and Movers provides reliable house shifting, office relocation and vehicle transport across all major cities and hubs.</p>
+            <p>Gati Packers Movers provides reliable house shifting, office relocation and vehicle transport across all major cities and hubs.</p>
           </div>
 
           <div className="cities-grid">
-            <Link href="/packers-and-movers-in-electronic-city" className="city-card fade-in-up" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-gurgaon-sector-31" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Aslali Ahmedabad</h3>
+              <h3>Packers and Movers in Gurgaon Sector 31</h3>
             </Link>
-            <Link href="/packers-and-movers-in-begur" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-gurgaon-sector-51" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in SG Highway</h3>
+              <h3>Packers and Movers in Gurgaon Sector 51</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bellandur" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-dlf-phase-3-gurgaon" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Satellite</h3>
+              <h3>Packers and Movers in DLF Phase 3 Gurgaon</h3>
             </Link>
-            <Link href="/packers-and-movers-in-marathahalli" className="city-card fade-in-up" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-gurgaon" className="city-card fade-in-up" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Prahlad Nagar</h3>
+              <h3>Best Packers and Movers in Gurgaon</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bommasandra" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-gurugram" className="city-card fade-in-up delay-1" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Narol</h3>
+              <h3>Movers &amp; Packers Near Gurugram Haryana</h3>
             </Link>
-            <Link href="/packers-and-movers-in-hulimangala" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
+            <Link href="/packers-and-movers-in-new-palam-vihar" className="city-card fade-in-up delay-2" data-cursor-text="AREA">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Packers and Movers in Changodar</h3>
+              <h3>Local Packers and Movers Gurgaon</h3>
             </Link>
           </div>
         </div>
@@ -453,14 +453,14 @@ export default function HomePage() {
             
             {/* Left Column: Brand Statement & Highlights */}
             <div>
-              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>THE SPEED EX ASSURANCE</span>
+              <span className="sub-title" style={{ marginBottom: '1.25rem' }}>THE GATI PACKERS MOVERS ASSURANCE</span>
               <TextAnime>
                 <h2 style={{ fontSize: 'clamp(2.1rem, 3.8vw, 2.8rem)', fontWeight: 800, color: '#0b2b3c', lineHeight: 1.25, marginBottom: '1.25rem' }}>
                   Safety, Timeliness &amp; Complete Peace of Mind
                 </h2>
               </TextAnime>
               <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '2rem' }}>
-                Every house shifting, office relocation, and vehicle transit project with Speed Ex Relocation Packers and Movers is backed by strict quality controls, trained moving staff, and insured handling.
+                Every house shifting, office relocation, and vehicle transit project with Gati Packers Movers is backed by strict quality controls, trained moving staff, and insured handling.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2.5rem' }}>
@@ -481,7 +481,7 @@ export default function HomePage() {
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap' }}>
                 <Link href="#quote" className="btn btn-primary" data-cursor-text="QUOTE">Get Free Quote</Link>
-                <a href="tel:09624644006" className="btn btn-navy" data-cursor-text="CALL">Call 9624644006</a>
+                <a href="tel:8796757472" className="btn btn-navy" data-cursor-text="CALL">Call 8796757472</a>
               </div>
             </div>
 

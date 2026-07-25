@@ -21,12 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/about-us', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/contact-us', priority: 0.8, changeFreq: 'weekly' as const },
     { path: '/gallery', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-electronic-city', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-begur', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-bellandur', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-bommasandra', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-hulimangala', priority: 0.8, changeFreq: 'weekly' as const },
-    { path: '/packers-and-movers-in-marathahalli', priority: 0.8, changeFreq: 'weekly' as const },
+    { path: '/packers-and-movers-in-gurgaon-sector-31', priority: 0.85, changeFreq: 'weekly' as const },
+    { path: '/packers-and-movers-in-gurgaon-sector-51', priority: 0.85, changeFreq: 'weekly' as const },
+    { path: '/packers-and-movers-in-dlf-phase-3-gurgaon', priority: 0.85, changeFreq: 'weekly' as const },
+    { path: '/packers-and-movers-in-gurgaon', priority: 0.9, changeFreq: 'daily' as const },
+    { path: '/packers-and-movers-in-gurugram', priority: 0.9, changeFreq: 'daily' as const },
+    { path: '/packers-and-movers-in-new-palam-vihar', priority: 0.85, changeFreq: 'weekly' as const },
   ];
 
   // Legal routes

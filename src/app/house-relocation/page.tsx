@@ -4,9 +4,9 @@ import Link from 'next/link';
 import ImageReveal from '@/components/ImageReveal';
 
 export const metadata: Metadata = {
-  title: 'Household Shifting Services Near Me | Best Packers and Movers Ahmedabad',
-  description: 'Looking for top household shifting services near me in Ahmedabad? Speed Ex Relocation is the best packers and movers offering safe, stress-free home relocation movers near me. Call: 9624644006.',
-  keywords: 'household shifting services, household shifting services near me, best packers and movers, packers and movers ahmedabad, relocation movers near me, shifting company',
+  title: 'Household Shifting Services & Home Moving Services | Gati Packers Movers',
+  description: 'Looking for top household shifting services, home moving services, or packers and movers services near me? Gati Packers Movers is the best moving company offering safe shifters and movers near me. Call: 8796757472.',
+  keywords: 'household shifting services, home moving services, shifters and movers near me, packers and movers services near me, best packers and movers, best moving company, packers and movers in gurgaon near me',
   alternates: {
     canonical: 'https://speedexrelocation.com/house-relocation',
   },
@@ -24,9 +24,9 @@ export default function HouseRelocationPage() {
         color: 'white',
       }}>
         <div className="container">
-          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Household Shifting Services</h1>
+          <h1 style={{ color: 'white', marginBottom: '1rem' }}>Household Shifting Services &amp; Home Moving</h1>
           <div className="breadcrumb" style={{ display: 'flex', justifyContent: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.9rem' }}>
-            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Household Shifting</span>
+            <Link href="/" style={{ color: 'white' }}>Home</Link> / <span>Services</span> / <span style={{ color: 'var(--accent-color)' }}>Household Shifting Services</span>
           </div>
         </div>
       </header>
@@ -35,13 +35,13 @@ export default function HouseRelocationPage() {
         <div className="container">
           <div className="about-grid">
             <div className="about-content fade-in-right">
-              <span className="sub-title">Expert Home Shifting</span>
-              <h2>Premier Household Shifting Services Near Me in Ahmedabad</h2>
+              <span className="sub-title">Expert Home Moving Services</span>
+              <h2>Premier Household Shifting Services &amp; Packers and Movers Near Me</h2>
               <p>
-                Moving to a new home is an exciting chapter, but finding reliable household shifting services near me can make all the difference. At Speed Ex Relocation Packers and Movers Ahmedabad, as the best packers and movers in the region, we ensure your residential relocation experience is completely smooth, safe, and stress-free.
+                Moving to a new home is an exciting chapter, but finding reliable household shifting services and packers and movers services near me can make all the difference. At Gati Packers Movers, as the best moving company and top shifters and movers near me, we ensure your residential home moving services experience is completely smooth, safe, and stress-free.
               </p>
               <p>
-                Our expert relocation movers near me handle everything from multi-layer packing of delicate items to loading and unpacking at your new destination with complete precision.
+                Our expert shifters and movers near me handle everything from multi-layer packing of delicate items to loading, transit, and systematic unpacking at your new home with complete precision.
               </p>
 
               <h3 style={{ marginTop: '1.5rem', fontSize: '1.5rem' }}>Why Choose Our Home Shifting?</h3>

@@ -11,6 +11,7 @@ export default function HeroVideoSection() {
     '/assets/videos/video-3.mp4',
     '/assets/videos/video-part-1.mp4',
     '/assets/videos/video-part-2.mp4',
+    '/assets/videos/video-last.mp4',
   ];
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -109,7 +110,7 @@ export default function HeroVideoSection() {
               }}
             >
               Our Best Relocation Services &amp; Consulting in{' '}
-              <span style={{ color: '#ff4d26' }}>Ahmedabad</span>
+              <span style={{ color: '#ff4d26' }}>Gurugram</span>
             </h1>
 
             {/* Banner Description Text */}

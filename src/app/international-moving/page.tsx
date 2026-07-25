@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'International Moving | Speed Ex relocation packers and movers',
-  description: 'Reliable international moving & global relocation services with complete customs & air/sea cargo management.',
-  keywords: 'international moving, global relocation, speed ex relocation packers and movers, overseas shifting',
+  title: 'International Moving | Gati Packers Movers',
+  description: 'Reliable international moving & global relocation services with complete customs & air/sea cargo management. Call: 8796757472.',
+  keywords: 'international moving, global relocation, gati packers movers, overseas shifting',
   alternates: {
     canonical: 'https://speedexrelocation.com/international-moving',
   },
@@ -37,7 +37,7 @@ export default function InternationalMovingPage() {
               <span className="sub-title">Global Relocation</span>
               <h2>Seamless Overseas &amp; International Shifting</h2>
               <p>
-                Relocating abroad involves complex customs documentations, air cargo regulations, and international freight standards. Speed Ex relocation packers and movers offers end-to-end international moving services.
+                Relocating abroad involves complex customs documentations, air cargo regulations, and international freight standards. Gati Packers Movers offers end-to-end international moving services.
               </p>
               <p>
                 Our team assists with export packing, air/sea freight booking, customs documentation, and door-delivery partnerships in destination countries worldwide.

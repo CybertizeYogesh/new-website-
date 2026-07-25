@@ -24,10 +24,10 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation - Shifting Services',
-  description: 'Speed Ex Relocation Packers and Movers is the best packers and movers in Ahmedabad offering household shifting services near me, office moving services, vehicle moving services & top transport logistics company solutions. Call: 9624644006 / 9211206101.',
-  keywords: 'packers and movers ahmedabad, best packers and movers, household shifting services, household shifting services near me, transport logistics company, shifting company, relocation movers near me, vehicle moving services, office moving services, speed ex relocation',
-  authors: [{ name: 'Speed Ex Relocation Packers and Movers' }],
+  title: 'Best Packers and Movers in Gurgaon | Top Movers and Packers Near Gurugram Haryana',
+  description: 'Gati Packers Movers is the best packers and movers in Gurgaon & top movers and packers near Gurugram Haryana offering household shifting services, office moving services in Gurgaon, car transportation & local home moving near me. Call: 8796757472.',
+  keywords: 'movers and packers near gurugram haryana, shifters and movers near me, packers and movers services near me, packers and movers gurgaon, best packers and movers in gurgaon, top packers and movers in gurgaon, packers and movers in gurgaon sector 31, packers and movers in gurgaon sector 51, packers and movers in dlf phase 3 gurgaon, packers and movers in gurgaon near me, relocation services in gurgaon, local packers and movers gurgaon, packers and movers gurugram haryana, packers movers in gurgaon, office shifting services in gurgaon, movers and packers, home moving services, best moving company, best packers and movers, household shifting services, car transportation companies',
+  authors: [{ name: 'Gati Packers Movers' }],
   metadataBase: new URL('https://speedexrelocation.com'),
   icons: {
     icon: '/assets/images/favicon.webp',
@@ -42,55 +42,100 @@ export const metadata: Metadata = {
     yandex: 'yandex-verification-placeholder',
   },
   openGraph: {
-    title: 'Best Packers and Movers Ahmedabad | Speed Ex Relocation',
-    description: 'Premier household shifting services, office moving services, vehicle moving services & transport logistics company in Ahmedabad.',
+    title: 'Best Packers and Movers in Gurgaon | Top Movers and Packers Near Gurugram Haryana',
+    description: 'Gati Packers Movers offers top household shifting services, office moving services in Gurgaon, car transportation companies & local movers near me.',
     type: 'website',
     locale: 'en_IN',
     url: 'https://speedexrelocation.com',
-    siteName: 'Speed Ex Relocation Packers and Movers',
+    siteName: 'Gati Packers Movers',
+    images: [
+      {
+        url: 'https://speedexrelocation.com/assets/images/logo.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Gati Packers Movers Gurgaon',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Packers and Movers in Gurgaon | Top Movers and Packers Near Gurugram Haryana',
+    description: 'Gati Packers Movers offers top household shifting services, office moving services in Gurgaon, car transportation companies & local movers near me.',
+    images: ['https://speedexrelocation.com/assets/images/logo.webp'],
   },
 };
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'MovingCompany',
-  'name': 'Speed Ex Relocation Packers and Movers',
-  'url': 'https://speedexrelocation.com',
-  'logo': 'https://speedexrelocation.com/assets/images/logo.webp',
-  'image': 'https://speedexrelocation.com/assets/images/logo.webp',
-  'description': 'Speed Ex Relocation is the best packers and movers in Ahmedabad offering top household shifting services near me, office moving services, vehicle moving services & transport logistics solutions.',
-  'telephone': '+919624644006',
-  'email': 'speedexrelocation3@gmail.com',
-  'priceRange': '₹₹',
-  'address': {
-    '@type': 'PostalAddress',
-    'streetAddress': 'B 107, Bijal Business Centre, Aslali Circle, Aslali',
-    'addressLocality': 'Ahmedabad',
-    'addressRegion': 'Gujarat',
-    'postalCode': '382427',
-    'addressCountry': 'IN'
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'MovingCompany',
+    'name': 'Gati Packers Movers',
+    'url': 'https://speedexrelocation.com',
+    'logo': 'https://speedexrelocation.com/assets/images/logo.webp',
+    'image': 'https://speedexrelocation.com/assets/images/logo.webp',
+    'description': 'Gati Packers Movers is the best packers and movers in Gurgaon offering top movers and packers near Gurugram Haryana, household shifting services, office moving services in Gurgaon, car transportation & local home moving services.',
+    'telephone': '+918796757472',
+    'email': 'gatipackerssmovers@gmail.com',
+    'priceRange': '₹₹',
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': '4.9',
+      'reviewCount': '9500',
+      'bestRating': '5',
+      'worstRating': '1'
+    },
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'F201, Phase 2, New Palam Vihar, Block F, New Palam Vihar Phase 2, Sector 110',
+      'addressLocality': 'Gurugram',
+      'addressRegion': 'Haryana',
+      'postalCode': '122017',
+      'addressCountry': 'IN'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 28.5146,
+      'longitude': 77.0270
+    },
+    'openingHoursSpecification': {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      'opens': '00:00',
+      'closes': '23:59'
+    },
+    'areaServed': [
+      { '@type': 'City', 'name': 'Gurgaon' },
+      { '@type': 'City', 'name': 'Gurugram Haryana' },
+      { '@type': 'City', 'name': 'Gurgaon Sector 31' },
+      { '@type': 'City', 'name': 'Gurgaon Sector 51' },
+      { '@type': 'City', 'name': 'DLF Phase 3 Gurgaon' },
+      { '@type': 'City', 'name': 'New Palam Vihar' },
+      { '@type': 'City', 'name': 'Delhi NCR' }
+    ]
   },
-  'geo': {
-    '@type': 'GeoCoordinates',
-    'latitude': 22.9385565,
-    'longitude': 72.5855219
-  },
-  'openingHoursSpecification': {
-    '@type': 'OpeningHoursSpecification',
-    'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    'opens': '00:00',
-    'closes': '23:59'
-  },
-  'areaServed': [
-    { '@type': 'City', 'name': 'Ahmedabad' },
-    { '@type': 'City', 'name': 'Aslali' },
-    { '@type': 'City', 'name': 'SG Highway' },
-    { '@type': 'City', 'name': 'Satellite' },
-    { '@type': 'City', 'name': 'Prahlad Nagar' },
-    { '@type': 'City', 'name': 'Narol' },
-    { '@type': 'City', 'name': 'Changodar' }
-  ]
-};
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'What services do Gati Packers Movers provide in Gurgaon?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Gati Packers Movers provides complete household shifting services, office moving services in Gurgaon, car transportation companies carriers, bike packing, local home moving near me, and warehouse storage solutions across Gurgaon Sector 31, Sector 51, DLF Phase 3, and Gurugram Haryana.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'How can I get an instant quote for packers and movers in Gurgaon near me?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'You can call Gati Packers Movers directly at 8796757472 or submit the instant quote form on our website for an upfront, transparent cost estimate with zero hidden fees.'
+        }
+      }
+    ]
+  }
+];
 
 export default function RootLayout({
   children,
@@ -98,14 +143,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${plusJakartaSans.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${outfit.variable} ${plusJakartaSans.variable}`}>
       <head>
         <link
           rel="stylesheet"
           href="/assets/fontawesome/css/all.min.css"
-          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
         />
         <script
           type="application/ld+json"

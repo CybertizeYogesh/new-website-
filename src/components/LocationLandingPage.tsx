@@ -18,12 +18,12 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
         </div>
         <div className="container hero-content">
           <div className="hero-text fade-in-up">
-            <span className="badge">#1 Best Packers and Movers Ahmedabad</span>
+            <span className="badge">#1 Best Packers and Movers Gurugram</span>
             <h1>
               Packers and Movers in <span className="text-gradient">{locationName}</span>
             </h1>
             <p>
-              Looking for the best packers and movers in {locationName}? As a premier transport logistics company and shifting company, Speed Ex Relocation provides top household shifting services near me, office moving services, and vehicle moving services with 100% safety.
+              Looking for the best packers and movers in {locationName}? As a premier transport logistics company and shifting company, Gati Packers Movers provides top household shifting services near me, office moving services, and vehicle moving services with 100% safety.
             </p>
 
             <div className="hero-stats">
@@ -79,8 +79,8 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
 
           <div className="services-grid">
             <div className="service-card fade-in-up">
-              <div className="service-img">
-                <Image src="/assets/images/home-relocation.webp" alt="House Relocation" width={400} height={240} style={{ objectFit: 'cover' }} />
+              <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/assets/images/home-relocation.webp" alt="House Relocation" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-house-chimney"></i></div>
@@ -91,8 +91,8 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
             </div>
 
             <div className="service-card fade-in-up delay-1">
-              <div className="service-img">
-                <Image src="/assets/images/office-relocation.webp" alt="Office Shifting" width={400} height={240} style={{ objectFit: 'cover' }} />
+              <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/assets/images/office-relocation.webp" alt="Office Shifting" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-building"></i></div>
@@ -103,8 +103,8 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
             </div>
 
             <div className="service-card fade-in-up delay-2">
-              <div className="service-img">
-                <Image src="/assets/images/vehicle-transportation.webp" alt="Vehicle Transport" width={400} height={240} style={{ objectFit: 'cover' }} />
+              <div className="service-img" style={{ position: 'relative', width: '100%', height: '240px' }}>
+                <Image src="/assets/images/vehicle-transportation.webp" alt="Vehicle Transport" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
               </div>
               <div className="service-content">
                 <div className="service-icon"><i className="fa-solid fa-car-side"></i></div>
@@ -122,33 +122,33 @@ export default function LocationLandingPage({ locationName }: LocationLandingPag
         <div className="container">
           <div className="section-header text-center">
             <span className="sub-title">Other Areas We Serve</span>
-            <h2>Packers and Movers in Ahmedabad &amp; Gujarat Hubs</h2>
+            <h2>Packers and Movers in Gurugram &amp; Delhi NCR Hubs</h2>
           </div>
 
           <div className="cities-grid">
-            <Link href="/packers-and-movers-in-electronic-city" className="city-card">
+            <Link href="/packers-and-movers-in-gurgaon-sector-31" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Aslali Circle</h3>
+              <h3>Sector 31 Gurgaon</h3>
             </Link>
-            <Link href="/packers-and-movers-in-begur" className="city-card">
+            <Link href="/packers-and-movers-in-gurgaon-sector-51" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>SG Highway</h3>
+              <h3>Sector 51 Gurgaon</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bellandur" className="city-card">
+            <Link href="/packers-and-movers-in-dlf-phase-3-gurgaon" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Satellite</h3>
+              <h3>DLF Phase 3 Gurgaon</h3>
             </Link>
-            <Link href="/packers-and-movers-in-marathahalli" className="city-card">
+            <Link href="/packers-and-movers-in-gurgaon" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Prahlad Nagar</h3>
+              <h3>Gurgaon City</h3>
             </Link>
-            <Link href="/packers-and-movers-in-bommasandra" className="city-card">
+            <Link href="/packers-and-movers-in-gurugram" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Narol</h3>
+              <h3>Gurugram Haryana</h3>
             </Link>
-            <Link href="/packers-and-movers-in-hulimangala" className="city-card">
+            <Link href="/packers-and-movers-in-new-palam-vihar" className="city-card">
               <div className="city-icon"><i className="fa-solid fa-location-dot"></i></div>
-              <h3>Changodar</h3>
+              <h3>New Palam Vihar</h3>
             </Link>
           </div>
         </div>

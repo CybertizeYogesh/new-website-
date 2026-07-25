@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Packing & Unpacking | Speed Ex relocation packers and movers',
-  description: 'Professional packing & unpacking services using multi-layer bubble wrap, foam sheets, and sturdy carton boxes.',
-  keywords: 'packing unpacking services, speed ex relocation packers and movers, household packing solutions',
+  title: 'Packing & Unpacking | Gati Packers Movers',
+  description: 'Professional packing & unpacking services using multi-layer bubble wrap, foam sheets, and sturdy carton boxes. Call: 8796757472.',
+  keywords: 'packing unpacking services, gati packers movers, household packing solutions',
   alternates: {
     canonical: 'https://speedexrelocation.com/packing-unpacking',
   },
@@ -37,7 +37,7 @@ export default function PackingUnpackingPage() {
               <span className="sub-title">Multi-Layer Protection</span>
               <h2>Professional Packing &amp; Unpacking Services</h2>
               <p>
-                Proper packing is the backbone of safe relocation. At Speed Ex relocation packers and movers, we use industry-grade packing materials tailored to every item type.
+                Proper packing is the backbone of safe relocation. At Gati Packers Movers, we use industry-grade packing materials tailored to every item type.
               </p>
               <p>
                 Our crew carefully wraps crockery, glassware, TVs, electronics, clothing, and furniture, and upon reaching your destination, assists with systematic unpacking and arrangement.

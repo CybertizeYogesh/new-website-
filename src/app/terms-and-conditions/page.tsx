@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions | Speed Ex Relocation Packers and Movers',
-  description: 'Terms and Conditions of Speed Ex Relocation Packers and Movers regarding services, payments, liability, and cancellations.',
-  keywords: 'speed ex relocation terms conditions, movers terms ahmedabad, relocation service terms india',
+  title: 'Terms and Conditions | Gati Packers Movers',
+  description: 'Terms and Conditions of Gati Packers Movers regarding services, payments, liability, and cancellations.',
+  keywords: 'gati packers movers terms conditions, movers terms, relocation service terms india',
   alternates: {
     canonical: 'https://speedexrelocation.com/terms-and-conditions',
   },
@@ -34,7 +34,7 @@ export default function TermsAndConditionsPage() {
         <div className="container" style={{ maxWidth: '900px' }}>
           <div className="policy-content" style={{ lineHeight: 1.8, color: '#334155' }}>
             <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
-              Welcome to Speed Ex Relocation Packers and Movers. By accessing our website and using our services, you agree to comply with the following terms and conditions.
+              Welcome to Gati Packers Movers. By accessing our website and using our services, you agree to comply with the following terms and conditions.
             </p>
             <br />
 

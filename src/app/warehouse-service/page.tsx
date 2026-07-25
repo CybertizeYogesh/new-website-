@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Warehouse Service | Speed Ex relocation packers and movers',
-  description: 'Spacious, clean, and 24/7 monitored warehouse & storage facilities for short and long-term goods storage.',
-  keywords: 'warehouse service, storage facilities, speed ex relocation packers and movers, goods storage ahmedabad',
+  title: 'Warehouse Service | Gati Packers Movers',
+  description: 'Spacious, clean, and 24/7 monitored warehouse & storage facilities for short and long-term goods storage. Call: 8796757472.',
+  keywords: 'warehouse service, storage facilities, gati packers movers, goods storage',
   alternates: {
     canonical: 'https://speedexrelocation.com/warehouse-service',
   },
@@ -37,7 +37,7 @@ export default function WarehouseServicePage() {
               <span className="sub-title">Secure Storage Facilities</span>
               <h2>Flexible Household &amp; Commercial Warehousing</h2>
               <p>
-                Need a safe place to store your household goods or commercial inventory during a transition? Speed Ex relocation packers and movers offers spacious, clean, and 24/7 monitored warehouse facilities.
+                Need a safe place to store your household goods or commercial inventory during a transition? Gati Packers Movers offers spacious, clean, and 24/7 monitored warehouse facilities.
               </p>
               <p>
                 Our warehouses are equipped with pest control, fire protection systems, and round-the-clock CCTV surveillance to keep your belongings completely safe.

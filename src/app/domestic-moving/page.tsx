@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Packers and Movers Ahmedabad | Transport Logistics Company & Shifting Company',
-  description: 'Speed Ex Relocation is the best packers and movers in Ahmedabad for domestic household shifting services near me & nationwide office moving services. Call: 9624644006.',
-  keywords: 'packers and movers ahmedabad, best packers and movers, transport logistics company, shifting company, household shifting services near me, relocation movers near me',
+  title: 'Domestic Moving & Shifting | Gati Packers Movers',
+  description: 'Gati Packers Movers is the best packers and movers for domestic household shifting services near me & nationwide office moving services. Call: 8796757472.',
+  keywords: 'gati packers movers, best packers and movers, transport logistics company, shifting company, household shifting services near me, relocation movers near me',
   alternates: {
     canonical: 'https://speedexrelocation.com/domestic-moving',
   },
@@ -37,10 +37,10 @@ export default function DomesticMovingPage() {
               <span className="sub-title">Long-Distance Relocation</span>
               <h2>Nationwide Domestic Shifting Services by Top Shifting Company</h2>
               <p>
-                Shifting your home or business to a new city across India requires an extensive, well-connected transport logistics company network. Speed Ex Relocation Packers and Movers Ahmedabad connects Gujarat with over 50+ major cities across India.
+                Shifting your home or business to a new city across India requires an extensive, well-connected transport logistics company network. Gati Packers Movers connects over 50+ major cities across India.
               </p>
               <p>
-                Whether moving to Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, Pune, or Kolkata, as the best packers and movers in Ahmedabad, our specialized container trucks guarantee safe and scheduled deliveries.
+                Whether moving to Mumbai, Delhi, Bengaluru, Hyderabad, Chennai, Pune, or Kolkata, as the best packers and movers in Gurugram, our specialized container trucks guarantee safe and scheduled deliveries.
               </p>
 
               <h3 style={{ marginTop: '1.5rem', fontSize: '1.5rem' }}>Why Trust Us for Intercity Moves?</h3>

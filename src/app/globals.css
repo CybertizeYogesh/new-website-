@@ -1016,10 +1016,9 @@ img {
 }
 
 .logo-img {
-    max-height: 48px;
+    max-height: 52px;
     width: auto;
     object-fit: contain;
-    mix-blend-mode: multiply;
     transition: var(--transition-smooth);
 }
 
@@ -2184,14 +2183,12 @@ img {
 }
 
 .footer-logo-img {
-    max-height: 52px;
+    max-height: 58px;
     width: auto;
     object-fit: contain;
-    background: var(--white);
-    padding: 6px 14px;
-    border-radius: var(--radius-md);
+    background: transparent;
+    padding: 0;
     margin-bottom: 1.25rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-bio {
